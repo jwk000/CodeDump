@@ -1,0 +1,45 @@
+using common;
+
+enum HomeType{
+    Home001 = 1,
+    Home222 = 2,
+    Home333 = 3,
+}
+
+class SceneLevel{
+    int level = 0;
+    int size = 0;
+
+    [string] //从string字段解析
+    List<CostItem> upgrade_cost; 
+
+    [string]
+    List<ObjectLayout> add_furniture;
+}
+
+class Scene{
+
+    [key]
+    int id = 0; //作为dict的key
+
+    HomeType type;//枚举
+
+    string name = "my home";
+
+    [range(1,99)] //取值范围，用于数值检查
+    int open_level = 0;
+    int def_ground;
+    int def_terrain;
+    int def_bg;
+    [string]
+    List<ObjectLayout> def_layout;
+    [string]//指定从string解析
+    List<CostItem> open_cost;
+
+    List<SceneLevel> SceneLevelList; //默认从下级节点解析
+}
+
+[root]
+class HomeConfig{
+    Dict<int,Scene> SceneList;
+}

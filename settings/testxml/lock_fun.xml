@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<lock_fun>
+	<!--说明-->
+	<!--fun_id 1000游戏大厅 2000主线闯关 3000商城 4000幸运城 5000舞团 6000成就 7000活跃度 8000背包 9000打造功能 10000PVP 11000 多人PVE-->
+	<!--fun_id 9002染色工坊 9003进化工坊 10001服装pvp 11001服装副本 11002材料副本-->
+	<!--unlockuiType 1建筑物 2底条 3次级功能-->
+	<!--icon_pot 不用配置-->
+	<!--icon_name 解锁图标-->
+	<!--uiname 解锁功能名称对应的名字图标-->
+	<!--anim_time 动画的飞行时间-->
+	<!--padview 解锁对应的ui枚举，UIWorldMap世界地图-->
+	<!--anchor 对应解锁按钮或者建筑物的对齐方式 BottomRight Left TopLeft Top TopRight Right BottomRight Bottom Center -->
+	<!-- posx水平位置 posy垂直位置-->
+	<!-- map_id: 所属地图 [1]世界地图[2]阳台 -->
+	<!-- lock_tip: 锁定提示语 -->
+	<!-- arrow_x,arrow_y: 箭头(x,y)位置 -->
+	<balcony posx="-700" posy="-215"/>
+	<fun_list>
+		<!-- 底条 背包-->
+		<lock fun_id="8000" unlockuiType="2" icon_pot="1,2" icon_name="WorldMap_bag＿normal" uiname="Guide_unlockBag" anim_time="500" padview="UIWorldMap" anchor="BottomRight" posx="-390" posy="164" param="0" beginpos="0.3" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="" arrow_x="0" arrow_y="0"/>
+		<!-- 底条 技能-->
+		<lock fun_id="14000" unlockuiType="2" icon_pot="1,2" icon_name="jineng_xinshouyindao" uiname="技能" anim_time="500" padview="UIWorldMap" anchor="BottomRight" posx="-360" posy="110" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="达到5级可以解锁技能" arrow_x="0" arrow_y="0"/>
+		<!-- 底条 任务-->
+		<lock fun_id="15000" unlockuiType="2" icon_pot="1,2" icon_name="renwu_xinshouyindao" uiname="任务" anim_time="500" padview="UIWorldMap" anchor="BottomRight" posx="-225" posy="110" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="" arrow_x="0" arrow_y="0"/>
+		<!-- 底条 日常任务-->
+		<lock fun_id="15001" unlockuiType="2" icon_pot="1,2" icon_name="renwu_xinshouyindao" uiname="日常任务" anim_time="500" padview="UIWorldMap" anchor="BottomRight" posx="-225" posy="110" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="" arrow_x="0" arrow_y="0"/>
+		<!-- 建筑  商城-->
+		<lock fun_id="3000" unlockuiType="1" icon_pot="1,2" icon_name="icon_shop" uiname="Guide_unlockShangcheng" anim_time="500" padview="UIWorldMap" anchor="Center" posx="750" posy="140" param="0" beginpos="0.3" endpos="0.5" delayTime="0.5" MoveTime="0.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="" arrow_x="0" arrow_y="0"/>
+		<!-- 建筑  星之旅-->
+		<lock fun_id="2000" unlockuiType="1" icon_pot="1,2" icon_name="Spr3-6" uiname="事务所" anim_time="250" padview="UIWorldMap" anchor="Center" posx="-510" posy="200" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.4" IconScaleY="1.4" map_id="1" lock_tip="" arrow_x="1.01" arrow_y="1.01"/>
+		<!-- 建筑  幸运城-->
+		<lock fun_id="4000" unlockuiType="1" icon_pot="1,2" icon_name="icon_luck" uiname="Guide_unlockGoodluck" anim_time="250" padview="UIWorldMap" anchor="Center" posx="480" posy="100" param="0" beginpos="0.3" endpos="0.5" delayTime="0.5" MoveTime="0.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="" arrow_x="0" arrow_y="0"/>
+		<!-- 底条 成就-->
+		<lock fun_id="6000" unlockuiType="2" icon_pot="1,2" icon_name="WorldMap_chengjiu＿normal" uiname="Guide_unlockchengjiu" anim_time="500" padview="UIWorldMap" anchor="BottomRight" posx="-940" posy="200" param="0" beginpos="0.3" endpos="0.5" delayTime="0.5" MoveTime="0.2" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="" arrow_x="0" arrow_y="0"/>
+		<!-- 底条 活跃度-->
+		<lock fun_id="7000" unlockuiType="2" icon_pot="1,2" icon_name="WorldMap_huoyuedu＿normal" uiname="Guide_unlockHuoyue" anim_time="500" padview="UIWorldMap" anchor="BottomRight" posx="-100" posy="330" param="0" beginpos="0.3" endpos="0.5" delayTime="0.5" MoveTime="0.2" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="" arrow_x="0" arrow_y="0"/>
+		<!-- 建筑 游戏大厅-->
+		<lock fun_id="1000" unlockuiType="1" icon_pot="1,2" icon_name="Spr4-7" uiname="休闲大厅" anim_time="500" padview="UIWorldMap" anchor="Center" posx="-286" posy="-10" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.4" IconScaleY="1.4" map_id="1" lock_tip="" arrow_x="0" arrow_y="0"/>
+		<!-- pve建筑 
+		<lock fun_id="11000" unlockuiType="1" icon_pot="1,2" icon_name="icon_pve" uiname="Guide_unlockpve" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="85" posy="152" param="0" beginpos="0.3" endpos="0.5" delayTime="0.1" MoveTime="0.2" IconScaleX="1.0" IconScaleY="1.0"/>
+		-->
+		<!-- 次级功能 服装副本 -->
+		<lock fun_id="11001" unlockuiType="1" icon_pot="1,2" icon_name="icon_pvp" uiname="Guide_unlockWangguo" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="90" posy="170" param="0" beginpos="0.3" endpos="0.5" delayTime="0.5" MoveTime="0.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="" arrow_x="0" arrow_y="0"/>
+		<!-- 次级功能 材料副本 -->
+		<lock fun_id="11002" unlockuiType="3" icon_pot="1,2" icon_name="icon_cailiaoben" uiname="Guide_unlockMingxing" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="0" posy="0" param="0" beginpos="0.3" endpos="0.5" delayTime="0.5" MoveTime="0.2" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="" arrow_x="0" arrow_y="0"/>
+		<!-- 建筑 搭配评选赛-->
+		<lock fun_id="10000" unlockuiType="1" icon_pot="1,2" icon_name="Spr3-7" uiname="评选赛" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="460" posy="87" param="0" beginpos="0.5" endpos="0.75" delayTime="0.5" MoveTime="1.5" IconScaleX="1.6" IconScaleY="1.6" map_id="1" lock_tip="达到16级可以解锁服装评选赛" arrow_x="0" arrow_y="0"/>
+		<!-- 建筑 舞团经纪公司-->
+		<lock fun_id="5000" unlockuiType="1" icon_pot="1,2" icon_name="Spr4-6" uiname="舞团" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="-369" posy="-190" param="0" beginpos="0.5" endpos="0.22" delayTime="0.5" MoveTime="1.5" IconScaleX="1.2" IconScaleY="1.2" map_id="1" lock_tip="达到12级可以解锁舞团" arrow_x="0" arrow_y="0"/>
+		<!-- 建筑 竞技场-->
+		<lock fun_id="13000" unlockuiType="1" icon_pot="1,2" icon_name="Spr4-8" uiname="对战中心" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="236" posy="120" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="0.9" map_id="1" lock_tip="尚未解锁对战中心" arrow_x="1.01" arrow_y="1.01"/>
+		<!-- 建筑 姻缘树-->
+		<lock fun_id="12000" unlockuiType="1" icon_pot="1,2" icon_name="Spr3-5" uiname="姻缘树" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="-330" posy="114" param="0" beginpos="0.5" endpos="0.11" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="达到26级可以解锁姻缘树" arrow_x="0" arrow_y="0"/>
+		<!-- 建筑 照片墙-->
+		<lock fun_id="16000" unlockuiType="1" icon_pot="1,2" icon_name="Spr2-4" uiname="影像长廊" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="-349" posy="120" param="0" beginpos="0.5" endpos="0" delayTime="0.5" MoveTime="1.5" IconScaleX="1.3" IconScaleY="1.3" map_id="1" lock_tip="" arrow_x="0" arrow_y="0"/>
+		<!-- 建筑 花园-->
+		<lock fun_id="19000" unlockuiType="1" icon_pot="1,2" icon_name="xinshouyindao_huayuan" uiname="花园" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="-505" posy="200" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.3" IconScaleY="1.3" map_id="2" lock_tip="达到9级可以解锁花园" arrow_x="0" arrow_y="0"/>
+		<!-- 建筑 工坊-->
+		<lock fun_id="9000" unlockuiType="1" icon_pot="1,2" icon_name="Spr5-6" uiname="工坊" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="540" posy="-270" param="0" beginpos="0.5" endpos="1.0" delayTime="0.5" MoveTime="1.5" IconScaleX="1.3" IconScaleY="1.3" map_id="1" lock_tip="达到18级可以解锁工坊" arrow_x="0" arrow_y="0"/>
+		<!-- 建筑 美颜社-->
+		<lock fun_id="22000" unlockuiType="1" icon_pot="1,2" icon_name="Spr4-14" uiname="美颜社" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="540" posy="40" param="0" beginpos="0.5" endpos="1.0" delayTime="0.5" MoveTime="1.5" IconScaleX="1.3" IconScaleY="1.3" map_id="1" lock_tip="默认解锁" arrow_x="0" arrow_y="0"/>
+		<!-- 建筑 社区-->
+		<lock fun_id="23000" unlockuiType="1" icon_pot="1,2" icon_name="Spr2-5" uiname="社区" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="-280" posy="160" param="0" beginpos="0.5" endpos="0.22" delayTime="0.5" MoveTime="1.5" IconScaleX="1.5" IconScaleY="1.5" map_id="1" lock_tip="达到8级可以解锁社区" arrow_x="0" arrow_y="0"/>
+		<!-- 次级功能 泡泡模式-->
+		<lock fun_id="2002" unlockuiType="1" icon_pot="1,2" icon_name="xinshouyindao_paopaomoshi" uiname="泡泡模式" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="-510" posy="200" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="达到7级可以解锁泡泡模式" arrow_x="0" arrow_y="0"/>
+		<!-- 次级功能 弹珠模式-->
+		<lock fun_id="2003" unlockuiType="1" icon_pot="1,2" icon_name="xinshouyindao_danzhumoshi" uiname="弹珠模式" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="-510" posy="200" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="达到6级可以解锁弹珠模式" arrow_x="0" arrow_y="0"/>
+		<!-- 次级功能 主题专辑-->
+		<lock fun_id="2004" unlockuiType="1" icon_pot="1,2" icon_name="xinshouyindao_diancangteji" uiname="主题专辑" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="-510" posy="200" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="达到14级可以解锁主题专辑" arrow_x="0" arrow_y="0"/>
+		<!-- 次级功能 单人排位赛-->
+		<lock fun_id="13003" unlockuiType="1" icon_pot="1,2" icon_name="xinshouyindao_drpws" uiname="单人排位赛" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="236" posy="120" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="达到10级可以解锁单人排位赛" arrow_x="0" arrow_y="0"/>
+		<!-- 次级功能 2V2排位赛-->
+		<lock fun_id="13004" unlockuiType="1" icon_pot="1,2" icon_name="xinshouyindao_2v2" uiname="2V2排位赛" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="236" posy="120" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="达到20级可以解锁2V2排位赛" arrow_x="0" arrow_y="0"/>
+		<!-- 次级功能 欢乐局-->
+		<lock fun_id="13002" unlockuiType="1" icon_pot="1,2" icon_name="xinshouyindao_hlj" uiname="欢乐局" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="236" posy="120" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="达到24级可以解锁欢乐局" arrow_x="0" arrow_y="0"/>
+		<!-- 次级功能 音乐实验室-->
+		<lock fun_id="2005" unlockuiType="1" icon_pot="1,2" icon_name="xinshouyindao_ysys" uiname="音乐实验室" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="-510" posy="200" param="0" beginpos="0.5" endpos="0.5" delayTime="0.5" MoveTime="1.5" IconScaleX="1.0" IconScaleY="1.0" map_id="1" lock_tip="达到11级可以解锁音乐实验室" arrow_x="0" arrow_y="0"/>
+		<!-- 次级功能 约会建筑-->
+		<lock fun_id="24000" unlockuiType="1" icon_pot="1,2" icon_name="Spr4-15" uiname="丘比特花园" anim_time="1000" padview="UIWorldMap" anchor="Center" posx="-480" posy="-50" param="0" beginpos="0.5" endpos="0.18" delayTime="0.5" MoveTime="1.5" IconScaleX="2" IconScaleY="2" map_id="1" lock_tip="达到22级可以解锁丘比特花园" arrow_x="0" arrow_y="0"/>
+	</fun_list>
+</lock_fun>

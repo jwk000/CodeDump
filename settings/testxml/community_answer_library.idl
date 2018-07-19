@@ -1,0 +1,12 @@
+class Answer{
+    [key]
+    int id;
+    string content;
+    int result=0;
+    List<string> choice_answer_list;
+}
+
+[root]
+class AnswerLibrary{
+    Dict<int,Answer> answers;
+}

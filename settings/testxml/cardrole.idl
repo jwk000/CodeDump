@@ -1,0 +1,87 @@
+
+class score{
+    int level;
+    int single;
+    int longscore;
+    int slide;
+}
+
+class level_up_material{
+    int level;
+    int gold;
+    int fragment_num;
+}
+
+class material{
+    int item_id;
+    int num;
+}
+
+class star_up_material{
+    int star;
+    int gold;
+    List<material> material_list;
+}
+
+class ability{
+    int type;
+    int val;
+}
+
+class level_ability{
+    int favor_level;
+    List<ability>  abilitys;
+}
+
+class level_skill{
+    int star;
+    int skill_id;
+}
+
+class skin{
+    int index;
+    int skin_id;
+}
+
+class info{
+    int index;
+    string name;
+    string desc;
+}
+
+class story{
+    int index;
+    int story_id;
+}
+
+class information{
+    string name;
+    List<info> info_list;
+    List<story> story_list;
+}
+
+class cardrole{
+    [key]
+    int id;
+    string name;
+    int sub_type;
+    int rank;
+    int default_star;
+    string head_big_pic;
+    string head_pic;
+    string default_skin;
+    string q_skin;
+    int fragment_id;
+
+    List<score> level_score;
+    List<level_up_material> level_up_material_list;
+    List<star_up_material> star_up_material_list;
+    List<level_ability> ability_list;
+    List<level_skill> skill_list;
+    List<skin> skin_list;
+}
+
+[root]
+class cardroleData{
+    Dict<int,cardrole> cardrole_list;
+}

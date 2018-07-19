@@ -1,0 +1,32 @@
+using common;
+
+class section{
+    [key]
+    int id;
+    string name;
+    int chapterId;
+    int sceneId;
+    int default_env_id;
+    [string]
+    Pos position;
+    int section_type;
+    int unlocklevel;
+    int difficulty;
+    int music_id;
+    int plot_id;
+    int pre_plot_id;
+    int latter_plot_id;
+    List<int> pre_sectionId;
+    string describe;
+    string force_main;
+    string invisible1;
+    string invisible2;
+    string buff;
+    string normal_rewards;
+    string first_rewards;
+}
+
+[root]
+class SectionList{
+    Dict<int,section> section_list;
+}
