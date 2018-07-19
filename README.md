@@ -7,8 +7,10 @@
 ## CodeDump工具使用规则
 以xml解析生成C#代码为例介绍使用规则。这里使用home_config.xml。
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/1.gif)
+
 ### 1.	填写xml对应的meta文件
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/2.gif)
+
 说明：
 - Home_config.idl即为描述类型信息的meta文件。
 - 采用类似C#语法的规则，Dictionary比较长，简写成了Dict，目前支持类（class）、枚举（enum）、基本数据类型、容器（只支持List和Dict）、特性（attribute）、注释、默认值、引用（using）。
@@ -23,8 +25,9 @@
  
 说明：
 这是生成C#代码的模板文件，其基本规则如下：
-@{\w+} 为“规则标记”，通常成对出现，@{BEGIN_XXX} @{END_XXX}，用来指示中间的文本展开规则。规则的分类和数据结构有关，从meta级别到text级别处理方式不同。
-${\w+} 为“数据标记”，数据处理和规则对应，每个级别的规则都有相应级别的数据，比如${META_NAME}表示meta级别的名称，${CLASS_FIELD_NAME}为类字段级别名称。
+
+- `@{\w+}` 为“规则标记”，通常成对出现，@{BEGIN_XXX} @{END_XXX}，用来指示中间的文本展开规则。规则的分类和数据结构有关，从meta级别到text级别处理方式不同。
+- `${\w+}` 为“数据标记”，数据处理和规则对应，每个级别的规则都有相应级别的数据，比如${META_NAME}表示meta级别的名称，${CLASS_FIELD_NAME}为类字段级别名称。
 
 目前支持的规则标记
 ```C#
@@ -58,6 +61,7 @@ ${\w+} 为“数据标记”，数据处理和规则对应，每个级别的规�
         CLASS_FIELD_IF,
     }
 ```
+
 目前支持的数据标记
 ```C#
     enum eTemplateData
@@ -89,6 +93,7 @@ ${\w+} 为“数据标记”，数据处理和规则对应，每个级别的规�
     }
 
 ```
+
 ### 3.	使用CodeDump工具生成代码
 CodeDump工具使用同名json文件作为配置文件，解析并遍历配置的idl文件目录，使用模板文件生成代码到指定目录。CodeDump.json配置如下：
 ```json
@@ -124,6 +129,7 @@ CodeDump工具使用同名json文件作为配置文件，解析并遍历配置�
     ]
 }
 ```
+
 本例中生成的C#代码为home_config.cs内容如下（部分）
 ```C#
 
@@ -172,28 +178,45 @@ CodeDump工具使用同名json文件作为配置文件，解析并遍历配置�
 ## Xml填写规范
 1.	尽量不要混搭风格！节点尽量写完整！
 2.	每个具名节点，在IDL中填写为class、List、Dict。Class的成员对应xml中的属性。举例：
+
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/6.gif)
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/7.gif)
+
 3.	Class、dict、list成员如果为普通类型，也可以用inner_text的配置方式。
 例子一：
+
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/8.gif)
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/9.gif)
+
 例子二：
+
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/10.gif)
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/11.gif)
+
 4.	可以省略dict和list的中间节点。
 标准写法：
+
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/12.gif)
+
 省略写法：
+
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/13.gif)
+
 对应idl类：
+
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/14.gif)
+
 5.	不支持的配置方式：
 例子一：既有attribute又有inner text，说明tip节点是个类，但丢失了一种字段描述。
+
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/15.gif)
+
 例子二：不确定的配置格式，根据需求扩展节点。这种情况只能拆表，根据道具类型拆分。否则就要在idl中定义所有类型，结果会非常冗余。
+
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/16.gif)
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/17.gif)
+
 例子三：不支持复杂嵌套类从string解析。混搭格式也不支持。
+
 ![](https://github.com/jwk000/CodeDump/blob/master/doc/18.gif)
 
