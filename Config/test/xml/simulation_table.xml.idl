@@ -1,0 +1,59 @@
+using common;
+
+class Upgrade{
+    int level;
+    int player_level;
+    [string]
+    List<CostItem> cost;
+    int pos_count;
+    int out_interval;
+    float out_level_rate;
+}
+
+class Furniture{
+    int furniture_id;
+    bool is_double;
+    List<Upgrade> LevelList;
+}
+
+class Action{
+    [key]
+    int id;
+    string name;
+    [string]
+    Reward outreward;
+    string anim_id;
+    float out_action_rate;
+    List<Furniture> FurnitureList;
+}
+
+[string]
+class ReduceMap{
+    int key;
+    float value;
+}
+
+class Const{
+    int out_heart_time;
+    int storage_max_count;
+    int recover_health_time;
+    int health_out_rate;
+    int normal_out_rate;
+    int tired_out_rate;
+    int recover_heart_time;
+    int min_work_time;
+    int max_work_time;
+    int health_phase_rate;
+    int normal_phase_rate;
+    int tired_phase_rate;
+    string health_phase_img;
+    string normal_phase_img;
+    string tired_phase_img;
+    [string]
+    List<ReduceMap> recover_time_reduce_map;
+}
+[root]
+class Simulation{
+    Const const_var;
+    Dict<int,Action> ActionList;
+}

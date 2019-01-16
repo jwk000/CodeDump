@@ -1,0 +1,7 @@
+[root]
+class check{
+    bool formal_is_check_env = false;
+    bool check_is_check_env=false;
+    bool is_show_wx_gift_center=false;
+    bool is_block_func_in_gray_server=false;
+}

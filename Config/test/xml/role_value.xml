@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RoleValue>
+	<!--改名消耗钻石 -->
+	<change_nick_cost>100</change_nick_cost>
+	<!--等级最大-->
+	<level_max>50</level_max>
+	<!--每日副本挑战次数限制 -->
+	<daily_battle_limit>30</daily_battle_limit>
+	<!--每日副本挑战次数重置时间 -->
+	<daily_battle_reset_time>05:00</daily_battle_reset_time>
+	<!--升级获得体力-->
+	<levelup_stamina>50</levelup_stamina>
+	<!--体力恢复间隔时间（秒），每次恢复1点-->
+	<stamina_recover_interval>300</stamina_recover_interval>
+	<!--每日购买体力次数限制 -->
+	<daily_buy_stamina_limit>10</daily_buy_stamina_limit>
+	<!--每日购买次数重置时间 格式00:00-->
+	<stamina_buy_reset_time>05:00</stamina_buy_reset_time>
+	<!--购买体力需要钻石-->
+	<stamina_buy_list>
+		<stamina_buy buy_num="1" need_diamond="1"/>
+		<stamina_buy buy_num="2" need_diamond="1"/>
+		<stamina_buy buy_num="3" need_diamond="1"/>
+	</stamina_buy_list>
+	<!--升级需要经验 体力上限-->
+	<level_list>
+		<level value="1" exp="0" stamina="100"/>
+		<level value="2" exp="14" stamina="101"/>
+		<level value="3" exp="27" stamina="102"/>
+		<level value="4" exp="40" stamina="103"/>
+		<level value="5" exp="54" stamina="104"/>
+		<level value="6" exp="69" stamina="105"/>
+		<level value="7" exp="83" stamina="106"/>
+		<level value="8" exp="96" stamina="107"/>
+		<level value="9" exp="110" stamina="108"/>
+		<level value="10" exp="124" stamina="109"/>
+		<level value="11" exp="146" stamina="110"/>
+		<level value="12" exp="161" stamina="111"/>
+		<level value="13" exp="176" stamina="112"/>
+		<level value="14" exp="192" stamina="113"/>
+		<level value="15" exp="207" stamina="114"/>
+		<level value="16" exp="319" stamina="115"/>
+		<level value="17" exp="342" stamina="116"/>
+		<level value="18" exp="366" stamina="117"/>
+		<level value="19" exp="389" stamina="118"/>
+		<level value="20" exp="413" stamina="119 "/>
+		<level value="21" exp="502" stamina="120"/>
+		<level value="22" exp="531" stamina="120"/>
+		<level value="23" exp="561" stamina="120"/>
+		<level value="24" exp="592" stamina="120"/>
+		<level value="25" exp="623" stamina="120"/>
+		<level value="26" exp="801" stamina="120"/>
+		<level value="27" exp="843" stamina="120"/>
+		<level value="28" exp="887" stamina="120"/>
+		<level value="29" exp="930" stamina="120"/>
+		<level value="30" exp="975" stamina="120"/>
+		<level value="31" exp="1349" stamina="120"/>
+		<level value="32" exp="1416" stamina="120"/>
+		<level value="33" exp="1485" stamina="120"/>
+		<level value="34" exp="1556" stamina="120"/>
+		<level value="35" exp="1628" stamina="120"/>
+		<level value="36" exp="2423" stamina="120"/>
+		<level value="37" exp="2541" stamina="120"/>
+		<level value="38" exp="2662" stamina="120"/>
+		<level value="39" exp="2785" stamina="120"/>
+		<level value="40" exp="2912" stamina="120"/>
+		<level value="41" exp="4615" stamina="120"/>
+		<level value="42" exp="4835" stamina="120"/>
+		<level value="43" exp="5060" stamina="120"/>
+		<level value="44" exp="5290" stamina="120"/>
+		<level value="45" exp="5527" stamina="120"/>
+		<level value="46" exp="9186" stamina="120"/>
+		<level value="47" exp="9612" stamina="120"/>
+		<level value="48" exp="10050" stamina="120"/>
+		<level value="49" exp="10499" stamina="120"/>
+		<level value="50" exp="10959" stamina="120"/>
+	</level_list>
+</RoleValue>

@@ -1,0 +1,6774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<!-- 答题库 -->
+<!-- content:问题内容, result:正确答案的索引(从0开始计算) -->
+<AnswerLibrary>
+	<Answer id="1" content="玩家在欢乐局单人匹配要匹配几个人?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>三个</answer>
+			<answer>四个</answer>
+			<answer>两个</answer>
+			<answer>一个</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="2" content="花艺工坊插花格每种插花材料需要几朵？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>2朵</answer>
+			<answer>1朵</answer>
+			<answer>6朵</answer>
+			<answer>12朵</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="3" content="找恋人的话应该挂哪种风铃？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>求偶风铃</answer>
+			<answer>树洞风铃</answer>
+			<answer>交友风铃</answer>
+			<answer>缘分风铃</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="4" content="玩家在事务所生涯中不会遇到哪种模式？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>传统模式</answer>
+			<answer>星动模式</answer>
+			<answer>弹珠模式</answer>
+			<answer>泡泡模式</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="5" content="舞团中玩家开演唱会哪种不能开？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>豪华演唱会</answer>
+			<answer>大型演唱会</answer>
+			<answer>中型演唱会</answer>
+			<answer>小型演唱会</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="6" content="美颜社的预存位有几个？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>3个</answer>
+			<answer>2个</answer>
+			<answer>1个</answer>
+			<answer>无限个</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="7" content="以下玩家不可以美颜的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>耳朵</answer>
+			<answer>眉毛</answer>
+			<answer>嘴唇</answer>
+			<answer>脸型</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="8" content="对战中心排名前五十的玩家会获什么称号？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>神之手</answer>
+			<answer>乐天使</answer>
+			<answer>御音使</answer>
+			<answer>司音士</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="9" content="对战中心内不包括以下哪种娱乐模式？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>周活动</answer>
+			<answer>欢乐局</answer>
+			<answer>休闲局</answer>
+			<answer>单人排位赛</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="10" content="参加舞团派对可以获得什么奖励？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>舞团币</answer>
+			<answer>花束</answer>
+			<answer>服饰</answer>
+			<answer>金币</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="11" content="QQ炫舞手游内容架构师是______" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>张皓宸</answer>
+			<answer>张碧晨</answer>
+			<answer>欧豪</answer>
+			<answer>欧皓辰</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="12" content="QQ炫舞手游内排位赛最高段位是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>神之手</answer>
+			<answer>音乐家</answer>
+			<answer>御音使</answer>
+			<answer>演奏师</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="13" content="背包中玩家可以保存几个形象？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>3</answer>
+			<answer>1</answer>
+			<answer>2</answer>
+			<answer>4</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="14" content="游戏名片可以上传几张照片？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>3</answer>
+			<answer>1</answer>
+			<answer>2</answer>
+			<answer>4</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="15" content="社区中的每个频道最多可容纳多少人？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>50</answer>
+			<answer>20</answer>
+			<answer>30</answer>
+			<answer>40</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="16" content="总共几朵花可以合成一束花？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>12</answer>
+			<answer>6</answer>
+			<answer>8</answer>
+			<answer>10</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="17" content="QQ炫舞手游属于什么类型游戏？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>音乐舞蹈</answer>
+			<answer>回合制</answer>
+			<answer>格斗</answer>
+			<answer>策略</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="18" content="以下哪项不是QQ炫舞手游中的游戏模式？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>舞动模式</answer>
+			<answer>星动模式</answer>
+			<answer>泡泡模式</answer>
+			<answer>弹珠模式</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="19" content="游戏中星动模式第一章初见共有几个关卡？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>5</answer>
+			<answer>4</answer>
+			<answer>3</answer>
+			<answer>2</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="20" content="比音乐家低一级的段位是_______" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>演奏师</answer>
+			<answer>司音士</answer>
+			<answer>乐动者</answer>
+			<answer>御音使</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="21" content="删除历任伴侣记录的道具是________" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>爱情橡皮擦</answer>
+			<answer>忘情水</answer>
+			<answer>改名卡</answer>
+			<answer>以上都不对</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="22" content="幸运游轮中没有以下哪种抽奖方式？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>美人鱼祈愿</answer>
+			<answer>超时空极光</answer>
+			<answer>魔力水晶球</answer>
+			<answer>星星知我心</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="23" content="社区内不能钓到什么鱼？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>金龙鱼</answer>
+			<answer>鲨鱼</answer>
+			<answer>金枪鱼</answer>
+			<answer>蝴蝶鱼</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="24" content="游戏中开启服装评选赛功能是在多少级？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>16级</answer>
+			<answer>10级</answer>
+			<answer>15级</answer>
+			<answer>6级</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="25" content="名人堂内有以下哪种排行？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>等级排行</answer>
+			<answer>颜值排行</answer>
+			<answer>身高排行</answer>
+			<answer>年龄排行</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="26" content="以下哪个建筑物不在世界地图中？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>梦幻城</answer>
+			<answer>姻缘树</answer>
+			<answer>对战中心</answer>
+			<answer>名人堂</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="27" content="排位赛一共有多少个段位？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>8个</answer>
+			<answer>6个</answer>
+			<answer>5个</answer>
+			<answer>7个</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="28" content="玩家可以在哪里创建房间娱乐？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>休闲大厅</answer>
+			<answer>事务所</answer>
+			<answer>对战中心</answer>
+			<answer>影像长廊</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="29" content="玩家的每个技能等级最高多少级？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>3级</answer>
+			<answer>4级</answer>
+			<answer>5级</answer>
+			<answer>6级</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="30" content="以下不是游戏内的技能的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>极限生存</answer>
+			<answer>极限增强</answer>
+			<answer>得分提高</answer>
+			<answer>连击加成</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="31" content="对战中心的欢乐局的解锁等级是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>24</answer>
+			<answer>26</answer>
+			<answer>22</answer>
+			<answer>20</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="32" content="美颜社定制细节中不可调节哪个部位？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>脖子</answer>
+			<answer>眉毛</answer>
+			<answer>眼睛</answer>
+			<answer>鼻子</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="33" content="男女玩家结成情侣时必须要用哪个道具？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>情书</answer>
+			<answer>红线</answer>
+			<answer>丘比特</answer>
+			<answer>戒指</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="34" content="女玩家聘男性亲属时没有以下哪个聘亲选项?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>叔叔</answer>
+			<answer>蓝颜</answer>
+			<answer>弟弟</answer>
+			<answer>哥哥</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="35" content="社区钓鱼功能可以钓到以下哪种物品？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>七彩贝壳</answer>
+			<answer>海龟</answer>
+			<answer>魔法书</answer>
+			<answer>杯子</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="36" content="QQ炫舞吉祥物名字_________？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>六六</answer>
+			<answer>二二</answer>
+			<answer>七七</answer>
+			<answer>八八</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="37" content="舞团建筑在多少等级开启？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>12</answer>
+			<answer>11</answer>
+			<answer>10</answer>
+			<answer>9</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="38" content="事务所哪种模式可以直接解锁？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>星动模式</answer>
+			<answer>传统模式</answer>
+			<answer>泡泡模式</answer>
+			<answer>弹珠模式</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="39" content="“技能”的解锁等级是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>5级</answer>
+			<answer>4级</answer>
+			<answer>6级</answer>
+			<answer>7级</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="40" content="事务所中“弹珠模式”的解锁等级是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>6级</answer>
+			<answer>5级</answer>
+			<answer>7级</answer>
+			<answer>8级</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="41" content="“花园”的解锁等级是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>9级</answer>
+			<answer>7级</answer>
+			<answer>8级</answer>
+			<answer>10级</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="42" content="弹珠模式下《邮递马车》是几星歌曲？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>9</answer>
+			<answer>7</answer>
+			<answer>10</answer>
+			<answer>8</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="43" content="以下哪种交互动作在房间内没有？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>抱抱</answer>
+			<answer>挥手</answer>
+			<answer>飞吻</answer>
+			<answer>抱大腿</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="44" content="每天可以在游戏中领取几朵花束？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>5</answer>
+			<answer>10</answer>
+			<answer>15</answer>
+			<answer>20</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="45" content="在幸运邮轮抽奖时除单抽外还可选择几连抽？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>10连</answer>
+			<answer>5连</answer>
+			<answer>8连</answer>
+			<answer>9连</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="46" content="周任务活动中一共有几首歌可供玩家挑战？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>6首</answer>
+			<answer>4首</answer>
+			<answer>5首</answer>
+			<answer>7首</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="47" content="玩家可以带几个技能进入游戏模式中？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>1个</answer>
+			<answer>2个</answer>
+			<answer>3个</answer>
+			<answer>6个</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="48" content="星动模式之后解锁的模式为泡泡模式。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="49" content="在休闲厅创建的房间中没有传统模式。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="50" content="玩家可以去好友的花园浇花。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="51" content="在社区中钓鱼需要使用鱼饵。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="52" content="游戏内申请离婚后24小时内解除伴侣关系。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="53" content="向异性玩家表白需要消耗戒指。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="54" content="美颜社可以根据个人喜爱自由捏脸。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="55" content="在事务所对局中可以中途暂停。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="56" content="游戏内心动值伴侣完成对局后可以直接获得。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="57" content="排位赛里提升大段位的奖励是点券。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="58" content="家园花艺工坊总共可以合成6种花束。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="59" content="QQ炫舞手游官方网址是http://x5m.qq.com/" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="60" content="炫舞手游是qq炫舞端游原班人马倾心打造的。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="61" content="玩家在游戏中可以制作自己的个性名片。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="62" content="名片中玩家最多可以选择自己的三个标签。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="63" content="双人排位赛可以邀请比自己低的两个段位。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="64" content="社区内美人鱼祈愿NPC名字叫菲欧娜。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="65" content="玩家在游戏中满级是80级。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="66" content="送花时可以一键送出。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="67" content="排位赛里,乐动者是最低段位。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="68" content="同性玩家可以结为伴侣。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="69" content="玩家可点击另一名玩家的名片进行追踪操作。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="70" content="游戏花园等级上限为5级。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="71" content="购买的水晶/极光经验券使用可获得经验值。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="72" content="玩家可以在我的相册中查看最近的访客。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="73" content="玩家在事务所生涯中可以调整歌曲的难度。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="74" content="玩家单人排位和2V2排位段位是同步的。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="75" content="欢乐局不支持多人匹配。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="76" content="玩家每个技能最高为3级。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="77" content="以下哪种心得学习不属于艺修所？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>插花心得</answer>
+			<answer>节奏心得</answer>
+			<answer>舞蹈心得</answer>
+			<answer>学艺心得</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="78" content="成就系统一共分为4大类，其中不包含的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>潮流先锋</answer>
+			<answer>服饰收集</answer>
+			<answer>社交达人</answer>
+			<answer>成长之路</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="79" content="游戏排位赛第四位段位的称号是什么？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>音乐家</answer>
+			<answer>乐动者</answer>
+			<answer>演奏师</answer>
+			<answer>司音士</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="80" content="舞团团长转让，则被转让团员需要满足？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>贡献+入团7天</answer>
+			<answer>贡献</answer>
+			<answer>入团7天</answer>
+			<answer>以上都不对</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="81" content="星愿任务功能在以下哪所建筑中开放？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>姻缘树</answer>
+			<answer>影像长廊</answer>
+			<answer>社区</answer>
+			<answer>舞团</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="82" content="《Now you see me》的BMP是多少？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>186</answer>
+			<answer>190</answer>
+			<answer>188</answer>
+			<answer>192</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="83" content="姻缘树有几种风铃？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>4</answer>
+			<answer>3</answer>
+			<answer>5</answer>
+			<answer>6</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="84" content="单人排位赛音乐家可匹配到的歌曲难度是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>6—8星</answer>
+			<answer>5—7星</answer>
+			<answer>7—9星</answer>
+			<answer>4—6星</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="85" content="以下哪个段位比演奏师低？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>乐动者</answer>
+			<answer>司音士</answer>
+			<answer>音乐家</answer>
+			<answer>神之手</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="86" content="本区排行榜中最多可以显示排名数量是多少？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>100</answer>
+			<answer>150</answer>
+			<answer>200</answer>
+			<answer>300</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="87" content="QQ炫舞手游发布会时间是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>2017年12月8日</answer>
+			<answer>2017年10月4日</answer>
+			<answer>2017年11月8日</answer>
+			<answer>2018年1月24日</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="88" content="以下哪个不属于游戏中工坊的高级染料？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>月露</answer>
+			<answer>韶华</answer>
+			<answer>翰墨</answer>
+			<answer>水影</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="89" content="以下哪项课程目前没有在舞团艺修所开放？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>传统心得</answer>
+			<answer>节奏心得</answer>
+			<answer>舞蹈心得</answer>
+			<answer>学艺心得</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="90" content="对战中心里“2v2排位赛”的解锁等级是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>20级</answer>
+			<answer>18级</answer>
+			<answer>19级</answer>
+			<answer>21级</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="91" content="游戏中技能得分提高3级加成分数为多少？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>10%</answer>
+			<answer>8%</answer>
+			<answer>12%</answer>
+			<answer>14%</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="92" content="游戏内几级开放姻缘树系统？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>26</answer>
+			<answer>22</answer>
+			<answer>24</answer>
+			<answer>20</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="93" content="QQ炫舞手游与______彩妆合作？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>美宝莲</answer>
+			<answer>欧莱雅</answer>
+			<answer>香奈儿</answer>
+			<answer>雅诗兰黛</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="94" content="音符的判定等级有几种？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>5</answer>
+			<answer>4</answer>
+			<answer>3</answer>
+			<answer>6</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="95" content="游戏中共有几种对局技能" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>5</answer>
+			<answer>4</answer>
+			<answer>3</answer>
+			<answer>6</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="96" content="以下技能中的哪个技能只能在竞技场使用？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>爆气加成</answer>
+			<answer>免除MISS</answer>
+			<answer>极限增强</answer>
+			<answer>得分提高</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="97" content="以下哪个动作是伴侣或情侣才可以使用的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>摸头杀</answer>
+			<answer>双宿双飞</answer>
+			<answer>背靠背</answer>
+			<answer>飞吻</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="98" content="主题专辑的解锁等级是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>14级</answer>
+			<answer>10级</answer>
+			<answer>6级</answer>
+			<answer>8级</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="99" content="以下哪个不属于工坊的功能？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>插花</answer>
+			<answer>进化</answer>
+			<answer>合成</answer>
+			<answer>染色</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="100" content="以下哪个不属于社区的玩法？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>插花</answer>
+			<answer>钓鱼</answer>
+			<answer>美人鱼祈愿</answer>
+			<answer>藏宝袋</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="101" content="以下哪种方式不可以获得心动值？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>六块钱麻辣烫</answer>
+			<answer>和伴侣完成对局</answer>
+			<answer>使用伴侣动作</answer>
+			<answer>送礼物给伴侣</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="102" content="舞团中玩家每天举行演唱会只能3次。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="103" content="游戏中每个玩家可以把最多九个人加为亲属。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="104" content="道具进化只需要消耗金币就可以。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="105" content="每样物品的最后一件也可以被分解。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="106" content="QQ炫舞手游与欧莱雅合作。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="107" content="加上情侣关系，玩家共有九种亲属关系。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="108" content="事务所闯关可使用爆气技能。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="109" content="美颜社中可以导入脸型。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="110" content="花园等级到达3级时可以种植高级魔法种子。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="111" content="玩家在游戏对局中可以求助。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="112" content="游戏中演奏师下一个段位是御音师。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="113" content="舞团欢乐派对每个难度专辑有三个关卡。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="114" content="玩家等级7级的时候，开启事务所泡泡模式。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="115" content="《李白》在本游戏里是_______？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>李荣浩的歌</answer>
+			<answer>诗人</answer>
+			<answer>王者英雄</answer>
+			<answer>撒贝宁媳妇</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="116" content="《美杜莎》是谁的歌？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>蔡依林</answer>
+			<answer>王心凌</answer>
+			<answer>张韶涵</answer>
+			<answer>李宇春</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="117" content="以下哪首歌是“世界第一公主殿下”的作品？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>千本樱</answer>
+			<answer>禁绝边境线</answer>
+			<answer>一片花瓣</answer>
+			<answer>偶像万万岁</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="118" content="《世界第一公主殿下》是谁唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>初音未来</answer>
+			<answer>洛天依</answer>
+			<answer>镜音铃</answer>
+			<answer>巡音</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="119" content="韩文歌曲《短裙》是哪个组合演唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>AOA</answer>
+			<answer>A-pink</answer>
+			<answer>少女时代</answer>
+			<answer>B.A.P</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="120" content="《明明就》歌曲的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>周杰伦</answer>
+			<answer>林俊杰</answer>
+			<answer>汪峰</answer>
+			<answer>李荣浩</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="121" content="《空想神话》是以下哪部动漫的主题曲？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>未来日记</answer>
+			<answer>死亡笔记</answer>
+			<answer>宝石之国</answer>
+			<answer>凉宫春日的忧郁</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="122" content="以下哪首歌曲不是困难模式的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>动物森林</answer>
+			<answer>许愿池的希腊少女</answer>
+			<answer>空想神话</answer>
+			<answer>Now You See Me</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="123" content="EXO在游戏内的歌曲是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>Drop That</answer>
+			<answer>Freaky</answer>
+			<answer>This ls the Life</answer>
+			<answer>Now You See Me</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="124" content="《房间》的歌手是哪个国家的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>中国</answer>
+			<answer>日本</answer>
+			<answer>韩国</answer>
+			<answer>新加坡</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="125" content="《短裙》是什么语言歌曲？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>韩文</answer>
+			<answer>中文</answer>
+			<answer>日文</answer>
+			<answer>英文</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="126" content="《不朽》是哪种语言歌曲？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>中文</answer>
+			<answer>日文</answer>
+			<answer>英文</answer>
+			<answer>韩文</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="127" content="《意外》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>薛之谦</answer>
+			<answer>林俊杰</answer>
+			<answer>周杰伦</answer>
+			<answer>吴亦凡</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="128" content="《浪漫来袭》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>萧亚轩</answer>
+			<answer>王心凌</answer>
+			<answer>杨丞琳</answer>
+			<answer>张韶涵</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="129" content="歌曲《后裔》是哪个歌手演唱？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>李荣浩</answer>
+			<answer>毛不易</answer>
+			<answer>薛之谦</answer>
+			<answer>杨宗纬</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="130" content="《忘记时间》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>胡歌</answer>
+			<answer>杨幂</answer>
+			<answer>周俊杰</answer>
+			<answer>唐嫣</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="131" content="歌曲《绽放》是谁唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>南征北战NZBZ</answer>
+			<answer>张杰</answer>
+			<answer>吴亦凡</answer>
+			<answer>张艺兴</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="132" content="歌曲《红昭愿》是谁唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>音阙诗听</answer>
+			<answer>周笔畅</answer>
+			<answer>张杰</answer>
+			<answer>汪苏泷</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="133" content="《Tulips》是哪个歌手唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>Christopher</answer>
+			<answer>Flo Rida/Maluma</answer>
+			<answer>Ed Sheeran</answer>
+			<answer>back number</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="134" content="歌曲《你好灰姑娘》是谁唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>胡夏</answer>
+			<answer>本兮</answer>
+			<answer>白小白</answer>
+			<answer>张艺兴</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="135" content="《稻香》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>周杰伦</answer>
+			<answer>林俊杰</answer>
+			<answer>蔡依林</answer>
+			<answer>李宇春</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="136" content="《爱要有你才完整》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>魏晨</answer>
+			<answer>萧亚轩</answer>
+			<answer>庄心妍</answer>
+			<answer>郭静</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="137" content="《不朽》的演唱者是谁？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>华晨宇</answer>
+			<answer>许嵩</answer>
+			<answer>张杰</answer>
+			<answer>温岚</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="138" content="《暧昧》的演唱者是谁？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>薛之谦</answer>
+			<answer>周笔畅</answer>
+			<answer>戚薇</answer>
+			<answer>华晨宇</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="139" content="歌曲《逆战》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>张杰</answer>
+			<answer>张震</answer>
+			<answer>鹿晗</answer>
+			<answer>吴亦凡</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="140" content="以下哪首歌不是薛之谦的歌？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>年轮</answer>
+			<answer>意外</answer>
+			<answer>演员</answer>
+			<answer>丑八怪</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="141" content="《父亲》是以下哪个歌手演唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>筷子兄弟</answer>
+			<answer>鹿晗</answer>
+			<answer>五月天</answer>
+			<answer>银临</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="142" content="《浪漫惊喜》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>kent王健</answer>
+			<answer>成龙</answer>
+			<answer>韩红</answer>
+			<answer>王源</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="143" content="《摇滚吧姑娘》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>王心凌</answer>
+			<answer>王菲</answer>
+			<answer>萧敬腾</answer>
+			<answer>周深</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="144" content="《超级冠军》的歌手是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>鹿晗</answer>
+			<answer>张碧晨</answer>
+			<answer>杨宗纬</answer>
+			<answer>五月天</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="145" content="以下哪位歌手是女性？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>蔡依林</answer>
+			<answer>周杰伦</answer>
+			<answer>张杰</answer>
+			<answer>魏晨</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="146" content="歌曲《剑心》是由哪位歌手演唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>张杰</answer>
+			<answer>李易峰</answer>
+			<answer>陈伟霆</answer>
+			<answer>AAA</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="147" content="潘玮柏/关晓彤合作的歌曲是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>慢动作</answer>
+			<answer>生日歌</answer>
+			<answer>恭喜发财</answer>
+			<answer>义勇军进行曲</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="148" content="《拆弹专家》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>华晨宇</answer>
+			<answer>邓紫棋</answer>
+			<answer>林俊杰</answer>
+			<answer>李荣浩</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="149" content="歌曲《勇敢》是谁演唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>五月天</answer>
+			<answer>六月天</answer>
+			<answer>九月九</answer>
+			<answer>二月红</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="150" content="《残雪》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>蒋蒋</answer>
+			<answer>韩雪</answer>
+			<answer>陈慧娴</answer>
+			<answer>庄心妍</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="151" content="《剑伤》是哪部电视剧的主题曲？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>《古剑奇谭》</answer>
+			<answer>《双世宠妃》</answer>
+			<answer>《闵月传》</answer>
+			<answer>《旋风少女》</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="152" content="歌曲《年轮》的演唱者是哪位女歌手？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>张碧晨</answer>
+			<answer>周笔畅</answer>
+			<answer>张靓颖</answer>
+			<answer>杨幂</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="153" content="歌曲《勋章》的演唱者是哪位男歌手？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>鹿晗</answer>
+			<answer>吴亦凡</answer>
+			<answer>张杰</answer>
+			<answer>林俊杰</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="154" content="以下哪首歌不是香港歌手组合BEYOND原唱？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>石头记</answer>
+			<answer>海阔天空</answer>
+			<answer>大地</answer>
+			<answer>逝去的日子</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="155" content="《神的随波逐流》这首歌演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>初音未来</answer>
+			<answer>巡音ルカ</answer>
+			<answer>鏡音リン</answer>
+			<answer>宮崎歩</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="156" content="罗志祥第11张专辑的主打歌是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>爱的主打嗝</answer>
+			<answer>爱的主打歌</answer>
+			<answer>爱的快打嗝</answer>
+			<answer>爱的快打歌</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="157" content="《灵魂的共鸣》的演唱者是谁？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>林俊杰</answer>
+			<answer>张杰</answer>
+			<answer>许嵩</answer>
+			<answer>李荣浩</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="158" content="《千本樱》在弹珠模式中的难度是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>9星</answer>
+			<answer>10星</answer>
+			<answer>8星</answer>
+			<answer>7星</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="159" content="《不将就》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>李荣浩</answer>
+			<answer>黄子韬</answer>
+			<answer>苏打绿</answer>
+			<answer>魏晨</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="160" content="《南山南》是类型什么歌曲？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>民谣</answer>
+			<answer>摇滚</answer>
+			<answer>爵士</answer>
+			<answer>乡村</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="161" content="以下哪一首歌洛天依的作品？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>权御天下</answer>
+			<answer>倾尽天下</answer>
+			<answer>千本樱</answer>
+			<answer>蜀绣</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="162" content="以下哪首歌不属于古风歌曲？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>极乐净土</answer>
+			<answer>倾尽天下</answer>
+			<answer>权御天下</answer>
+			<answer>蜀绣</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="163" content="以下哪首歌不是鹿晗唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>Bad Girl</answer>
+			<answer>That Good Good</answer>
+			<answer>勋章</answer>
+			<answer>心率</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="164" content="蔡依林与陶喆合作的是哪一首歌？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>今天你要嫁给我</answer>
+			<answer>I'm Not Yours</answer>
+			<answer>电话皇后</answer>
+			<answer>Play 我呸</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="165" content="以下哪一首歌不是TFBOYS的作品？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>许愿糖</answer>
+			<answer>不息之河</answer>
+			<answer>青春修炼手册</answer>
+			<answer>宠爱</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="166" content="以下哪一首不是韩文歌曲？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>曖昧スクリーム</answer>
+			<answer>IF YOU</answer>
+			<answer>Fantastic Baby</answer>
+			<answer>Missing You</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="167" content="《微微一笑很倾城》的演唱者是郑爽。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="168" content="《空想神话》是一首韩文歌。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="169" content="《年轮》是电视剧《花千骨》的主题曲。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="170" content="《林中鸟》是葛林演唱的。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="171" content="《Just You and I》是英文歌曲。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="172" content="游戏里《With You》的演唱者是周笔畅。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="173" content="《红色高跟鞋》的演唱者是陈一发儿。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="174" content="《无可替代》的歌手是欧豪。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="175" content="《天下》不是张杰演唱的。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="176" content="《我的未来式》演唱者是郭采洁" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="177" content="《突然好想你》的演唱者是五月天。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="178" content="歌曲《安静的夜》是本兮唱的。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="179" content="歌曲《Romance》的演唱者是Lady Gaga。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="180" content="《鞋子特大号》的演唱者是周杰伦。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="181" content="《蜀绣》的演唱者是李宇春。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="182" content="游戏中《邮递马车》是泡泡模式的9星歌曲。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="183" content="弹珠模式《Now You See Me》难度为十星。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="184" content="《Torches》是一首英文歌。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="185" content="《深夜书店》是许嵩和洛天依合作的歌曲。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="186" content="《智商二五零》是讲的王者里面的鲁班。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="187" content="《最美中国风》是凤凰传奇的歌曲。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="188" content="《甩葱歌》是初音未来原创歌曲。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="189" content="《极乐净土》是虚拟偶像歌手的作品。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="190" content="《七里香》是大陆歌手周杰伦的作品。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="191" content="游戏中《意外》这首曲目的难度是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>8星</answer>
+			<answer>9星</answer>
+			<answer>7星</answer>
+			<answer>2星</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="192" content="《女皇》的作曲是谁？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>张敬轩</answer>
+			<answer>陈伟霆</answer>
+			<answer>林日曦</answer>
+			<answer>陈奂仁</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="193" content="以下哪个不属于Bigbang的歌曲是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>Maps</answer>
+			<answer>IF YOU</answer>
+			<answer>Monster</answer>
+			<answer>Fantastic Baby</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="194" content="以下哪首歌是“世界第一吃货殿下”的作品？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>权御天下</answer>
+			<answer>禁绝边境线</answer>
+			<answer>千本樱</answer>
+			<answer>偶像万万岁</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="195" content="《智商二五零》是华晨宇为哪个游戏作品？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>王者荣耀</answer>
+			<answer>阴阳师</answer>
+			<answer>绝地求生</answer>
+			<answer>传奇霸业</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="196" content="泡泡模式下歌曲《Gee》的难度为？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>10星</answer>
+			<answer>9星</answer>
+			<answer>8星</answer>
+			<answer>7星</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="197" content="星动模式下《超级冠军》的难度为？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>9星</answer>
+			<answer>7星</answer>
+			<answer>8星</answer>
+			<answer>10星</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="198" content="《Kolibre》是属于哪种类型的歌曲？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>纯音乐</answer>
+			<answer>HIP-HOP</answer>
+			<answer>爵士</answer>
+			<answer>摇滚</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="199" content="《手心的蔷薇》是由林俊杰和谁合唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>邓紫棋</answer>
+			<answer>张韶涵</answer>
+			<answer>王心凌</answer>
+			<answer>张碧晨</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="200" content="《万吨匿名信》是哪种风格歌曲？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>纯音乐</answer>
+			<answer>摇滚类</answer>
+			<answer>儿童类</answer>
+			<answer>戏曲类</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="201" content="《浪漫惊喜》这首歌的难度是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>简单</answer>
+			<answer>一般</answer>
+			<answer>困难</answer>
+			<answer>以上都不对</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="202" content="游戏中《With You》是哪个歌手演唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>周笔畅</answer>
+			<answer>Avicii</answer>
+			<answer>昭宥/Geeks</answer>
+			<answer>EXO</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="203" content="防弹少年团是哪国组合？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>韩国</answer>
+			<answer>英国</answer>
+			<answer>美国</answer>
+			<answer>中国</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="204" content="《Just You and I》是哪个歌手演唱？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>安室奈美惠</answer>
+			<answer>羽多野渉</answer>
+			<answer>TWICE</answer>
+			<answer>AAA</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="205" content="《808》这首歌的原唱是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>张靓颖</answer>
+			<answer>邓紫棋</answer>
+			<answer>曲婉婷</answer>
+			<answer>庄心妍</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="206" content="弹珠模式中《卡农》的难度为几星？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>9</answer>
+			<answer>8</answer>
+			<answer>10</answer>
+			<answer>7</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="207" content="《南山南》这首歌的原唱是哪位歌手？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>马頔</answer>
+			<answer>李腾飞</answer>
+			<answer>侃侃</answer>
+			<answer>马伊琍</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="208" content="《剑伤》是以下哪位男歌手演唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>李易峰</answer>
+			<answer>张杰</answer>
+			<answer>乔振宇</answer>
+			<answer>马天宇</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="209" content="韩国歌曲《LIKEY》是由哪组女团演唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>TWICE</answer>
+			<answer>Twins</answer>
+			<answer>BY2</answer>
+			<answer>SHE</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="210" content="《Sakura》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>嵐</answer>
+			<answer>凤</answer>
+			<answer>风</answer>
+			<answer>風</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="211" content="《Let Me Love You》的演唱者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>Justin Bieber</answer>
+			<answer>Justin Baeber</answer>
+			<answer>Justtin Bieber</answer>
+			<answer>Justin Beeber</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="212" content="电影《赏金猎人》的主题曲是哪首歌？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>《奔跑》</answer>
+			<answer>《暗号》</answer>
+			<answer>《超越无限》</answer>
+			<answer>《弱点》</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="213" content="《爱的主打嗝》是罗志祥的第几部专辑？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>11</answer>
+			<answer>9</answer>
+			<answer>10</answer>
+			<answer>12</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="214" content="星动模式中《因你而在》歌曲难度为几星？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>2星</answer>
+			<answer>4星</answer>
+			<answer>5星</answer>
+			<answer>6星</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="215" content="泡泡模式中《千本樱》这首曲目的难度是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>8星</answer>
+			<answer>7星</answer>
+			<answer>9星</answer>
+			<answer>10星</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="216" content="以下哪首歌曲是林俊杰演唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>超越无限</answer>
+			<answer>残雪</answer>
+			<answer>剑心</answer>
+			<answer>一路不变</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="217" content="以下哪首歌曲不是庄心妍所唱？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>过得好吗</answer>
+			<answer>耳旁风</answer>
+			<answer>再见只是陌生人</answer>
+			<answer>爱囚</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="218" content="以下哪些歌不属于初音家族演唱的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>极乐净土</answer>
+			<answer>ロストワンの号哭</answer>
+			<answer>快乐合成器</answer>
+			<answer>千本樱</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="219" content="以下哪首歌BPM没有在200以上？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>神无月</answer>
+			<answer>跨时代</answer>
+			<answer>Gee</answer>
+			<answer>空想神话</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="220" content="以下哪首歌曲是Lady GaGa的的作品？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>Bad Romance</answer>
+			<answer>Bad Girl</answer>
+			<answer>Bang Bang</answer>
+			<answer>Brave Heart</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="221" content="《神无月》这首歌的难度等级为8星。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="222" content="《非酋》是朱贺独唱的歌曲。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="223" content="《不朽》是音频怪物和华晨宇合作的歌曲。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="224" content="《卡农》是Pachelbel创作的曲子。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="225" content="《Brave Heart》是滨崎步的作品。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="226" content="泡泡模式中《卡农》的bpm为196。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="227" content="《Gee》这首歌曲的BPM是在190以上。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="228" content="《不愿回头》是动漫《镇魂街》的主题曲。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="229" content="《Hello》的演唱者是大陆歌手。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="230" content="《Amazing》是韩剧《告白夫妇》的插曲。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="231" content="《Make Love》这首歌曲的BPM在110以上。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="232" content="《深海少女》这首歌的演唱是邓紫棋。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="233" content="歌曲《帝都》是一群小哥哥唱的。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="234" content="《战狼2》的主演是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>吴京</answer>
+			<answer>李连杰</answer>
+			<answer>甄子丹</answer>
+			<answer>成龙</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="235" content="蓝瘦香菇是什么意思？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>难受想哭</answer>
+			<answer>蓝色的香菇</answer>
+			<answer>瘦瘦的香菇</answer>
+			<answer>蓝色的瘦香菇</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="236" content="以下不是“佛系”的意思是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>出家</answer>
+			<answer>怎么都行</answer>
+			<answer>不争不抢</answer>
+			<answer>看淡一切</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="237" content="打Call的意思是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>应援支持</answer>
+			<answer>打酱油</answer>
+			<answer>打架</answer>
+			<answer>充气</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="238" content="以下没有结婚的女明星是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>范冰冰</answer>
+			<answer>林心如</answer>
+			<answer>张雨绮</answer>
+			<answer>佟丽娅</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="239" content="以下人设崩坏的男明星是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>薛之谦</answer>
+			<answer>周杰伦</answer>
+			<answer>林俊杰</answer>
+			<answer>鹿晗</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="240" content="上海维密展摔倒的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>奚梦瑶</answer>
+			<answer>刘雯</answer>
+			<answer>何穗</answer>
+			<answer>雎晓雯</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="241" content="2018湖南跨年晚会中吴昕演唱的歌曲是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>童话镇</answer>
+			<answer>童话</answer>
+			<answer>儿歌镇</answer>
+			<answer>白日梦</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="242" content="papi酱参与的第一部影视作品是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>妖铃铃</answer>
+			<answer>前任3：再见前任</answer>
+			<answer>芳华</answer>
+			<answer>妖猫传</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="243" content="无尾熊CP指的是哪两位明星？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>吴昕、潘玮柏</answer>
+			<answer>无尾熊、无尾熊</answer>
+			<answer>吴亦凡、陈伟霆</answer>
+			<answer>没有尾巴的熊</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="244" content="86版《西游记》中孙悟空的扮演者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>六小龄童</answer>
+			<answer>闫怀礼</answer>
+			<answer>马德华</answer>
+			<answer>迟重瑞</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="245" content="以下谁是歌手转型演员走红的艺人？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>李易峰</answer>
+			<answer>迪丽热巴</answer>
+			<answer>周星驰</answer>
+			<answer>李连杰</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="246" content="喜剧总动员第2季谁穿旗袍跳了C哩C哩舞？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>柳岩</answer>
+			<answer>李小璐</answer>
+			<answer>舒畅</answer>
+			<answer>蓝盈莹</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="247" content="电视剧《夏至未至》的男女主是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>郑爽 ，陈学冬</answer>
+			<answer>郑爽 ，白敬亭</answer>
+			<answer>郑爽 ， 杨洋 </answer>
+			<answer>柴碧云 ， 白敬亭</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="248" content="TF boys的粉丝名叫什么？
+" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>四叶草</answer>
+			<answer>仙后</answer>
+			<answer>铁塔</answer>
+			<answer>铃铛</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="249" content="“蓝朋友”意指？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>男朋友</answer>
+			<answer>好朋友</answer>
+			<answer>男性朋友</answer>
+			<answer>不明所以</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="250" content="“原谅帽”是什么颜色？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>绿色</answer>
+			<answer>黄色</answer>
+			<answer>红色</answer>
+			<answer>蓝色</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="251" content="韩国男团Super Junior最多有多少位成员？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>13</answer>
+			<answer>12</answer>
+			<answer>11</answer>
+			<answer>10</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="252" content="《西游记》中孙悟空的一个跟斗可以翻越？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>十万八千里</answer>
+			<answer>二万五千里</answer>
+			<answer>十万八千公里</answer>
+			<answer>七万八百里</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="253" content="2018年世界杯在哪个国家举行？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>俄罗斯</answer>
+			<answer>里约热内卢</answer>
+			<answer>巴西</answer>
+			<answer>意大利</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="254" content="2018年是十二生肖里面的哪一年？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>狗年</answer>
+			<answer>鸡年</answer>
+			<answer>猴年</answer>
+			<answer>猪年</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="255" content="《柒个我》的主演是谁？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>张一山</answer>
+			<answer>胡歌</answer>
+			<answer>霍建华</answer>
+			<answer>王凯</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="256" content="《花千骨》女主是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>赵丽颖</answer>
+			<answer>袁姗姗</answer>
+			<answer>杨幂</answer>
+			<answer>刘诗诗</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="257" content="《中国有嘻哈》唯一进十强的女rapper是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>VAVA</answer>
+			<answer>大笑</answer>
+			<answer>安大魂</answer>
+			<answer>杨舒涵</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="258" content="《中国有嘻哈》中以下谁是红花会选手是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>BrAnT.B小白</answer>
+			<answer>黄旭</answer>
+			<answer>Bridge</answer>
+			<answer>艾福杰尼</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="259" content="五五开是谁？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>卢本伟</answer>
+			<answer>赵本伟</answer>
+			<answer>鲁本伟</answer>
+			<answer>吕本伟</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="260" content="以下哪部电视剧是胡歌主演的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>琅琊榜</answer>
+			<answer>花千骨</answer>
+			<answer>三生三世十里桃花</answer>
+			<answer>古剑奇谭</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="261" content="《灵魂摆渡》是一部是什么类型的网剧？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>灵异</answer>
+			<answer>喜剧</answer>
+			<answer>科幻</answer>
+			<answer>古风</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="262" content="《爸爸去哪儿》被称为村长的主持人是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>李锐</answer>
+			<answer>林志颖</answer>
+			<answer>田亮</answer>
+			<answer>郭涛</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="263" content="《家有儿女》中主角家庭孩子中没有谁？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>鼠标</answer>
+			<answer>刘星</answer>
+			<answer>夏雨</answer>
+			<answer>夏雪</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="264" content="《大闹天竺》导演是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>王宝强</answer>
+			<answer>郭敬明</answer>
+			<answer>冯小刚</answer>
+			<answer>高晓松</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="265" content="《娜就怎么说》主持人叫？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>谢娜</answer>
+			<answer>张杰</answer>
+			<answer>吴昕</answer>
+			<answer>杜海涛</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="266" content="电影《三生三世十里桃花》中李纯饰演？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>素锦</answer>
+			<answer>白浅</answer>
+			<answer>玄女</answer>
+			<answer>东海水君</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="267" content="娱乐圈被称为小绵羊的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>张艺兴</answer>
+			<answer>李易峰</answer>
+			<answer>吴亦凡</answer>
+			<answer>鹿晗</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="268" content="鹿晗与哪位女明星公布了恋情？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>关晓彤</answer>
+			<answer>李艺彤</answer>
+			<answer>毛晓彤</answer>
+			<answer>李一桐</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="269" content="哪位国模没有上过维多利亚的秘密舞台？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>林志玲</answer>
+			<answer>刘雯</answer>
+			<answer>何穗</answer>
+			<answer>奚梦瑶</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="270" content="谢娜没有主持过以下哪个综艺节目？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>《天天向上》</answer>
+			<answer>《快乐大本营》</answer>
+			<answer>《百变大咖秀》</answer>
+			<answer>《拜托了衣橱》</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="271" content="以下哪个电视剧是鹿晗参演过的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>择天记</answer>
+			<answer>灵魂摆渡</answer>
+			<answer>风筝</answer>
+			<answer>你好，旧时光</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="272" content="《快乐大本营》里面有几位主持人？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>5</answer>
+			<answer>4</answer>
+			<answer>6</answer>
+			<answer>7</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="273" content="《特工皇妃》中的楚乔是谁饰演的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>赵丽颖</answer>
+			<answer>李沁</answer>
+			<answer>杨幂</answer>
+			<answer>刘亦菲</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="274" content="《羞羞的铁拳》中艾迪生的饰演者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>艾伦</answer>
+			<answer>田雨</answer>
+			<answer>宋阳</answer>
+			<answer>常远</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="275" content="惊不惊喜，______。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>意不意外</answer>
+			<answer>喜不喜欢</answer>
+			<answer>吓不吓到</answer>
+			<answer>美不美丽</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="276" content="______，我们能赢。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>稳住</answer>
+			<answer>加油</answer>
+			<answer>你好</answer>
+			<answer>撑住</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="277" content="2018年吴亦凡和赵丽颖出席哪个跨年晚会？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>江苏卫视</answer>
+			<answer>浙江卫视</answer>
+			<answer>湖南卫视</answer>
+			<answer>东方卫视</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="278" content="“狗带”是哪个英文的谐音？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>godie</answer>
+			<answer>goodday</answer>
+			<answer>gobed</answer>
+			<answer>gohome</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="279" content="“无fuck可说”是什么意思？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>无话可说</answer>
+			<answer>有话想说</answer>
+			<answer>想说很多话</answer>
+			<answer>想说英文</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="280" content="《辣妈学院》主持是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>李湘</answer>
+			<answer>谢娜</answer>
+			<answer>吴昕</answer>
+			<answer>杜海涛</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="281" content="贾乃亮的女儿大名叫什么？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>贾云馨</answer>
+			<answer>甜馨</answer>
+			<answer>甜心</answer>
+			<answer>少爷</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="282" content="《三生三世》中“糯米团子”是叫？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>阿离</answer>
+			<answer>阿梨</answer>
+			<answer>阿狸</answer>
+			<answer>阿里</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="283" content="迪丽热巴是哪个民族的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>维吾尔族</answer>
+			<answer>满族</answer>
+			<answer>蒙古族</answer>
+			<answer>回族</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="284" content="马云出演的电影是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>功守道</answer>
+			<answer>攻守道</answer>
+			<answer>工手道</answer>
+			<answer>弓手道</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="285" content="以下哪个明星不属于“香港四大天王”。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>周杰伦</answer>
+			<answer>张学友</answer>
+			<answer>刘德华</answer>
+			<answer>郭富城</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="286" content="《羞羞的铁拳》是什么类型电影？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>搞笑</answer>
+			<answer>悲情</answer>
+			<answer>恐怖</answer>
+			<answer>悬疑</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="287" content="《微微一笑很倾城》电视剧版的女主角是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>郑爽</answer>
+			<answer>张雪迎</answer>
+			<answer>迪丽热巴</answer>
+			<answer>杨颖</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="288" content="王菲和窦唯的女儿叫什么？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>窦靖童</answer>
+			<answer>窦靖文</answer>
+			<answer>窦靖婷</answer>
+			<answer>王靖童</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="289" content="以下哪部不是国产动画片？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>海底小精灵</answer>
+			<answer>黑猫警长</answer>
+			<answer>葫芦兄弟</answer>
+			<answer>小兔菲菲</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="290" content="前任3的主演是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>韩庚</answer>
+			<answer>鹿晗</answer>
+			<answer>吴亦凡</answer>
+			<answer>杨洋</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="291" content="《芳华》是谁导演的作品？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>冯小刚</answer>
+			<answer>张艺谋</answer>
+			<answer>陈凯歌</answer>
+			<answer>李安</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="292" content="《妖猫传》是以哪个朝代为故事背景？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>唐朝</answer>
+			<answer>宋朝</answer>
+			<answer>清朝</answer>
+			<answer>民国</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="293" content="下列哪个歌手被称为雨神？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>萧敬腾</answer>
+			<answer>杨宗纬</answer>
+			<answer>李建</answer>
+			<answer>张杰</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="294" content="被骑士称之为“世界第一公主殿下”的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>初音</answer>
+			<answer>洛天依</answer>
+			<answer>巡音</answer>
+			<answer>镜音铃</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="295" content="娱乐圈中的人称“姑父”的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>赵又廷</answer>
+			<answer>杨洋</answer>
+			<answer>李易峰</answer>
+			<answer>鹿晗</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="296" content="以下谁被称之为“红毯女王”？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>范冰冰</answer>
+			<answer>杨幂</answer>
+			<answer>唐嫣</answer>
+			<answer>刘亦菲</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="297" content="以下哪个明星不是出自于EXO？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>杨洋</answer>
+			<answer>鹿晗</answer>
+			<answer>吴亦凡</answer>
+			<answer>黄子韬</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="298" content="被评为“中国4000年第一美女”的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>鞠婧祎</answer>
+			<answer>李艺彤</answer>
+			<answer>龚诗淇</answer>
+			<answer>黄婷婷</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="299" content="以下谁是网红界的鼻祖？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>沉珂</answer>
+			<answer>奶茶妹妹</answer>
+			<answer>陈一发儿</answer>
+			<answer>凤姐</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="300" content="被称为“天仙”的美女明星是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>刘亦菲</answer>
+			<answer>范冰冰</answer>
+			<answer>杨幂</answer>
+			<answer>迪丽热巴</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="301" content="秋瓷炫的老公是哪一个国家的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>中国</answer>
+			<answer>韩国</answer>
+			<answer>日本</answer>
+			<answer>美国</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="302" content="DISS就是怼回去的意思。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="303" content="“XXX，我们走”最初是游戏王YGOcore的梗。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="304" content="周杰伦的女儿比儿子年纪大。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="305" content="“凤九断尾”是出自于《那年花开》的典故。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="306" content="白浅是《三生三世十里桃花》的女主。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="307" content="胡歌出演过《仙剑奇侠传》。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="308" content="《那年花开月正圆》讲的是徽商的故事。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="309" content="《将军在上》的女主演是获得金鸡奖的影后。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="310" content="鹿晗宣布恋情导致微博瘫痪。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="311" content="李晨已经向李冰冰求婚。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="312" content="宋慧乔的老公是宋仲基。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="313" content="陈伟霆的粉丝被称作女皇。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="314" content="“世界第一吃货殿下”是洛天依。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="315" content="“国民闺女”指的是关晓彤。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="316" content="“脏脏”包因为制作过程不干净而出名。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="317" content="肯德基改名金拱门。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="318" content="电影《芳华》的导演是冯小刚。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="319" content="鹿晗曾是EXO组合的成员。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="320" content="《奔跑吧，兄弟》节目录制的只有男明星。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="321" content="QQ炫舞参与了综艺节目《天天向上》。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="322" content="《奔跑吧，兄弟》被称为大黑牛的是邓超。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="323" content="《一起来看流星雨》主演是张翰。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="324" content="666在网络流行语中的意思是牛牛牛。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="325" content="热门“比心”是一种动作。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="326" content="王思聪被网友誉为娱乐圈风纪委员。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="327" content="百度的创始人兼CEO是夏骄阳。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="328" content="杨幂的丈夫比她大一轮（12岁）。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="329" content="“金拱门”指的是麦当劳。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="330" content="“石乐志”的意思是失了智对吗。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="331" content="电影《我不是潘金莲》的女主名叫潘金莲。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="332" content="中国第一部CG真人电影是《爵迹》。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="333" content="《爸爸去哪儿》里陈小春的儿子是嗯哼。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="334" content="杨紫的男朋友是一起合作过的张一山。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="335" content="最近参加戛纳电影节的女明星评委是范冰冰。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="336" content="取代萧蔷称为“台湾第一美女”的是林志玲" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="337" content="艾玛出演赫敏的时候只有7岁。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="338" content="从国民偶像到妖孽的小帅虎是陈志朋。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="339" content="范冰冰的弟弟是范丞丞。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="340" content="赵薇被称之为女版巴菲特。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="341" content="“国民老公”指的是王思聪。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="342" content="大吉大利，__________" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>晚上吃鸡</answer>
+			<answer>恭喜发财</answer>
+			<answer>打个喷嚏</answer>
+			<answer>买个吉利</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="343" content="以下哪一句没有在“农药”里出现过？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>皮皮虾，我们走</answer>
+			<answer>猥琐发育别浪</answer>
+			<answer>稳住，我们能赢</answer>
+			<answer>我思故我在</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="344" content="以下导演哪一个不是跨界的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>冯小刚</answer>
+			<answer>吴京</answer>
+			<answer>王宝强</answer>
+			<answer>韩寒</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="345" content="以下电影哪一个票房最高？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>战狼2</answer>
+			<answer>妖猫传</answer>
+			<answer>芳华</answer>
+			<answer>功夫瑜伽</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="346" content="以下电视剧哪一个不属于网文IP剧？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>人民的名义</answer>
+			<answer>楚乔传</answer>
+			<answer>择天记</answer>
+			<answer>醉玲珑</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="347" content="《镇魂街》的主演是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>汪东城</answer>
+			<answer>李易峰</answer>
+			<answer>吴亦凡</answer>
+			<answer>鹿晗</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="348" content="胡八一出自于哪个作品的人物?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>鬼吹灯</answer>
+			<answer>择天记</answer>
+			<answer>双世宠妃</answer>
+			<answer>盗墓笔记</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="349" content="《明日之子》的冠军是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>毛不易</answer>
+			<answer>孟子坤</answer>
+			<answer>赫兹</answer>
+			<answer>赵天宇</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="350" content="以下哪个不是音乐类综艺节目？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>极限挑战</answer>
+			<answer>中国有嘻哈</answer>
+			<answer>明日之子</answer>
+			<answer>中国新歌声</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="351" content="下列哪个女明星有“带货女王”的称谓？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>杨幂</answer>
+			<answer>刘亦菲</answer>
+			<answer>宋佳</answer>
+			<answer>李小璐</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="352" content="第10届金鹰女神是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>赵丽颖</answer>
+			<answer>唐嫣</answer>
+			<answer>刘亦菲</answer>
+			<answer>刘诗诗</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="353" content="著名歌手陈奕迅的妻子是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>徐濠萦</answer>
+			<answer>蒙嘉慧</answer>
+			<answer>江蕙</answer>
+			<answer>罗美薇</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="354" content="快乐大本营“一姐”是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>谢娜</answer>
+			<answer>吴昕</answer>
+			<answer>陈娅安</answer>
+			<answer>沈梦辰</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="355" content="知名女星买火车票回家的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>陶昕然</answer>
+			<answer>陶虹</answer>
+			<answer>陶子</answer>
+			<answer>杨颖</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="356" content="张国荣没有出演以下哪部电影？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>澳门风云</answer>
+			<answer>枪王</answer>
+			<answer>霸王别姬</answer>
+			<answer>家有喜事</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="357" content="成龙2016年获得了什么奖？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>奥斯卡终身成就奖</answer>
+			<answer>金马奖</answer>
+			<answer>柏林奖</answer>
+			<answer>白玉兰奖</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="358" content="以下哪个不是2017年的网络流行语？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>给力</answer>
+			<answer>打call</answer>
+			<answer>皮皮虾，我们走</answer>
+			<answer>大吉大利今晚吃鸡</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="359" content="《极限挑战》第三季是由哪个卫视推出的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>东方卫视</answer>
+			<answer>浙江卫视</answer>
+			<answer>湖南卫视</answer>
+			<answer>安徽卫视</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="360" content="2018年王源在跨年演唱会演唱的曲目是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>十七</answer>
+			<answer>十七岁的雨季</answer>
+			<answer>青春纪念手册</answer>
+			<answer>那年</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="361" content="女朋友的蓝颜色口红加点黄色会变成？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>绿色</answer>
+			<answer>红色</answer>
+			<answer>黑色</answer>
+			<answer>以上都不对</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="362" content="陈伟霆被曝元旦聚餐带见家长的美女是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>Bruna</answer>
+			<answer>cristian</answer>
+			<answer>Lea·T</answer>
+			<answer>katia</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="363" content="《OMG噢买咖》常驻嘉宾是?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>吴昕</answer>
+			<answer>谢娜</answer>
+			<answer>杜海涛</answer>
+			<answer>贾玲</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="364" content="以下哪位是《演员的诞生》的导师。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>章子怡</answer>
+			<answer>巩俐</answer>
+			<answer>张柏芝</answer>
+			<answer>汤唯</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="365" content="以下哪位是吐槽大会的主持人。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>张绍刚</answer>
+			<answer>冯小刚</answer>
+			<answer>何炅</answer>
+			<answer>谢娜</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="366" content="《太阳的后裔》男主角是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>宋仲基</answer>
+			<answer>李应福</answer>
+			<answer>宋慧乔</answer>
+			<answer>金淑恩</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="367" content="划船不用桨，（   ）。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>全靠浪</answer>
+			<answer>靠风吹</answer>
+			<answer>有轱辘</answer>
+			<answer>靠卖萌</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="368" content="以下哪项不是新海诚的电影？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>千与千寻</answer>
+			<answer>你的名字</answer>
+			<answer>言叶之庭</answer>
+			<answer>秒速5厘米</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="369" content="《快乐大本营》至今有多少年了？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>21</answer>
+			<answer>16</answer>
+			<answer>13</answer>
+			<answer>10</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="370" content="中国哪一部电影进入了全球总票房榜top100?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>战狼2</answer>
+			<answer>美人鱼</answer>
+			<answer>捉妖记</answer>
+			<answer>羞羞的铁拳</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="371" content="猥琐发育，________。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>别浪</answer>
+			<answer>别莽</answer>
+			<answer>别上</answer>
+			<answer>别肝</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="372" content="《戏说乾隆》中的乾隆是谁饰演的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>郑少秋</answer>
+			<answer>张铁林</answer>
+			<answer>张国立</answer>
+			<answer>郑伊健</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="373" content="2018跨年晚会吴亦凡赵丽颖合唱的一首歌是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>《想你》</answer>
+			<answer>《同一首歌》</answer>
+			<answer>《祝福》</answer>
+			<answer>《情话》</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="374" content="成龙获得了哪届的“奥斯卡终身成就奖”？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>89</answer>
+			<answer>88</answer>
+			<answer>87</answer>
+			<answer>86</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="375" content="《欢乐喜剧人》第一季的冠军是谁？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>沈腾</answer>
+			<answer>宋小宝</answer>
+			<answer>岳云鹏</answer>
+			<answer>贾玲</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="376" content="以下哪个是女演员“杨颖”的英文名？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>Angelababy</answer>
+			<answer>Angelebaby</answer>
+			<answer>Angeladaby</answer>
+			<answer>Angela</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="377" content="谁被称作“九亿少女的梦中情人”？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>林更新</answer>
+			<answer>贾乃亮</answer>
+			<answer>王思聪</answer>
+			<answer>陈赫</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="378" content="以下谁不是谋女郎？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>林允儿</answer>
+			<answer>巩俐</answer>
+			<answer>周冬雨</answer>
+			<answer>章子怡</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="379" content="以下哪个不是“新京城四美”？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>韩雪</answer>
+			<answer>蒋欣</answer>
+			<answer>刘诗诗</answer>
+			<answer>马苏</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="380" content="以下哪个模特被称之为“大表姐”？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>刘雯</answer>
+			<answer>奚梦瑶</answer>
+			<answer>何穗</answer>
+			<answer>雎晓雯</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="381" content="以下哪个明星不是模特？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>刘亦菲</answer>
+			<answer>刘雯</answer>
+			<answer>林志玲</answer>
+			<answer>奚梦瑶</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="382" content="以下哪位不属于“倾城四少”？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>鹿晗</answer>
+			<answer>李易峰</answer>
+			<answer>付辛博</answer>
+			<answer>井柏然</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="383" content="周杰伦的老婆是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>昆凌</answer>
+			<answer>桂纶镁</answer>
+			<answer>蔡依林</answer>
+			<answer>林志玲</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="384" content="杨幂的女儿名字叫？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>小糯米</answer>
+			<answer>土豆</answer>
+			<answer>汤圆</answer>
+			<answer>西红柿</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="385" content="蝉联福布斯名人榜冠军的女明星是范冰冰。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="386" content="《跑男5》新加入的女明星是迪丽热巴。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="387" content="《猎场》中男主角郑秋冬的扮演者是霍建华。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="388" content="《琅琊榜》第二部的男主依然是胡歌。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="389" content="《海上牧云记》是九州系列的IP。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="390" content="《三生三世十里桃花》影视女主都是杨幂。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="391" content="《楚乔传》的作者是天下归元。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="392" content="达康书记扮演者参演过《战狼2》。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="393" content="北京五棵松举行火星演唱会的歌手是华晨宇。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="394" content="《王牌对王牌》中TFboys成员是王源。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="395" content="被称之为“文莱王子”的是吴尊。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="396" content="小七是贝克汉姆的小女儿。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="397" content="被称之为电竞界的范冰冰的主播是Miss。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="398" content="“小甜甜”指的是麦当娜。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="399" content="酷女孩窦靖童的父亲是窦唯。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="400" content="“春哥”是指的陈小春。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="401" content="戚薇的老公是韩国人。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="402" content="杰西卡·奥尔芭被称为“好莱坞第一玉女”。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="403" content="被评为“好莱坞头号天然美女”的是斯嘉丽。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="404" content="郑爽、杨颖都参加过《演员的诞生》。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="405" content="小熊维尼是迪士尼电影公司的动画片人物。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="406" content="王俊凯参加过《亲爱的客栈》。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="407" content="佟丽娅是古装十大美女之一。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="408" content="李宇春的首张个人专辑叫《我的》。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="409" content="《我们十七岁》常驻嘉宾是林志颖。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="410" content="古力娜扎的全名是古丽娜扎尔·拜合提亚尔。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="411" content="《七月与安生》的双女主获得了金马奖影后。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="412" content="热搜“神马”的意思是神奇的马。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="413" content="美国的好莱坞电影公司坐落在华盛顿？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="414" content="在电影《夏洛特烦恼》中夏洛打了杰伦。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="415" content="张靓颖是第一个登上维密舞台的亚洲歌手。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="416" content="以下哪个品牌是卖衣服的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>美特斯邦威</answer>
+			<answer>美宝莲</answer>
+			<answer>飞跃</answer>
+			<answer>卡西欧</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="417" content="以下哪个品牌没有口红？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>卡西欧</answer>
+			<answer>香奈儿</answer>
+			<answer>圣罗兰</answer>
+			<answer>迪奥</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="418" content="以下哪个不属于世界四大时装周之一？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>东京时装周</answer>
+			<answer>纽约时装周</answer>
+			<answer>巴黎时装周</answer>
+			<answer>米兰时装周</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="419" content="以下哪个不属于时装奢侈品牌？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>耐克</answer>
+			<answer>香奈儿</answer>
+			<answer>阿玛尼</answer>
+			<answer>范思哲</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="420" content="被称为“何仙姑”的超模是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>何穗</answer>
+			<answer>刘雯</answer>
+			<answer>奚梦瑶</answer>
+			<answer>吕燕</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="421" content="以下哪位不是天使超模？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>林志玲</answer>
+			<answer>米兰达·可儿</answer>
+			<answer>刘雯</answer>
+			<answer>吉赛尔·邦辰</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="422" content="以下哪个是时装品牌？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>ONLY</answer>
+			<answer>耐克</answer>
+			<answer>麦当劳</answer>
+			<answer>屈臣氏</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="423" content="维多利亚是哪位球星的老婆？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>贝克汉姆</answer>
+			<answer>梅西</answer>
+			<answer>罗纳尔多</answer>
+			<answer>贝利</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="424" content="以下哪个不属于运动品牌？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>阿玛尼</answer>
+			<answer>耐克</answer>
+			<answer>阿迪达斯</answer>
+			<answer>彪马</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="425" content="以下哪个品牌范冰冰没有代言过？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>范思哲</answer>
+			<answer>戴比尔斯</answer>
+			<answer>欧莱雅</answer>
+			<answer>路易·威登</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="426" content="米兰时装周是世界四大时装周之一。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="427" content="高田贤三被称之为“时尚界的雷诺阿”。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="428" content="香奈儿是意大利创立的品牌。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="429" content="阿玛尼是创立于意大利的奢侈品牌。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="430" content="纪梵希的现任男装设计师是里卡多·提西。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="431" content="爱马仕的代言人是李冰冰。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="432" content="卡尔文·克莱恩是美国第一大设计师品牌。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="433" content="范冰冰的御用造型师是卜柯文。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="434" content="毛戈平被赞誉为“魔术化妆师”。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="435" content="李白，字太白，号青莲居士，又号_____？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>谪仙人</answer>
+			<answer>酒仙</answer>
+			<answer>少陵野老</answer>
+			<answer>老白</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="436" content="《咏鹅》的作者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>骆宾王</answer>
+			<answer>李白</answer>
+			<answer>杜甫</answer>
+			<answer>苏轼</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="437" content="以下哪个不是杜甫的诗词？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>《过故人庄》</answer>
+			<answer>《石壕吏》</answer>
+			<answer>《春望》</answer>
+			<answer>《春夜喜雨》</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="438" content="以下不是“江南四大才子”的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>徐明卿</answer>
+			<answer>唐伯虎</answer>
+			<answer>祝枝山</answer>
+			<answer>文征明</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="439" content="大珠小珠落玉盘形容的是哪种乐器的声音？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>琵琶</answer>
+			<answer>葫芦丝</answer>
+			<answer>古筝</answer>
+			<answer>埙</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="440" content="周作人与鲁迅是什么亲戚关系？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>兄弟</answer>
+			<answer>父子</answer>
+			<answer>母子</answer>
+			<answer>爷孙</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="441" content="《木兰辞》中“唧唧复唧唧”指的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>织布</answer>
+			<answer>耕地</answer>
+			<answer>晒网</answer>
+			<answer>打渔</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="442" content="“我宣你”是什么意思？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>我喜欢你</answer>
+			<answer>我知道</answer>
+			<answer>我告诉你</answer>
+			<answer>我是你</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="443" content="“醉里挑灯看剑”是谁写的诗词？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>辛弃疾</answer>
+			<answer>李白</answer>
+			<answer>杜甫</answer>
+			<answer>李清照</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="444" content="《西游记》的作者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>吴承恩</answer>
+			<answer>罗贯中</answer>
+			<answer>曹雪芹</answer>
+			<answer>施耐庵</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="445" content="以下比喻粗心大意的人是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>马大哈</answer>
+			<answer>不倒翁</answer>
+			<answer>糊涂虫</answer>
+			<answer>没记性</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="446" content="“卧薪尝胆”说的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>勾践</answer>
+			<answer>夫差</answer>
+			<answer>管仲</answer>
+			<answer>韩信</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="447" content="“白雪公主”这个形象最早来自于？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>格林童话</answer>
+			<answer>安徒生童话</answer>
+			<answer>伊索寓言</answer>
+			<answer>一千零一夜</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="448" content="中国古代所说的文房四宝是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>笔墨纸砚</answer>
+			<answer>指南针</answer>
+			<answer>造纸术</answer>
+			<answer>印刷术</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="449" content="以下哪位诗人被世人称之为“诗鬼”？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>李贺</answer>
+			<answer>李商隐</answer>
+			<answer>李白</answer>
+			<answer>杜牧</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="450" content="以下哪部作品的作者是诸葛亮？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>出师表</answer>
+			<answer>夜雨寄北</answer>
+			<answer>陈情表</answer>
+			<answer>卖油翁</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="451" content="被世人称为“诗仙”的是以下哪位诗人？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>李白</answer>
+			<answer>杜甫</answer>
+			<answer>贺知章</answer>
+			<answer>白居易</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="452" content="“飞流直下三千尺，疑是银河落九天”是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>庐山</answer>
+			<answer>华山</answer>
+			<answer>黄山</answer>
+			<answer>峨眉山</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="453" content="古文中“手足”一词是指什么？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>兄弟</answer>
+			<answer>手和脚</answer>
+			<answer>父子</answer>
+			<answer>祖孙</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="454" content="“维纳斯”是希腊神话中的什么女神？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>爱神和美神</answer>
+			<answer>智慧女神</answer>
+			<answer>幸运女神</answer>
+			<answer>自由女神</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="455" content="“初出茅庐”中的“茅庐”是指谁的住处。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>诸葛亮</answer>
+			<answer>刘备</answer>
+			<answer>司马光</answer>
+			<answer>司马迁</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="456" content="古代“岁寒三友”是指？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>松竹梅</answer>
+			<answer>松竹菊</answer>
+			<answer>梅竹菊</answer>
+			<answer>松梅菊</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="457" content="待到重阳日，还来__菊花。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>就</answer>
+			<answer>旧</answer>
+			<answer>赏</answer>
+			<answer>看</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="458" content="“每逢佳节倍思亲”中的“佳节”指的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>重阳节</answer>
+			<answer>端午节</answer>
+			<answer>中秋节</answer>
+			<answer>清明节</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="459" content="“只要有恒心”的下一句是什么？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>铁杵磨成针</answer>
+			<answer>必定有钱剩 </answer>
+			<answer>天下无敌人</answer>
+			<answer>点石可成金</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="460" content="数字猜成语1256789？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>丢三落四</answer>
+			<answer>一五一十</answer>
+			<answer>三五成群</answer>
+			<answer>缺衣少食</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="461" content="《春思》是谁写的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>李白</answer>
+			<answer>杜甫</answer>
+			<answer>白居易</answer>
+			<answer>孟浩然 </answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="462" content="李白是哪个朝代的诗人？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>唐</answer>
+			<answer>宋</answer>
+			<answer>元</answer>
+			<answer>明</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="463" content="明月几时有？_________。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>把酒问青天</answer>
+			<answer>把酒问苍天</answer>
+			<answer>天黑时</answer>
+			<answer>天亮时</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="464" content="根据歌名《寒江雪》打一唐诗名字。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>江雪</answer>
+			<answer>寒江</answer>
+			<answer>泛舟</answer>
+			<answer>雪色</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="465" content="红豆生南国，_________。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>春来发几枝</answer>
+			<answer>春来发枝桠</answer>
+			<answer>春发来几枝</answer>
+			<answer>以上都不对</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="466" content="夕阳无限好，_________。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>只是近黄昏</answer>
+			<answer>总是近黄昏</answer>
+			<answer>黄昏总是近</answer>
+			<answer>只是进黄昏</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="467" content="给文字标声调：颇（po）" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>一声</answer>
+			<answer>二声</answer>
+			<answer>三声</answer>
+			<answer>四声</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="468" content="“孙悟空”是四大名著哪部小说中的人物？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>西游记</answer>
+			<answer>三国演义</answer>
+			<answer>水浒传</answer>
+			<answer>红楼梦</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="469" content="以下词语中，读音有误的一组是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>(qíu)遒劲 </answer>
+			<answer>胡同(tong)</answer>
+			<answer>(liǎn)敛裾</answer>
+			<answer>残羹冷炙(zhì)</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="470" content="以下各组词中没有错别字的一组是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>愿景 局域网</answer>
+			<answer>罗唆 水蒸汽</answer>
+			<answer>平添 声名雀起</answer>
+			<answer>赃款 金榜提名</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="471" content="《桃花源记》的作者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>陶渊明</answer>
+			<answer>刘禹锡</answer>
+			<answer>苏轼</answer>
+			<answer>王安石</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="472" content="李商隐属于哪个朝代？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>唐朝</answer>
+			<answer>宋朝</answer>
+			<answer>魏晋</answer>
+			<answer>清朝</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="473" content="该成语“声色俱励”中哪个字是错的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>励</answer>
+			<answer>生</answer>
+			<answer>色</answer>
+			<answer>俱</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="474" content="以下哪首诗描写母爱？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>游子吟</answer>
+			<answer>梅花</answer>
+			<answer>江雪</answer>
+			<answer>古朗月行</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="475" content="《朝花夕拾》的作者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>鲁迅</answer>
+			<answer>海子</answer>
+			<answer>老舍</answer>
+			<answer>普希金</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="476" content="但愿人长久，_____________。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>千里共婵娟</answer>
+			<answer>粒粒皆辛苦</answer>
+			<answer>低头思故乡</answer>
+			<answer>更上一层楼</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="477" content="什么东西越洗越脏？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>水</answer>
+			<answer>汽油</answer>
+			<answer>白醋</answer>
+			<answer>冰</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="478" content="“桃之夭夭，有蕡其实。”此诗是?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>桃夭</answer>
+			<answer>题都城南庄</answer>
+			<answer>春怨</answer>
+			<answer>大林寺桃花</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="479" content="君不见，______________?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>高堂明镜悲白发</answer>
+			<answer>狂滥生涯今几许</answer>
+			<answer>栏干十二绕层楼</answer>
+			<answer>夜阑人意醺酣</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="480" content="聪明的反义词是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>愚蠢</answer>
+			<answer>睿智</answer>
+			<answer>机灵</answer>
+			<answer>灵活</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="481" content="“莫愁前路无知己，天下谁人不识君”出自？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>高适</answer>
+			<answer>岑参</answer>
+			<answer>王昌龄</answer>
+			<answer>叶绍翁</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="482" content="“姑苏城外寒山寺”中的“姑苏”是指？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>苏州</answer>
+			<answer>杭州</answer>
+			<answer>徐州</answer>
+			<answer>扬州</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="483" content="“夸父追日”中夸父是如何追逐太阳的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>奔跑</answer>
+			<answer>飞行</answer>
+			<answer>骑马</answer>
+			<answer>凌波微步</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="484" content="王昭君没被汉元帝召见就远嫁是因为？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>画师把她画磕碜了</answer>
+			<answer>她长得太着急</answer>
+			<answer>她没参加</answer>
+			<answer>不知道</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="485" content="“况属高风晚，山山黄叶飞”描写的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>秋季</answer>
+			<answer>春季</answer>
+			<answer>夏季</answer>
+			<answer>冬季</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="486" content="“三打白骨精”出自哪一部名著？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>西游记</answer>
+			<answer>水浒传</answer>
+			<answer>三国演义</answer>
+			<answer>红楼梦</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="487" content="送人玫瑰，___________。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>手有余香</answer>
+			<answer>手留芳香</answer>
+			<answer>芳香四溢</answer>
+			<answer>鸟语花香</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="488" content="“德高望重”中的“望”指的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>名望，声誉</answer>
+			<answer>向远处看</answer>
+			<answer>希图，盼</answer>
+			<answer>拜访</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="489" content="《背影》中父亲在火车站买的水果是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>橘子</answer>
+			<answer>橙子</answer>
+			<answer>金桔</answer>
+			<answer>香蕉</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="490" content="《骆驼祥子》是哪位作者的作品？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>老舍</answer>
+			<answer>老舒</answer>
+			<answer>舒畅</answer>
+			<answer>佘曼</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="491" content="银烛秋光冷画屏，一枝红杏出墙来。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="492" content="我国最早的一部诗歌总集是《诗经》。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="493" content="“精卫填海”故事中的精卫是一只猴子。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="494" content="文字所标声调：仍，reng是二声。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="495" content="被封为诗圣是李白。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="496" content="《尚书》是最早的一部历史文献总集。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="497" content="宋词的代表人物是李白。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="498" content="《论语》是孔子的作品。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="499" content="我国“儒家”的创始人是孔子。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="500" content="《鲁滨逊漂流记》的作者是丹尼尔笛福。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="501" content="《沁园春·雪》这首词，是毛泽东所作。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="502" content="“遥知不是雪，唯有暗香来。”是指玫瑰。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="503" content="《老人与海》的作者是巴金。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="504" content="中国历史上最后一个皇帝是清朝的宣统帝。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="505" content="人不惑之年是指50岁。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="506" content="诸葛亮还被叫作“卧龙先生”" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="507" content="《春晓》是唐代诗人孟浩然的著名之作。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="508" content="以下哪个不是韵母？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>b</answer>
+			<answer>o</answer>
+			<answer>en</answer>
+			<answer>a</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="509" content="以下哪首是白居易的代表作？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>《长恨歌》</answer>
+			<answer>《春望》</answer>
+			<answer>《将进酒》</answer>
+			<answer>《美芹十论》</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="510" content="_____________，门泊东吴万里船。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>窗含西岭千秋雪</answer>
+			<answer>一行白鹭上青天</answer>
+			<answer>柳暗花明又一村</answer>
+			<answer>春风不度玉门关</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="511" content="酒喝多了伤人，不喝呢？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>伤心</answer>
+			<answer>伤肺</answer>
+			<answer>伤胃</answer>
+			<answer>伤身</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="512" content="赚钱去度假，打一俗语是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>有出息</answer>
+			<answer>钻空子</answer>
+			<answer>过一天算一天</answer>
+			<answer>吃饱不想家</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="513" content="以下哪座山不属于的“五岳”？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>峨眉山</answer>
+			<answer>泰山</answer>
+			<answer>华山</answer>
+			<answer>衡山</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="514" content="勤劳去百病（打北宋一词人名）？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>辛弃疾</answer>
+			<answer>李白</answer>
+			<answer>杜甫</answer>
+			<answer>李清照</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="515" content="以下哪位诗人号香山居士。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>白居易</answer>
+			<answer>李白</answer>
+			<answer>柳永</answer>
+			<answer>李清照</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="516" content="被称之为“诗奴”是哪位诗人？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>贾岛</answer>
+			<answer>李白</answer>
+			<answer>王昌龄</answer>
+			<answer>王勃</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="517" content="歇后语：80岁老太太踢毽子？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>盖中盖</answer>
+			<answer>盖装纯</answer>
+			<answer>盖中嫩</answer>
+			<answer>嫩中嫩</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="518" content="“东山再起”这个典故出自？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>谢安</answer>
+			<answer>曹操</answer>
+			<answer>刘备</answer>
+			<answer>孔子</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="519" content="“成也萧何，败也萧何”说的是谁的经历？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>韩信</answer>
+			<answer>萧何</answer>
+			<answer>张良</answer>
+			<answer>庄周</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="520" content="诗句“飞流直下三千尺”出自哪里？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>望庐山瀑布</answer>
+			<answer>将进酒</answer>
+			<answer>独坐敬山亭</answer>
+			<answer>送友人</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="521" content="以下哪句是白居易《忆江南》中的名句？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>春来江水绿如蓝</answer>
+			<answer>春风不度玉门关</answer>
+			<answer>春江水暖鸭先知</answer>
+			<answer>春潮带雨晚来急</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="522" content="给文字标声调：饕（tao）" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>一声</answer>
+			<answer>二声</answer>
+			<answer>三声</answer>
+			<answer>四声</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="523" content="“两个黄鹂鸣翠柳，一行白鹭上青天”出自？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>绝句</answer>
+			<answer>静夜思</answer>
+			<answer>春晓</answer>
+			<answer>早发白帝城</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="524" content="焱的读音为？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>yàn</answer>
+			<answer>huǒ</answer>
+			<answer>zhì</answer>
+			<answer>miāo </answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="525" content="“冬天到了，春天还会远吗”是谁说的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>雪莱</answer>
+			<answer>歌德</answer>
+			<answer>席勒</answer>
+			<answer>徐志摩</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="526" content="《木兰辞》与哪部作品被称为“乐府双壁”？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>孔雀东南飞</answer>
+			<answer>陌上桑</answer>
+			<answer>诗经</answer>
+			<answer>白头吟</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="527" content="“你若安好，便是晴天”是什么修辞手法？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>比喻</answer>
+			<answer>拟人</answer>
+			<answer>夸张</answer>
+			<answer>反复</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="528" content="唐代诗人王维有什么之称？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>诗佛</answer>
+			<answer>诗仙</answer>
+			<answer>诗圣</answer>
+			<answer>诗神</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="529" content="“一片孤城万仞山”中，一仞约相当于？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>成年人一臂的长度</answer>
+			<answer>一个成年人的高度</answer>
+			<answer>成年人下身的长度</answer>
+			<answer>成年人的脚长</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="530" content="塔传入中国是在什么时候?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>公元一世纪前后</answer>
+			<answer>公元三世纪前后</answer>
+			<answer>公元二世纪前后</answer>
+			<answer>公元前</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="531" content="“红娘”是哪部作品中的人物？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>《西厢记》</answer>
+			<answer>《红楼梦》</answer>
+			<answer>《红色娘子军》</answer>
+			<answer>《红灯记》</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="532" content="明清晚期被誉为“开眼看世界第一人”的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>林则徐</answer>
+			<answer>魏源</answer>
+			<answer>龚自珍</answer>
+			<answer>严复</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="533" content="被称为“小李杜”的是李商隐和杜牧。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="534" content="“秋后的蚂蚱—蹦跶不了几天.”是歇后语。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="535" content="文字所标声调：瓤，rang是二声。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="536" content="《乡愁》的作者是余光中。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="537" content="“猋”和“赑”分别念作biāo和bì。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="538" content="《穷人》的作者是丹麦作家列夫·托尔斯泰。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="539" content="1分钟内最有可能完成下列哪件事？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>骑自行车50米</answer>
+			<answer>打一场篮球</answer>
+			<answer>步行1000米</answer>
+			<answer>上一节数学课</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="540" content="一个足球场面积大约为5200___?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>平方米</answer>
+			<answer>平方千米</answer>
+			<answer>平方分米</answer>
+			<answer>公顷</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="541" content="黄金比例是多少？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>0.618</answer>
+			<answer>0.418</answer>
+			<answer>0.518</answer>
+			<answer>0.615</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="542" content="五条直线相交，最多能有多少个交点呢？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>10个</answer>
+			<answer>5个</answer>
+			<answer>8个</answer>
+			<answer>12个</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="543" content="最接近4.08W的整数是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>40801</answer>
+			<answer>40888</answer>
+			<answer>40111</answer>
+			<answer>40000</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="544" content="圆周率约等于多少？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>3.14</answer>
+			<answer>3.24</answer>
+			<answer>3.34</answer>
+			<answer>3.04</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="545" content="以下哪个选项为函数？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>Y=X</answer>
+			<answer>1+1</answer>
+			<answer>1+1=2</answer>
+			<answer>0</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="546" content="圆周率小数点后第五位是几？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>9</answer>
+			<answer>4</answer>
+			<answer>2</answer>
+			<answer>5</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="547" content="被誉为“中国现代数学之父”。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>华罗庚</answer>
+			<answer>刘徽</answer>
+			<answer>祖冲之</answer>
+			<answer>高斯</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="548" content="100克水中加入10克盐，盐占盐水的比例是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>  1/11</answer>
+			<answer> 1/9</answer>
+			<answer>  1/10</answer>
+			<answer>不存在的</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="549" content="数a（a≠0）乘一个小数，积与数a比较？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>不一定</answer>
+			<answer>积大于数a</answer>
+			<answer>积小于数a</answer>
+			<answer>积等于数a</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="550" content="气温由－2℃上升3℃后是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>1℃</answer>
+			<answer>3℃</answer>
+			<answer>5℃</answer>
+			<answer>-5℃</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="551" content="3+2-5*1=？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>0</answer>
+			<answer>10</answer>
+			<answer>5</answer>
+			<answer>15</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="552" content="一个西瓜4刀切成9块，怎样切法?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>井</answer>
+			<answer>田</answer>
+			<answer>口</answer>
+			<answer>日</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="553" content="1,2,3能组成的最大数是多少？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>3的21次方</answer>
+			<answer>21的3次方</answer>
+			<answer>31的2次方</answer>
+			<answer>12的3次方</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="554" content="6匹马拉着一架车跑了6里，每匹跑多少里?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>6</answer>
+			<answer>36</answer>
+			<answer>16</answer>
+			<answer>26</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="555" content="若A*40=360，则A*4=？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>36</answer>
+			<answer>3600</answer>
+			<answer>360</answer>
+			<answer>180</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="556" content="1+1*1的结果是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>2</answer>
+			<answer>1</answer>
+			<answer>0</answer>
+			<answer>3</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="557" content="1000有几位数？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>4</answer>
+			<answer>3</answer>
+			<answer>5</answer>
+			<answer>6</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="558" content="以下哪个数字不是8的倍数？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>28</answer>
+			<answer>16</answer>
+			<answer>32</answer>
+			<answer>64</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="559" content="猩猩最讨厌什么线？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>平行线</answer>
+			<answer>垂直线</answer>
+			<answer>相交线</answer>
+			<answer>对线</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="560" content="哪一年正着念和倒着念一样？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>1961年</answer>
+			<answer>1661年</answer>
+			<answer>1963年</answer>
+			<answer>1964年</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="561" content="被称为数学王子的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>高斯</answer>
+			<answer>祖冲之</answer>
+			<answer>牛顿</answer>
+			<answer>阿基米德</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="562" content="一公斤铁和一公斤棉花哪一个轻？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>一样轻</answer>
+			<answer>铁</answer>
+			<answer>棉花</answer>
+			<answer>一个</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="563" content="1*1+1*1+1+1*1=？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>4</answer>
+			<answer>3</answer>
+			<answer>2</answer>
+			<answer>1</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="564" content="10-6=？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>4</answer>
+			<answer>3</answer>
+			<answer>2</answer>
+			<answer>1</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="565" content="“新华字典”有多少个字？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>4</answer>
+			<answer>3</answer>
+			<answer>2</answer>
+			<answer>1</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="566" content="1米=（）厘米" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>100</answer>
+			<answer>1</answer>
+			<answer>10</answer>
+			<answer>1000</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="567" content="求6个7相加是多少，列式是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>7*6</answer>
+			<answer>6+7</answer>
+			<answer>7+7+7+7+7</answer>
+			<answer>6+6+6+6+6+6+6</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="568" content="从8900起一百一百地数，下一个数是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>9000</answer>
+			<answer>8910</answer>
+			<answer>9100</answer>
+			<answer>9900</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="569" content="最大的三位数加上( )就是最小的四位数？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>1</answer>
+			<answer>990</answer>
+			<answer>900</answer>
+			<answer>100</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="570" content="卡卡就是发，打二位数？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>28</answer>
+			<answer>38</answer>
+			<answer>48</answer>
+			<answer>58</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="571" content="3+5*7=?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>38</answer>
+			<answer>37</answer>
+			<answer>56</answer>
+			<answer>57</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="572" content="63÷()=7" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>9</answer>
+			<answer>8</answer>
+			<answer>7</answer>
+			<answer>6</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="573" content="2 4 6 （） 10" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>8</answer>
+			<answer>12</answer>
+			<answer>14</answer>
+			<answer>16</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="574" content="一个正方形的边长为5它的面积为多少？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>25</answer>
+			<answer>24</answer>
+			<answer>23</answer>
+			<answer>26</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="575" content="一蚂蚁从几百万米高的山峰落下会怎么死？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>饿死</answer>
+			<answer>无聊死</answer>
+			<answer>郁闷死</answer>
+			<answer>不知道</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="576" content="小明比赛跑过了第二名，所以他是第一名。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="577" content="在2.5后边添两个零这个数就扩大一百倍。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="578" content="S= π·r^2是面积公式。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="579" content="100kg的羽毛比100kg的煤炭轻。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="580" content="分针走一分钟有30度。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="581" content="51+78的结果是128。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="582" content="250*4的积的末尾一共有三个零。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="583" content="33+33-33*33的结果是负数。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="584" content="将分针拨慢十分钟，它所转过的角度是60°。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="585" content="光年是时间计量单位。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="586" content="黄金分割率的近似值是0.618。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="587" content="无理数是指无限不循环小数。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="588" content="2是质数。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="589" content="三角形具有稳定性。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="590" content="计算长方体体积的公式为：长*宽*高。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="591" content="0没有绝对值。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="592" content="圆的直径等于它半径的两倍。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="593" content="勾股定理适用于以下哪种三角形？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>直角三角形</answer>
+			<answer>等边三角形</answer>
+			<answer>等腰三角形</answer>
+			<answer>锐角三角形</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="594" content="4+4+4+4，猜一种水果？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>石榴</answer>
+			<answer>苹果</answer>
+			<answer>凤梨</answer>
+			<answer>西瓜</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="595" content="埃及建筑“金字塔”运用了什么数学原理？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>三角形的稳定性</answer>
+			<answer>勾股定理</answer>
+			<answer>余弦定理</answer>
+			<answer>边角边公理</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="596" content="21945的楷音表示什么？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>爱你就是我</answer>
+			<answer>我就是爱你</answer>
+			<answer>爱你就爱我</answer>
+			<answer>我就是服你</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="597" content="一刀两断（打一数学名词）答案是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>分数</answer>
+			<answer>分母</answer>
+			<answer>分子</answer>
+			<answer>比例</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="598" content="小小的房子（打一数学名词）答案是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>区间</answer>
+			<answer>区域</answer>
+			<answer>区别</answer>
+			<answer>区分</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="599" content="一张方桌锯掉一个角，还有几个角？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>5</answer>
+			<answer>3</answer>
+			<answer>6</answer>
+			<answer>4</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="600" content="1秒等于_______?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>1000毫秒</answer>
+			<answer>100毫秒</answer>
+			<answer>50毫秒</answer>
+			<answer>10毫秒</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="601" content="一根绳子两个头，一根半绳子有几个头？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>4</answer>
+			<answer>5</answer>
+			<answer>6</answer>
+			<answer>7</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="602" content="什么字全世界通用？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>阿拉伯数字</answer>
+			<answer>字</answer>
+			<answer>A</answer>
+			<answer>什么</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="603" content="半径为1cm的圆，求面积？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>3.14cm²</answer>
+			<answer>1.24cm²</answer>
+			<answer>2.14cm²</answer>
+			<answer>2.74cm²</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="604" content="2的八次方是多少？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>256</answer>
+			<answer>512</answer>
+			<answer>128</answer>
+			<answer>64</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="605" content="等腰三角形的周长为14，一边长为4，腰长？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>4或5</answer>
+			<answer>6或7</answer>
+			<answer>2或3</answer>
+			<answer>8或9</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="606" content="若|x|=x，则x一定是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>非负数</answer>
+			<answer>正数</answer>
+			<answer>负数</answer>
+			<answer>非正数</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="607" content="8个数字8怎么才能得到结果为1000？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>8+8+8+88+888</answer>
+			<answer>8+88+88+888</answer>
+			<answer>88+888+888</answer>
+			<answer>8+8+8+8+8888</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="608" content="用3个3组成一个最大数是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>3的33次方</answer>
+			<answer>3个3相加</answer>
+			<answer>3个3相乘</answer>
+			<answer>3的3次方的3次方</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="609" content="1=5,2=50，3=500，4=5000，5=（）？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>1</answer>
+			<answer>50000</answer>
+			<answer>0</answer>
+			<answer>15</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="610" content="谁发明了算盘？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>徐岳</answer>
+			<answer>梅文鼎</answer>
+			<answer>张择端</answer>
+			<answer>刘洪</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="611" content="《几何原本》的作者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>欧几里得</answer>
+			<answer>阿基米德</answer>
+			<answer>阿波罗尼奥斯 </answer>
+			<answer>托勒玫</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="612" content="自然数的平方都是合数。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="613" content="著名的勾股定理是祖冲之最早证明的。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="614" content="网络交流出现的Tan90°表示不存在的意思。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="615" content="中国国旗的长宽比例为三比二。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="616" content="风车转动是平移现象。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="617" content="一条直线是一个平角，这一说法错误。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="618" content="“一个人”用英语怎么说？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>alone</answer>
+			<answer>one you</answer>
+			<answer>you</answer>
+			<answer>me</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="619" content='"I am alright."翻译成中文是？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>我很好</answer>
+			<answer>我很确定</answer>
+			<answer>我是对的</answer>
+			<answer>我很健康</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="620" content="世界上使用最广泛的语言是以下哪个选项？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>英语</answer>
+			<answer>西班牙语</answer>
+			<answer>汉语</answer>
+			<answer>日语</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="621" content="以下哪个单词与其它三个分类不同？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>potato</answer>
+			<answer>apple</answer>
+			<answer>peach</answer>
+			<answer>banana</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="622" content="以下哪个选项不是第三人称？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>me</answer>
+			<answer>she</answer>
+			<answer>he</answer>
+			<answer>it</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="623" content="英语专业等级最高为几级？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>8</answer>
+			<answer>6</answer>
+			<answer>5</answer>
+			<answer>4</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="624" content="以下哪个是世界贸易组织的缩写？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>WTO</answer>
+			<answer>CCTV</answer>
+			<answer>HB</answer>
+			<answer>BBC</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="625" content="以下哪个英文单词为“某人”的意思？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>someone</answer>
+			<answer>anyone</answer>
+			<answer>no one</answer>
+			<answer>nobody</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="626" content='"Never forget why you started"的意思？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>不忘初心</answer>
+			<answer>对不起</answer>
+			<answer>我爱你</answer>
+			<answer>中国梦</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="627" content="中号衣服标志是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>M</answer>
+			<answer>S</answer>
+			<answer>L</answer>
+			<answer>Y</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="628" content="VIP的意思是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>贵宾</answer>
+			<answer>不明飞行物</answer>
+			<answer>人名</answer>
+			<answer>英国广播电视</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="629" content="以下哪个是“中国”英文的正确拼写？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>China</answer>
+			<answer>Chaina</answer>
+			<answer>Caina</answer>
+			<answer>Chana</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="630" content='"BGM"是什么英文单词的简称？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>背景音乐</answer>
+			<answer>光效</answer>
+			<answer>二次元</answer>
+			<answer>钢琴曲</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="631" content="英文字母中“K”在第几位？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>11位</answer>
+			<answer>25位</answer>
+			<answer>14位</answer>
+			<answer>10位</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="632" content='"panda"是什么动物？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>熊猫</answer>
+			<answer>猴子</answer>
+			<answer>老虎</answer>
+			<answer>大象</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="633" content='"honeymoon"这个词来源于哪里的民俗传统？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>巴比伦</answer>
+			<answer>亚历山大</answer>
+			<answer>亚特兰蒂斯</answer>
+			<answer>诺亚方舟遗址</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="634" content='"stressed"倒过来拼是什么意思？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>点心</answer>
+			<answer>惊讶</answer>
+			<answer>点名</answer>
+			<answer>惊奇</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="635" content="世界的尽头（打一字母）？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>D</answer>
+			<answer>X</answer>
+			<answer>W</answer>
+			<answer>N</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="636" content="苹果用英文翻译为？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>apple</answer>
+			<answer>appie</answer>
+			<answer>aplpe</answer>
+			<answer>aplle</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="637" content="一共有多少个英语字母？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>26</answer>
+			<answer>27</answer>
+			<answer>25</answer>
+			<answer>24</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="638" content="大学本科英语等级考试最低是几级？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>四级</answer>
+			<answer>六级</answer>
+			<answer>八级</answer>
+			<answer>十级</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="639" content="联合国的英文缩写是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>UN</answer>
+			<answer>UK</answer>
+			<answer>UL</answer>
+			<answer>UH</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="640" content="中华人民共和国的英文缩写是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>PRC</answer>
+			<answer>PRG</answer>
+			<answer>RPC</answer>
+			<answer>CPR</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="641" content="英国的英文缩写是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>UK</answer>
+			<answer>UC</answer>
+			<answer>UF</answer>
+			<answer>UG</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="642" content="美国的英文缩写是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>U.S.A</answer>
+			<answer>U.A.S</answer>
+			<answer>A.U.S</answer>
+			<answer>S.U.A</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="643" content="皇帝的英文是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>emperor</answer>
+			<answer>China's boss</answer>
+			<answer>yellow up </answer>
+			<answer>the yellow king</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="644" content="馒头的英文是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>steamed bun</answer>
+			<answer>momo</answer>
+			<answer>mantou</answer>
+			<answer>slow head</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="645" content="红色翻译成英文是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>Red</answer>
+			<answer>Yellow</answer>
+			<answer>Blue</answer>
+			<answer>Pink</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="646" content="我想你翻译成英文是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>I miss you</answer>
+			<answer>I like you</answer>
+			<answer>I love you</answer>
+			<answer>I have you</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="647" content="猪用英语怎么拼？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>pig</answer>
+			<answer>pug</answer>
+			<answer>pag</answer>
+			<answer>peg</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="648" content="哪两个字母人人都喜欢听？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>CD</answer>
+			<answer>MV</answer>
+			<answer>MP</answer>
+			<answer>CE</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="649" content='"Goodbye"的原意是什么？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>上帝与你同在</answer>
+			<answer>你好，再见</answer>
+			<answer>祝福</answer>
+			<answer>拜拜</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="650" content='"Santa Claus"翻译成中文是什么意思？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>圣诞老人</answer>
+			<answer>学生教室</answer>
+			<answer>学校里的教师</answer>
+			<answer>胜利的老人</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="651" content="哪个字母可以停车？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>P</answer>
+			<answer>Q</answer>
+			<answer>W</answer>
+			<answer>E</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="652" content="26个字母里有两个人，是哪两个？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>I U</answer>
+			<answer>A L</answer>
+			<answer>Y H</answer>
+			<answer>P A</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="653" content='"black art"是什么意思？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>妖术</answer>
+			<answer>黑色艺术</answer>
+			<answer>美术</answer>
+			<answer>艺术</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="654" content='"American beauty"是什么意思？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>美国丽人</answer>
+			<answer>美丽的美国人</answer>
+			<answer>美国人很美</answer>
+			<answer>美丽的美国</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="655" content='"You are a pig."翻译成中文是？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>你是猪</answer>
+			<answer>你是兔子</answer>
+			<answer>你是狗</answer>
+			<answer>你是猫</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="656" content='"How old are you?"是什么意思？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>你多大了？</answer>
+			<answer>怎么老是你？</answer>
+			<answer>你老了吗？</answer>
+			<answer>你以前是什么？</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="657" content="什么东西是你的但是别人用的比你多？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>your name</answer>
+			<answer>your hand</answer>
+			<answer>your pen</answer>
+			<answer>your food</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="658" content="日期的英文拼写?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>date</answer>
+			<answer>dete</answer>
+			<answer>deta</answer>
+			<answer>以上都不对</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="659" content='"Monday"是星期几？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>一</answer>
+			<answer>二</answer>
+			<answer>三</answer>
+			<answer>四</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="660" content='"Saturday"是星期几？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>六</answer>
+			<answer>三</answer>
+			<answer>四</answer>
+			<answer>五</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="661" content="爸爸的英文拼写是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>father</answer>
+			<answer>fethar</answer>
+			<answer>fether</answer>
+			<answer>fathar</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="662" content="Nice ______ meet you." result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>to</answer>
+			<answer>too</answer>
+			<answer>for</answer>
+			<answer>of</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="663" content="m_ther" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>o</answer>
+			<answer>e</answer>
+			<answer>a</answer>
+			<answer>h</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="664" content='"happy"中文意思是?' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>开心</answer>
+			<answer>难受</answer>
+			<answer>哭泣</answer>
+			<answer>沮丧</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="665" content='"ture"的中文意思是错误。' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="666" content='"No smoking."的意思是禁止吸烟。' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="667" content="英语就是英国的语言。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="668" content="“多样性”译成英文是diversity。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="669" content='"good idea"是好心情的意思。' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="670" content="狐狸用英文表示为fox。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="671" content="forefinger 又称index finger。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="672" content="杨颖的英文名是Angelababy。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="673" content='"black tea" 的意思是红茶。' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="674" content='"I love China."中文翻译为我爱中国。' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="675" content='"peach"既能表示水果，又能表示颜色。' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="676" content="字母T表示可以停车。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="677" content="英语缩写Feb.代表的是5月份。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="678" content='"国际友人洋笑星"大山是加拿大人。' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="679" content="“蛇”的英文是sneke。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="680" content="英语可分为英式与美式。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="681" content="英语是联合国的工作语言之一。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="682" content='"Stay true to the mission"是什么意思？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>不忘初心</answer>
+			<answer>不要止步</answer>
+			<answer>不要忘记任务</answer>
+			<answer>不要完成任务</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="683" content="国内义务教育规定____开始学习英语？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>三年级</answer>
+			<answer>五年级</answer>
+			<answer>一年级</answer>
+			<answer>六年级</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="684" content="国际音标一共有多少个？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>48</answer>
+			<answer>26</answer>
+			<answer>45</answer>
+			<answer>58</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="685" content='"dragon"的意思是什么？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>龙</answer>
+			<answer>草地</answer>
+			<answer>花园</answer>
+			<answer>眼镜</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="686" content="《Pirates of the Caribbean》是电影__？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>加勒比海盗</answer>
+			<answer>盗梦空间</answer>
+			<answer>复仇者联盟</answer>
+			<answer>地心历险记</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="687" content="能吃的桌子是什么？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>vegetable</answer>
+			<answer>coffeetable </answer>
+			<answer>roundtable</answer>
+			<answer>dressingtable</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="688" content='"It is Greek to me."是指？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>我不知道</answer>
+			<answer>我是希腊人</answer>
+			<answer>我会说希腊语</answer>
+			<answer>我听不清你的话</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="689" content='"hell cat"指的是？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>泼妇，巫婆</answer>
+			<answer>好发脾气的猫</answer>
+			<answer>冷酷的人</answer>
+			<answer>阴险的人</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="690" content='"From A to Z" 指的是？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>从头到尾</answer>
+			<answer>从A到Z</answer>
+			<answer>字母表</answer>
+			<answer>距离很远</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="691" content="小偷最怕哪三个字母？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>ICU</answer>
+			<answer>BUG</answer>
+			<answer>ABC</answer>
+			<answer>VIP</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="692" content="进口蚂蚁，打一英语单词。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>important</answer>
+			<answer>impor</answer>
+			<answer>ant</answer>
+			<answer>anthill</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="693" content='将"China/from/Iam"连成句子是？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>Iam from China</answer>
+			<answer>China from Iam</answer>
+			<answer>From Iam China</answer>
+			<answer>From Iam China</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="694" content='与"black"相反的颜色？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>white</answer>
+			<answer>yellow</answer>
+			<answer>green</answer>
+			<answer>biue</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="695" content="英语等级考试多久举行一次？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>半年</answer>
+			<answer>一年</answer>
+			<answer>三个月</answer>
+			<answer>九个月</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="696" content="英语等级考试四级多少分才算合格？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>425</answer>
+			<answer>450</answer>
+			<answer>525</answer>
+			<answer>550</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="697" content="哪个字母可以看得见？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>I</answer>
+			<answer>W</answer>
+			<answer>X</answer>
+			<answer>Q</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="698" content="十个apples，里面的S走了，问还有几个？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>1个</answer>
+			<answer>9个</answer>
+			<answer>11个</answer>
+			<answer>8个</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="699" content="S.O.S是一种什么信号？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>求救</answer>
+			<answer>组织</answer>
+			<answer>语言</answer>
+			<answer>话题</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="700" content='"Indian summer"是什么意思？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>愉快宁静的夜晚</answer>
+			<answer>印度的夏天</answer>
+			<answer>印第安的夏天</answer>
+			<answer>银色的夏天</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="701" content='"sweet water"是什么意思？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>淡水</answer>
+			<answer>甜水</answer>
+			<answer>苦水</answer>
+			<answer>海水</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="702" content='"apple of love"是什么意思？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>西红柿</answer>
+			<answer>爱的果实</answer>
+			<answer>浪漫果实</answer>
+			<answer>苹果</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="703" content="以下选择中翻译不正确的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>China-汉语</answer>
+			<answer>show off-炫耀</answer>
+			<answer>school-学校</answer>
+			<answer>road-路</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="704" content='"You are welcome"中文意思是？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>不客气</answer>
+			<answer>对不起</answer>
+			<answer>没关系</answer>
+			<answer>谢谢你</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="705" content="“有限”翻译成英文是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>finite</answer>
+			<answer>fitite</answer>
+			<answer>linita</answer>
+			<answer>linite</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="706" content="玫瑰的拼写是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>rose</answer>
+			<answer>flower</answer>
+			<answer>meigui</answer>
+			<answer>huaduo</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="707" content='"couch potato"的意思是？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>电视迷</answer>
+			<answer>沙发土豆</answer>
+			<answer>沙发上的土豆</answer>
+			<answer>发芽的土豆</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="708" content="面包翻译成英文是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>bread</answer>
+			<answer>hamburger</answer>
+			<answer>sandwich</answer>
+			<answer>coke</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="709" content='"This is a black pen."中文是？' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>这是个黑色钢笔</answer>
+			<answer>这是个红色钢笔</answer>
+			<answer>这是个黑色毛笔</answer>
+			<answer>一个黑色钢笔</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="710" content="“东南西北”可以组成news这个单词。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="711" content='"To be or not to be."来自萧伯纳这个作家。' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="712" content="英文中“面粉”与“花朵”发音相似。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="713" content='"Titanic you jump I jump."出自《铁拳》。' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="714" content='"Love me, love my dog."是爱屋及乌的意思。' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="715" content="星期六来源于罗马的北方诸神。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="716" content='"loveless"的中文意思是无爱。' result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="717" content="5个元音字母是A、E、I、O、U。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="718" content="抗日战争胜利纪念日是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>9月3日</answer>
+			<answer>10月10日</answer>
+			<answer>10月1日</answer>
+			<answer>8月15日</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="719" content="中国最后一个皇帝是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>溥仪</answer>
+			<answer>秦始皇</answer>
+			<answer>武则天</answer>
+			<answer>康熙</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="720" content="四大洋中，面积最小的是以下哪个大洋？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>北冰洋</answer>
+			<answer>大西洋</answer>
+			<answer>印度洋</answer>
+			<answer>太平洋</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="721" content="古代四大美女不包括以下哪个人物？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>孙尚香</answer>
+			<answer>杨玉环</answer>
+			<answer>王昭君</answer>
+			<answer>西施</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="722" content="中国古代四大发明不包括以下哪个选项？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>古筝</answer>
+			<answer>火药</answer>
+			<answer>造纸术</answer>
+			<answer>司南</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="723" content="“花果山”为哪个城市的旅游景点？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>连云港</answer>
+			<answer>苏州</answer>
+			<answer>杭州</answer>
+			<answer>合肥</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="724" content="地球上有几大洲？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>7</answer>
+			<answer>8</answer>
+			<answer>6</answer>
+			<answer>5</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="725" content="以下哪个不属于四大洋？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>北印度洋</answer>
+			<answer>太平洋</answer>
+			<answer>大西洋</answer>
+			<answer>北冰洋</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="726" content="蒋介石的爱人是谁？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>宋美龄</answer>
+			<answer>张爱玲</answer>
+			<answer>宋庆龄</answer>
+			<answer>宋祖英</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="727" content="香港特别行政区的区花是什么？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>紫荆花</answer>
+			<answer>木棉花</answer>
+			<answer>菊花</answer>
+			<answer>莲花</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="728" content="在一月份哪个地区的日照时间长？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>南极</answer>
+			<answer>一样长</answer>
+			<answer>北极</answer>
+			<answer>赤道</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="729" content="全国性抗日战争爆发的标志是?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>七七事件</answer>
+			<answer>九一八事件</answer>
+			<answer>一一八事件</answer>
+			<answer>一二八事件</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="730" content="古代死刑在什么季节行刑？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>秋季</answer>
+			<answer>春季</answer>
+			<answer>夏季</answer>
+			<answer>冬季</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="731" content="“草船借箭”是发生在哪一个朝代？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>三国</answer>
+			<answer>春秋</answer>
+			<answer>战国</answer>
+			<answer>东周</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="732" content="《水经注》的作者是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>郦道元</answer>
+			<answer>班固</answer>
+			<answer>裴秀</answer>
+			<answer>全祖望</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="733" content="中国五大淡水湖中哪个湖最大？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>鄱阳湖</answer>
+			<answer>洞庭湖</answer>
+			<answer>巢湖</answer>
+			<answer>洪泽湖</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="734" content="香港回归中国的时间是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>1997年7月1日</answer>
+			<answer>1999年12月20日</answer>
+			<answer>1998年10月10日</answer>
+			<answer>1997年10月1日</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="735" content="以下谁不是“西汉三杰”？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>刘备</answer>
+			<answer>张良</answer>
+			<answer>韩信</answer>
+			<answer>萧何</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="736" content="“三顾茅庐”请的是哪位隐士高人？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>诸葛亮</answer>
+			<answer>赵云</answer>
+			<answer>张飞</answer>
+			<answer>关羽</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="737" content="以下哪个不是我国四大名著之一？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>钢铁是怎样炼成的</answer>
+			<answer>西游记</answer>
+			<answer>红楼梦</answer>
+			<answer>三国演义</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="738" content="福建的省会是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>福州</answer>
+			<answer>泉州</answer>
+			<answer>厦门</answer>
+			<answer>三明</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="739" content="七大洲中面积最大的是哪个洲？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>亚洲</answer>
+			<answer>欧洲</answer>
+			<answer>非洲</answer>
+			<answer>南美洲</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="740" content="发动“玄武门之变”的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>李世民</answer>
+			<answer>李元吉</answer>
+			<answer>李建成</answer>
+			<answer>李渊</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="741" content="被后人尊称“诗圣”的唐朝诗人是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>杜甫</answer>
+			<answer>李白</answer>
+			<answer>王维</answer>
+			<answer>白居易</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="742" content="世界最高山峰是什么峰？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>珠穆朗玛峰</answer>
+			<answer>喜马拉雅</answer>
+			<answer>奥林帕斯</answer>
+			<answer>乔戈里峰</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="743" content="在我国，少数民族人口最多的哪个族？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>壮族</answer>
+			<answer>汉族</answer>
+			<answer>蒙古族</answer>
+			<answer>藏族</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="744" content="我国古迹龙门石窟位于哪个城市？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>河南洛阳</answer>
+			<answer>山西大同</answer>
+			<answer>新疆乌鲁木齐</answer>
+			<answer>河南开封</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="745" content="猜灯谜是哪个节日的内容？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>元宵节</answer>
+			<answer>春节</answer>
+			<answer>端午节</answer>
+			<answer>清明节</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="746" content="月饼是哪个节日的特色？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>中秋节</answer>
+			<answer>元宵节</answer>
+			<answer>端午节</answer>
+			<answer>春节</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="747" content="安史之乱到哪个皇帝统治时期才结束?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>唐代宗</answer>
+			<answer>乾隆帝</answer>
+			<answer>宋太宗</answer>
+			<answer>后周世</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="748" content="车牌上的豫是哪个省？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>河南</answer>
+			<answer>河北</answer>
+			<answer>山西</answer>
+			<answer>陕西</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="749" content="中华人民共和国成立时间为？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>1949年10月1日</answer>
+			<answer>1948年10月1日</answer>
+			<answer>1949年8月1日</answer>
+			<answer>1948年8月1日</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="750" content="西藏属于中国的哪部分？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>西南部</answer>
+			<answer>南部</answer>
+			<answer>东部</answer>
+			<answer>北部</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="751" content="东三省没有以下哪个省？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>河北</answer>
+			<answer>黑龙江</answer>
+			<answer>吉林</answer>
+			<answer>辽宁</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="752" content="古代所称的江北泛指？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>长江以北</answer>
+			<answer>长江以南</answer>
+			<answer>长江以西</answer>
+			<answer>长江以东</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="753" content="卢浮宫博物馆在？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>法国</answer>
+			<answer>英国</answer>
+			<answer>美国</answer>
+			<answer>俄罗斯</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="754" content="世界上最高的高原是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>青藏高原</answer>
+			<answer>苏格兰高地</answer>
+			<answer>帕米尔高原</answer>
+			<answer>黄土高原</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="755" content="哈雷彗星绕太阳运行的周期约为?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>76年</answer>
+			<answer>80年</answer>
+			<answer>75年</answer>
+			<answer>90年</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="756" content="以下不属于世界八大奇迹的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>宙斯神像</answer>
+			<answer>巴比伦空中花园</answer>
+			<answer>埃及金字塔</answer>
+			<answer>秦始皇陵兵马俑</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="757" content="一次性筷子的发明者？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>日本人</answer>
+			<answer>美国人</answer>
+			<answer>中国人</answer>
+			<answer>英国人</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="758" content="旧时妇女的发髻上插银簪，其最初作用是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>防身武器</answer>
+			<answer>笛子</answer>
+			<answer>梳子</answer>
+			<answer>装饰</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="759" content="被称为“万园之园”的是指?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>圆明园</answer>
+			<answer>乔家大院</answer>
+			<answer>苏州园林</answer>
+			<answer>皇家园林</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="760" content="我国的“冰城”指的是哪个城市？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>哈尔滨</answer>
+			<answer>根河市</answer>
+			<answer>呼玛</answer>
+			<answer>漠河</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="761" content="秦始皇兵马俑位于我国哪个省？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>陕西省</answer>
+			<answer>山东省</answer>
+			<answer>河南省</answer>
+			<answer>河北省</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="762" content="秦二世时，专擅朝政指鹿为马的宦官是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>赵高</answer>
+			<answer>赵低</answer>
+			<answer>赵嵩</answer>
+			<answer>赵离</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="763" content="三国时，谁写出了著名的《出师表》？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>诸葛亮</answer>
+			<answer>周瑜</answer>
+			<answer>诸葛黑</answer>
+			<answer>周不瑜</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="764" content="第一次鸦片战争是哪年开始？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>1840</answer>
+			<answer>1841</answer>
+			<answer>1842</answer>
+			<answer>1843</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="765" content="唐三藏西天取经的长安，现为我国？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>陕西西安</answer>
+			<answer>甘肃天水</answer>
+			<answer>甘肃武威</answer>
+			<answer>兰州</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="766" content="《狼图腾》中背景为我国内蒙古。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="767" content="伦敦和北京相差了6小时。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="768" content="台湾不属于葡萄牙殖民活动主要区域。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="769" content="《史记》是一部纪传体史书。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="770" content="华北平原位于长江上游。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="771" content="杨玉环是唐太宗的宠妃。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="772" content="河北省的“河”指黄河。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="773" content="哈尔滨被称为中国的“冰城”" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="774" content="南北半球的季节是相反的。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="775" content="武则天是中国历史上唯一一个女皇帝。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="776" content="世界上最深的海沟是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>马里亚纳海沟</answer>
+			<answer>汤加海沟</answer>
+			<answer>千岛海沟</answer>
+			<answer>菲律宾海沟</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="777" content="中国封建时期国土面积最广的是哪个朝代？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>元</answer>
+			<answer>汉</answer>
+			<answer>秦</answer>
+			<answer>清</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="778" content="五岳归来不看山，______ 归来不看岳？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>黄山</answer>
+			<answer>华山</answer>
+			<answer>青城山</answer>
+			<answer>峨眉山</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="779" content="以下不属于江南四大名楼的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>无名楼</answer>
+			<answer>黄鹤楼</answer>
+			<answer>滕王阁</answer>
+			<answer>岳阳楼</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="780" content="苏轼是哪个朝代诗人？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>北宋</answer>
+			<answer>唐代</answer>
+			<answer>清朝</answer>
+			<answer>西汉</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="781" content="项羽自刎的乌江在哪个省份？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>安徽省</answer>
+			<answer>河南省</answer>
+			<answer>湖北省</answer>
+			<answer>江苏省</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="782" content="世界上最长的河流是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>尼罗河</answer>
+			<answer>密西西比河</answer>
+			<answer>黄河</answer>
+			<answer>亚马孙河</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="783" content="世界上第一家七星级酒店位于？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>迪拜</answer>
+			<answer>印度</answer>
+			<answer>英国</answer>
+			<answer>美国</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="784" content="国际通用的阿拉伯数字，是哪国人发明的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>印度人</answer>
+			<answer>阿拉伯人</answer>
+			<answer>中国人</answer>
+			<answer>波斯人</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="785" content="中国历史上唯一一个当了三次皇帝的是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>溥仪</answer>
+			<answer>光绪</answer>
+			<answer>乾隆</answer>
+			<answer>康熙</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="786" content="东汉末年的太平道领袖张角是哪里人？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>巨鹿人</answer>
+			<answer>巨马人</answer>
+			<answer>巨兔人</answer>
+			<answer>巨猫人</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="787" content="六国中，哪国最先被秦国所灭？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>韩</answer>
+			<answer>赵</answer>
+			<answer>楚</answer>
+			<answer>齐</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="788" content="反腐倡廉的“四菜一汤”是谁发明的？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>朱元璋</answer>
+			<answer>良翼</answer>
+			<answer>陈乐民</answer>
+			<answer>朱隶</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="789" content="地跨两大洲，首都在西半球的是?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>美国</answer>
+			<answer>俄罗斯</answer>
+			<answer>土耳其</answer>
+			<answer>埃及</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="790" content="春季有几个节气？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>6</answer>
+			<answer>4</answer>
+			<answer>5</answer>
+			<answer>7</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="791" content="科举制首次出现于哪一朝代？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>隋朝</answer>
+			<answer>唐朝</answer>
+			<answer>五代十国</answer>
+			<answer>元朝</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="792" content="新航路开辟的根本原因是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>资本主义萌芽发展</answer>
+			<answer>马可波罗游记流传</answer>
+			<answer>君主强化王权目的</answer>
+			<answer>基督教会为了传教</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="793" content="中国领土跨越了几个时区？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>5个</answer>
+			<answer>3个</answer>
+			<answer>4个</answer>
+			<answer>6个</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="794" content="地球自转的方向是？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>自西向东</answer>
+			<answer>自东向西</answer>
+			<answer>自南向北</answer>
+			<answer>自北向南</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="795" content="外国侵略者在中国攫取的第一个租界位于？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>上海</answer>
+			<answer>天津</answer>
+			<answer>广州</answer>
+			<answer>厦门</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="796" content="以下哪个不是八大行星？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>冥王星</answer>
+			<answer>海王星</answer>
+			<answer>天王星</answer>
+			<answer>金星</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="797" content="五四运动是哪一年？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>1919年</answer>
+			<answer>1920年</answer>
+			<answer>1921年</answer>
+			<answer>1922年</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="798" content="以下哪个不属于春秋五霸？" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>秦始皇</answer>
+			<answer>齐桓公</answer>
+			<answer>楚庄王</answer>
+			<answer>晋文公</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="799" content="祝寿用语“寿比南山”中所指的终南山位于?" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>陕西</answer>
+			<answer>山东</answer>
+			<answer>广东</answer>
+			<answer>山西</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="800" content="本初子午线位于英国格林尼治天文台。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="801" content="地球的平均半径为63710千米。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="802" content="屈原投江而死的地方叫汨罗江。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="803" content="江苏省以平原地带为主。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="804" content="最长的海峡是莫桑比克海峡 。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="805" content="第一部章回体长篇历史小说是《三国演义》。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="806" content="辛亥革命是1919年发起的。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>错误</answer>
+			<answer>正确</answer>
+		</choice_answer_list>
+	</Answer>
+	<Answer id="807" content="中国近代史起止时间：1840至1949。" result="0">
+		<!-- 选择答案列表 -->
+		<choice_answer_list>
+			<answer>正确</answer>
+			<answer>错误</answer>
+		</choice_answer_list>
+	</Answer>
+</AnswerLibrary>

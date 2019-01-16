@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+    <!-- 活动id 嘉年华加成活动id -->
+    <Misc campaign_id="24001" carnival_activity="24001" />
+    <Seat>
+        <!--杂项 ABC级座椅ID-->
+        <Misc seat_a_id="10400009" seat_b_id="10400010" seat_c_id="10400011" />
+        <Upgrades>
+            <!--座椅升级配置，座椅id，升级材料，下级座椅id-->
+            <Upgrade seat_id="10400009" next_seat_id="10400010">
+                <Need type="item" boy_id="920000160" girl_id="920000160" num="300" />
+            </Upgrade>
+            <Upgrade seat_id="10400010" next_seat_id="10400011">
+                <Need type="item" boy_id="920000160" girl_id="920000160" num="600" />
+            </Upgrade>
+        </Upgrades>
+    </Seat>
+    <Signin>
+        <!--签到送布衣：累计天数-->
+        <Day dayid="1">
+            <Reward type="gb" boy_id="0" girl_id="0" num="100" />
+        </Day>
+        <Day dayid="2">
+            <Reward type="gb" boy_id="0" girl_id="0" num="200" />
+        </Day>
+        <Day dayid="3">
+            <Reward type="gb" boy_id="0" girl_id="0" num="300" />
+        </Day>
+        <Day dayid="4">
+            <Reward type="gb" boy_id="0" girl_id="0" num="400" />
+        </Day>
+        <Day dayid="5">
+            <Reward type="gb" boy_id="0" girl_id="0" num="500" />
+        </Day>
+        <Day dayid="6">
+            <Reward type="gb" boy_id="0" girl_id="0" num="600" />
+        </Day>
+		<Day dayid="7">
+            <Reward type="gb" boy_id="0" girl_id="0" num="700" />
+        </Day>
+		<Day dayid="8">
+            <Reward type="gb" boy_id="0" girl_id="0" num="800" />
+        </Day>
+		<Day dayid="9">
+            <Reward type="gb" boy_id="0" girl_id="0" num="900" />
+        </Day>
+		<Day dayid="10">
+            <Reward type="gb" boy_id="0" girl_id="0" num="1000" />
+        </Day>
+    </Sigin>
+    <Passport>
+        <Share>
+            <Reward type="gb" boy_id="0" girl_id="0" num="1000" />
+        </Share>
+        <Triggers>
+            <Trigger id="2300031" />
+            <Trigger id="2300032" />
+            <Trigger id="2300033" />
+            <Trigger id="2300034" />
+            <Trigger id="2300035" />
+        </Triggers>
+    </Passport>
+    <Summary>
+        <!-- 杂项 称号高度 -->
+        <Misc title_height="0.5" />
+        <!-- 人气指数=点赞数*n1+收花数*n2 1星线 2星线 3星线 4星线 5星线-->
+        <Hot n1="1.6" n2="0.8" star1="10" star2="20" star3="30" star4="40" star5="50" />
+        <!-- 资历分=目前角色等级*n1 + 建号天数*n2 + 成就点数*n3 + 紫钻等级*n4-->
+        <Career n1="0.1" n2="0.1" n3="0.1" n4="0.1" />
+        <!-- 舞技分=事务所总分*n1+三种排位赛历史最高等级分之和*n2-->
+        <Dancer n1="0.1" n2="0.1" />
+        <!-- 收藏分=图鉴总收集率*n1 + 拥有称号数*n2 + 臻品服装数量*n3 + 轻奢服装数量*n4 + S宠物数量*n5 + A宠物数量*n6-->
+        <Collector n1="0.1" n2="0.1" n3="0.1" n4="0.1" n5="0.1" n6="0.1" />
+        <!-- 情缘分=历史获得羁绊照片数*n1 + 好友数量*n2 + 被点赞数*n3 + 收花数*n4-->
+        <Lover n1="0.1" n2="0.1" n3="0.1" n4="0.1" />
+        <Share>
+            <Reward type="gb" boy_id="0" girl_id="0" num="1000" />
+        </Share>
+        <!-- 关键词选取条件
+            1 成就点数>=N
+            2 三种排位赛历史最高段位都>=某段位
+            3 拥有臻品服饰数量>=N
+            4 图鉴收集率>=N%"
+            5 与羁绊值最高好友的羁绊值>=N
+            6 收集图鉴套装>=N
+            7 建号天数>=N
+            8 累计位赛次数>=N
+            9 事务所总分>=N
+            10 历史获得SSR照片>=N
+            11 称号拥有>=N
+            12 拥有宠物>=N
+            13 历史获得羁绊旅行照片>=N
+            14 宠物旅行藏品收集度>=N%
+            15 人气指数>=N
+            16 四项总分都>=N
+            17 资历分>=N
+            18 舞技分>=N
+            19 情缘分>=N
+            20 收藏分>=N
+            0 以上全都不满足
+        -->
+        <Keyword>
+            <!-- 梯队 条件 参数 关键词 -->
+            <Key id="1" level="1" condition="1" value="200" desc="成就点数>=N" word="独孤求败" />
+            <Key id="2" level="1" condition="2" value="100" desc="三种排位赛历史最高段位都>=某段位" word="神之领域的探索者" />
+            <Key id="3" level="1" condition="3" value="100" desc="拥有臻品服饰数量>=N" word="土豪来交个朋友吗" />
+            <Key id="4" level="1" condition="4" value="100" desc="图鉴收集率>=N%" word="给大佬递茶" />
+            <Key id="5" level="1" condition="5" value="100" desc="与羁绊值最高好友的羁绊值>=N" word="人人都爱本可爱" />
+            <Key id="6" level="2" condition="6" value="100" desc="收集图鉴套装>=N" word="可爱舞者，在线换装" />
+            <Key id="7" level="2" condition="7" value="100" desc="建号天数>=N" word="炫舞忠实粉丝" />
+            <Key id="8" level="2" condition="8" value="100" desc="累计位赛次数>=N" word="输赢乃身外之事" />
+            <Key id="9" level="2" condition="9" value="100" desc="事务所总分>=N" word="勤奋的舞者" />
+            <Key id="10" level="2" condition="10" value="100" desc="历史获得SSR照片>=N" word="人形锦鲤本鲤" />
+            <Key id="11" level="3" condition="11" value="50" desc="称号拥有>=N" word="千面达人" />
+            <Key id="12" level="3" condition="12" value="20" desc="拥有宠物>=N" word="动物园园长" />
+            <Key id="13" level="3" condition="13" value="100" desc="历史获得羁绊旅行照片>=N" word="爱拍达人" />
+            <Key id="14" level="3" condition="14" value="100" desc="宠物旅行藏品收集度>=N%" word="所思在远道" />
+            <Key id="15" level="3" condition="15" value="100" desc="人气指数>=N" word="夜空中最亮的星" />
+            <Key id="16" level="4" condition="16" value="100" desc="四项总分都>=N" word="无敌是多么的寂寞" />
+            <Key id="17" level="5" condition="17" value="100" desc="资历分>=N" word="知名炫舞社会人" />
+            <Key id="18" level="5" condition="18" value="100" desc="舞技分>=N" word="舞蹈担当本担" />
+            <Key id="19" level="5" condition="19" value="100" desc="情缘分>=N" word="人气idol" />
+            <Key id="20" level="5" condition="20" value="100" desc="收藏分>=N" word="超满足的收藏家" />
+            <Key id="21" level="9" condition="0" value="100" desc="以上全都不满足" word="我悄悄地来过，又悄悄地走了" />
+        </Keyword>
+        <UI>
+            <!-- 
+            下面的id需要转义成文字
+            100 数据统计日期
+            101 昵称
+            102 等级
+            103 vip等级
+            104 建号日期
+            105 大区名称
+            106 建号天数
+            107 成就点数
+            108 成就完成度
+            109 成就好友排名比例
+
+            200 事务所总分
+            201 得分s数量
+            202 得分ap数量
+            203 得分ac数量
+            204 得分好友排名
+            205 得分全区排名比例
+            206 排位赛总数
+            207 最多排位赛模式
+            208 最多排位赛场次
+
+            300 服装数量
+            301 臻品数量
+            302 轻奢数量
+            303 高档数量
+            304 图鉴套数
+            305 图鉴收集率
+            306 称号数量
+            307 称号高度
+            308 宠物数量
+            309 宠物s数量
+            310 宠物a数量
+            311 宠物b数量
+            312 宠物c数量
+            313 旅行藏品收集度
+
+            400 好友数量
+            401 羁绊值最高好友名
+            402 羁绊值最高好友羁绊值
+            403 羁绊旅行照片数量
+            404 ssr照片
+            405 sr照片
+            406 r照片
+            407 n照片
+            408 赞
+            409 花
+
+            下面的id需要转义成图片
+            zp 臻品
+            qs 轻奢
+            gd 高档
+            s s级
+            a A级
+            b b级
+            c c级
+            sp s分
+            ap ap分
+            ac ac分
+            dw 段位
+            dwdj 段位等级
+            star 人气指数
+
+         -->
+            <Page id="1" name="资历">
+                <Groups>
+                    <Group id="1">
+                        <Lines>
+                            <Line id="1" desc="亲爱的舞者{101}:" />
+                            <Line id="2" desc="您的角色等级{102}，紫钻等级{103}" />
+                        </Lines>
+                    </Group>
+                    <Group id="2">
+                        <Lines>
+                            <Line id="1" desc="于{104}来到了炫舞世界:" />
+                            <Line id="2" desc="并定居在{105}" />
+                            <Line id="3" desc="今天是你在这里的第{106}天" />
+                        </Lines>
+                    </Group>
+                    <Group id="3">
+                        <Lines>
+                            <Line id="1" desc="成就点数{107}，完成度{108}%" />
+                            <Line id="2" desc="这个成绩超过了{109}%的好友" />
+                        </Lines>
+                    </Group>
+                </Groups>
+            </Page>
+            <Page id="2" name="舞技">
+                <Groups>
+                    <Group id="1">
+                        <Lines>
+                            <Line id="1" desc="您的事务所总分达到了{200}万" />
+                            <Line id="2" desc="累计获得<sp>{201} <ap>{202} <ac>{203}" />
+                            <Line id="3" desc="在好友中排名第{204}位，全区排名{205}" />
+                        </Lines>
+                    </Group>
+                    <Group id="2">
+                        <Lines>
+                            <Line id="1" desc="您一共进行了{206}次排位赛" />
+                            <Line id="2" desc="最钟爱的模式是{207}，达到了{208}场" />
+                        </Lines>
+                    </Group>
+                    <Group id="3">
+                        <Lines>
+                            <Line id="1" desc="排位赛历史最高段位为<dw><dwdj>" expt="66目前还没有找到您的历史最高段位" />
+                            <Line id="2" desc="新的一年继续努力吧" />
+                        </Lines>
+                    </Group>
+                </Groups>
+            </Page>
+            <Page id="3" name="收藏">
+                <Groups>
+                    <Group id="1">
+                        <Lines>
+                            <Line id="1" desc="您目前拥有{300}件服装" />
+                            <Line id="2" desc="其中<zp>{301} <qs>{302} <gd>{303}" />
+                            <Line id="3" desc="图鉴套装共收集{304}套，总收集率{305}" />
+                        </Lines>
+                    </Group>
+                    <Group id="2">
+                        <Lines>
+                            <Line id="1" desc="您攻击拥有{306}枚称号" />
+                            <Line id="2" desc="全部显示在头顶的话，足足有{307}米高" />
+                        </Lines>
+                    </Group>
+                    <Group id="3">
+                        <Lines>
+                            <Line id="1" desc="目前拥有宠物{308}只" />
+                            <Line id="2" desc="其中<s>{309} <a>{310} <b>{311} <c>{312}" />
+                            <Line id="3" desc="旅行藏品收集度达到了{313}%" />
+                        </Lines>
+                    </Group>
+                </Groups>
+            </Page>
+            <Page id="4" name="情缘">
+                <Groups>
+                    <Group id="1">
+                        <Lines>
+                            <Line id="1" desc="您目前拥有好友{400}位" />
+                            <Line id="2" desc="其中羁绊值最高的好友为{401}" />
+                            <Line id="3" desc="你们之间的羁绊值高达{402}" />
+                        </Lines>
+                    </Group>
+                    <Group id="2">
+                        <Lines>
+                            <Line id="1" desc="累计获得羁绊旅行照片{403}张" />
+                            <Line id="2" desc="其中包含{404}张SSR {405}张SR {406}张R {407}张N" />
+                        </Lines>
+                    </Group>
+                    <Group id="3">
+                        <Lines>
+                            <Line id="1" desc="累计收到点赞{408}次，花束{409}束" />
+                            <Line id="2" desc="人气指数<star>" />
+                        </Lines>
+                    </Group>
+                </Groups>
+            </Page>
+        </UI>
+    </Summary>
+</Config>

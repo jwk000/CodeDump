@@ -1,0 +1,19 @@
+using common;
+
+class Dress{
+    [key]
+    int id;
+    string name;
+    int gender;
+    int type;
+    int sub_type;
+    bool can_overlay;
+    [optional]
+    bool show_inbag;
+    List<bodyPart> bodyPartList;
+}
+
+[root]
+class DressListInfo{
+    Dict<int,Dress> DressList;
+}

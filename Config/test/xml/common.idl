@@ -1,0 +1,38 @@
+[string]
+class CostItem{ //消耗物品的配置格式
+    int type = 0;
+    int id = 0;
+    int count = 0;
+}
+
+[string]
+class Reward{ //奖励
+    int type = 0;
+    int id = 0;
+    int count = 0;
+}
+
+[string]
+class ObjectLayout{ //场景对象布局结构
+    int id = 0;
+    int x = 0;
+    int y = 0;
+    int angle = 0;
+}
+
+class bodyPart{
+    int type;
+    int src;
+}
+
+[string]
+class Pos{
+    int x;
+    int y;
+}
+
+[string]
+class Size{
+    int w;
+    int h;
+}

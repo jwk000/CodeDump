@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using System.IO;
 using System.Xml.Linq;
 using System.Diagnostics;
@@ -15,52 +14,77 @@ namespace CodeDump
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("usage1: CodeDump --xmldir=test/xml/ --tpldir=template/ --tardir=test/dumpcode/");
+            Console.WriteLine("usage2: CodeDump --idl=xxx.idl --lang=cpp;cs");
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
-            string setting_path = "settings/"+ Path.GetFileNameWithoutExtension(Process.GetCurrentProcess().MainModule.FileName)+".json";
-            string jsontext = File.ReadAllText(setting_path);
-
-            //解析json
-            ExeJsonConfig exejson = JsonConvert.DeserializeObject<ExeJsonConfig>(jsontext);
+            string xmldir = "./xml/";
+            string tpldir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "template/");
+            string tardir = "./dumpcode/";
+            string idlfile = "";
+            string[] lang = null;
+            for (int i = 0; i < args.Length; i++)
+            {
+                var ss = args[i].Split('=');
+                if (ss[0] == "--xmldir") xmldir = ss[1];
+                if (ss[0] == "--tpldir") tpldir = ss[1];
+                if (ss[0] == "--tardir") tardir = ss[1];
+                if (ss[0] == "--idl") idlfile = ss[1];
+                if (ss[0] == "--lang") lang = ss[1].Split(';');
+            }
 
             CodeGenHelper code_gen = new CodeGenHelper();
             code_gen.Init();
 
-            //遍历common目录
-            foreach(var idl in Directory.EnumerateFiles(exejson.common.idl_dir))
+            //生成一个文件的某种语言代码
+            if (Path.GetExtension(idlfile)==".idl")
             {
-                //遍历目录下的idl文件
-                if (Path.GetExtension(idl)==".idl")
+                tardir = Path.Combine(Path.GetDirectoryName(idlfile), "codedump");
+                foreach (string tpl in Directory.EnumerateFiles(tpldir))
                 {
-                    code_gen.GenerateCode(idl, exejson.template.cpp_common_h, exejson.common.cpp_dir, false);
-                    code_gen.GenerateCode(idl, exejson.template.cpp_cpp, exejson.common.cpp_dir, false);
-                    code_gen.GenerateCode(idl, exejson.template.cs, exejson.common.cs_dir, false);
-                }
-            }
-
-            //遍历xml目录
-            foreach(var cfg in exejson.xml)
-            {
-                //遍历目录下的idl文件
-                foreach(string idl in Directory.EnumerateFiles(cfg.xml_dir))
-                {
-                    if(Path.GetExtension(idl)==".idl")
+                    if (lang.Contains(Path.GetExtension(tpl)))
                     {
-                        code_gen.GenerateCode(idl, exejson.template.cpp_h, exejson.common.cpp_dir, true);
-                        code_gen.GenerateCode(idl, exejson.template.cpp_cpp, exejson.common.cpp_dir, true);
-                        code_gen.GenerateCode(idl, exejson.template.cs, exejson.common.cs_dir, true);
-
+                        code_gen.GenerateCode(idlfile, tpl, tardir);
                     }
                 }
+                Console.ReadKey();
+                return;
             }
 
-            //为c++生成index文件
-            code_gen.GenerateCppIndexCode(exejson.template.cpp_xml_head, exejson.common.cpp_dir);
-            code_gen.GenerateCppIndexCode(exejson.template.cpp_xml_index, exejson.common.cpp_dir);
+            //先特殊处理一下公共引用
+            string commonidl = Path.Combine(xmldir, "common.idl");
+            if (File.Exists(commonidl))
+            {
+                code_gen.ParseIDL(commonidl);
+            }
 
+            Action<string> DoGenerater = (string _xmldir) =>
+            {
+                //遍历目录下的idl文件
+                foreach (string idl in Directory.EnumerateFiles(_xmldir))
+                {
+                    if (Path.GetExtension(idl) == ".idl")
+                    {
+                        //遍历template文件
+                        foreach (string tpl in Directory.EnumerateFiles(tpldir))
+                        {
+                            code_gen.GenerateCode(idl, tpl, tardir);
+                        }
+                    }
+                }
+            };
+
+            DoGenerater(xmldir);
+            //遍历子目录
+            foreach (string dir in Directory.EnumerateDirectories(xmldir))
+            {
+                DoGenerater(dir);
+            }
+
+            code_gen.SaveCodeGenTime();
             sw.Stop();
-            Console.WriteLine("生成代码完成！用时{0}秒！", sw.ElapsedMilliseconds/1000.0f);
+            Console.WriteLine("生成代码完成！用时{0}秒！", sw.ElapsedMilliseconds / 1000.0f);
         }
     }
 }

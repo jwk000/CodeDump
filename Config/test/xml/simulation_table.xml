@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Simulation>
+  <!--
+		Const 常量表。
+		out_heart_time：家具产出的心跳时间（s）；storage_max_count：家具资源量存储上限；recover_health_time：恢复全部疲劳所需时间（s）；
+		health_out_rate：健康状态产出修正（百位）；normal_out_rate：正常状态产出修正（百位）；tired_out_rate：疲劳状态产出修正（百位）；
+		recover_heart_time：恢复心跳时间（s）；min_work_time：生产时间最小值（s）；max_work_time：生产时间最大值（s）；health_phase_rate：健康阶段开始比率；normal_phase_rate：正常阶段开始比率；tired_phase_rate：疲劳阶段开始比率；
+		health_phase_img：健康状态人物标识；normal_phase_img：正常状态人物标识；tired_phase_img：疲劳状态人物标识；recover_time_reduce_map：舒适度区间对应疲劳恢复时间缩减；
+	-->
+  <Const out_heart_time="30" storage_max_count="999999999" recover_health_time="14400" health_out_rate="120" normal_out_rate="70" tired_out_rate="30" recover_heart_time="240" min_work_time="60" max_work_time="7200" health_phase_rate="30" normal_phase_rate="60" tired_phase_rate="100" health_phase_img="common_diyiming_icon" normal_phase_img="common_dierming_icon" tired_phase_img="common_disanmingi_icon" recover_time_reduce_map="1,1.0;5,0.8;10,0.6;20,0.4" />
+
+  <!--
+		Action 一种经营行为。id：经营行为id；name：经营行为名称；out：产出资源（类型,产出资源id,基础产出值）；anim_id：人物交互行为；out_action_rate：人物经营值修正系数；
+		furniture_id：家具模板id；is_double：是否为双人行动；
+		level：行为等级；player_level：升级时玩家等级限制；cost：升级消耗（Type,ID,Count;Type,ID,Count）；pos_count：待机位置数量；out_interval：资源产出间隔（s）；out_level_rate：家具等级产出系数；
+	-->
+  <ActionList>
+
+    <!--正式数据-->
+    <!--1养性 4个（经验 气灵） -->
+    <Action id="2" name="养性" outreward="0,21090301,100" anim_id="play" out_action_rate="0.01">
+      <FurnitureList>
+        <!--书桌 书房-->
+        <Furniture furniture_id="22404001" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.11" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.12" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="0.13" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="0.14" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="0.16" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="0.17" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="0.18" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="0.19" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="0.20" />
+          </LevelList>
+        </Furniture>
+        <!--画架 书房-->
+        <Furniture furniture_id="22404002" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.11" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.12" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="0.13" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="0.14" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="0.16" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="0.17" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="0.18" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="0.19" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="0.20" />
+          </LevelList>
+        </Furniture>
+        <!--池塘 后院-->
+        <Furniture furniture_id="22404003" is_double="true">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.11" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.12" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="0.13" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="0.14" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="0.16" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="0.17" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="0.18" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="0.19" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="0.20" />
+          </LevelList>
+        </Furniture>
+        <!--蒲团 后院-->
+        <Furniture furniture_id="22404004" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.11" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.12" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="0.13" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="0.14" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="0.16" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="0.17" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="0.18" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="0.19" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="0.20" />
+          </LevelList>
+        </Furniture>
+
+      </FurnitureList>
+    </Action>
+
+    <!--2烹饪 2个（金币 金币） -->
+    <Action id="1" name="烹饪" outreward="3,0,4" anim_id="play" out_action_rate="0.01">
+      <FurnitureList>
+        <!--树墩案板 厨房-->
+        <Furniture furniture_id="22404005" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.33" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.67" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="1.00" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="1.33" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="1.67" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="2.00" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="2.33" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="2.67" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="3.00" />
+          </LevelList>
+        </Furniture>
+        <!--灶台 厨房-->
+        <Furniture furniture_id="22404006" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.33" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.67" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="1.00" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="1.33" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="1.67" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="2.00" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="2.33" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="2.67" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="3.00" />
+          </LevelList>
+        </Furniture>
+
+      </FurnitureList>
+    </Action>
+    <!--3开物 2个（场景材料 玄晶） -->
+    <Action id="4" name="开物" outreward="0,21090303,8" anim_id="play" out_action_rate="0.01">
+      <FurnitureList>
+        <!--打铁台 建造室-->
+        <Furniture furniture_id="22404007" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.22" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.44" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="0.67" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="0.89" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="1.11" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="1.33" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="1.56" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="1.78" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="2.00" />
+          </LevelList>
+        </Furniture>
+        <!--机关台 建造室-->
+        <Furniture furniture_id="22404008" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.22" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.44" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="0.67" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="0.89" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="1.11" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="1.33" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="1.56" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="1.78" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="2.00" />
+          </LevelList>
+        </Furniture>
+
+      </FurnitureList>
+    </Action>
+    <!--4修身 6个（好感度 体灵） -->
+    <Action id="3" name="修身" outreward="0,21090302,7" anim_id="play" out_action_rate="0.01">
+      <FurnitureList>
+        <!--大舞台 客厅-->
+        <Furniture furniture_id="22404009" is_double="true">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.22" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.44" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="0.67" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="0.89" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="1.11" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="1.33" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="1.56" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="1.78" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="2.00" />
+          </LevelList>
+        </Furniture>
+        <!--小舞台 客厅-->
+        <Furniture furniture_id="22404010" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.22" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.44" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="0.67" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="0.89" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="1.11" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="1.33" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="1.56" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="1.78" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="2.00" />
+          </LevelList>
+        </Furniture>
+        <!--箭场 前院-->
+        <Furniture furniture_id="22404011" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.22" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.44" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="0.67" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="0.89" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="1.11" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="1.33" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="1.56" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="1.78" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="2.00" />
+          </LevelList>
+        </Furniture>
+        <!--练武台 前院-->
+        <Furniture furniture_id="22404012" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.22" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.44" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="0.67" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="0.89" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="1.11" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="1.33" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="1.56" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="1.78" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="2.00" />
+          </LevelList>
+        </Furniture>
+        <!--修炼台一 修炼室-->
+        <Furniture furniture_id="22404013" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.22" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.44" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="0.67" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="0.89" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="1.11" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="1.33" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="1.56" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="1.78" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="2.00" />
+          </LevelList>
+        </Furniture>
+        <!--修炼台二 修炼室-->
+        <Furniture furniture_id="22404014" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,21050101,0;0,21050102,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,21050101,30;0,21050102,30" pos_count="2" out_interval="60" out_level_rate="0.22" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,21050101,60;0,21050102,60" pos_count="2" out_interval="60" out_level_rate="0.44" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,21050101,90;0,21050102,90" pos_count="3" out_interval="60" out_level_rate="0.67" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,21050201,120;0,21050202,120" pos_count="3" out_interval="60" out_level_rate="0.89" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,21050201,150;0,21050202,150" pos_count="4" out_interval="60" out_level_rate="1.11" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,21050201,180;0,21050202,180" pos_count="4" out_interval="60" out_level_rate="1.33" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,21050301,210;0,21050302,210" pos_count="5" out_interval="60" out_level_rate="1.56" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,21050301,240;0,21050302,240" pos_count="5" out_interval="60" out_level_rate="1.78" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,21050301,270;0,21050302,270" pos_count="6" out_interval="60" out_level_rate="2.00" />
+          </LevelList>
+        </Furniture>
+
+      </FurnitureList>
+    </Action>
+
+    <!--测试数据-->
+    <Action id="5" name="行为1" outreward="3,0,200" anim_id="play" out_action_rate="0.001">
+      <FurnitureList>
+
+        <Furniture furniture_id="940400001" is_double="true">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,920700001,0;0,920700002,0" pos_count="1" out_interval="30" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,920700001,0;0,920700002,0" pos_count="1" out_interval="30" out_level_rate="0.33" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,920700001,0;0,920700002,0" pos_count="1" out_interval="30" out_level_rate="0.67" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,920700001,0;0,920700002,0" pos_count="2" out_interval="30" out_level_rate="1" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,920700001,0;0,920700002,0" pos_count="2" out_interval="30" out_level_rate="1.33" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,920700001,0;0,920700002,0" pos_count="2" out_interval="30" out_level_rate="1.67" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,920700001,0;0,920700002,0" pos_count="3" out_interval="30" out_level_rate="2" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,920700001,0;0,920700002,0" pos_count="3" out_interval="30" out_level_rate="2.33" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,920700001,0;0,920700002,0" pos_count="4" out_interval="30" out_level_rate="2.67" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,920700001,0;0,920700002,0" pos_count="6" out_interval="30" out_level_rate="3" />
+          </LevelList>
+        </Furniture>
+
+        <Furniture furniture_id="940400002" is_double="false">
+          <LevelList>
+
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,920700001,0;0,920700002,0" pos_count="1" out_interval="30" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,0;0,920700001,0;0,920700002,0" pos_count="2" out_interval="30" out_level_rate="0.33" />
+            <Upgrade level="3" player_level="1" cost="3,0,0;0,920700001,0;0,920700002,0" pos_count="3" out_interval="30" out_level_rate="0.67" />
+          </LevelList>
+        </Furniture>
+      </FurnitureList>
+    </Action>
+
+    <Action id="6" name="行为2" outreward="0,10007,100" anim_id="play" out_action_rate="0.005">
+      <FurnitureList>
+        <Furniture furniture_id="940400003" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,920700001,0;0,920700002,0" pos_count="1" out_interval="60" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,9000;0,920700001,0;0,920700002,0" pos_count="2" out_interval="60" out_level_rate="0.22" />
+            <Upgrade level="3" player_level="1" cost="3,0,15000;0,920700001,0;0,920700002,0" pos_count="2" out_interval="60" out_level_rate="0.67" />
+            <Upgrade level="4" player_level="1" cost="3,0,21000;0,920700001,0;0,920700002,0" pos_count="3" out_interval="60" out_level_rate="1" />
+            <Upgrade level="5" player_level="1" cost="3,0,27000;0,920700001,0;0,920700002,0" pos_count="3" out_interval="60" out_level_rate="1.33" />
+            <Upgrade level="6" player_level="1" cost="3,0,33000;0,920700001,0;0,920700002,0" pos_count="4" out_interval="60" out_level_rate="1.67" />
+            <Upgrade level="7" player_level="1" cost="3,0,39000;0,920700001,0;0,920700002,0" pos_count="4" out_interval="60" out_level_rate="2" />
+            <Upgrade level="8" player_level="1" cost="3,0,45000;0,920700001,0;0,920700002,0" pos_count="5" out_interval="60" out_level_rate="2.33" />
+            <Upgrade level="9" player_level="1" cost="3,0,51000;0,920700001,0;0,920700002,0" pos_count="5" out_interval="60" out_level_rate="2.67" />
+            <Upgrade level="10" player_level="1" cost="3,0,57000;0,920700001,0;0,920700002,0" pos_count="6" out_interval="60" out_level_rate="3" />
+          </LevelList>
+        </Furniture>
+      </FurnitureList>
+    </Action>
+
+    <Action id="7" name="行为3" outreward="0,920000029,10000" anim_id="play" out_action_rate="0.001">
+      <FurnitureList>
+        <Furniture furniture_id="940400004" is_double="false">
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,920700001,0;0,920700002,0" pos_count="1" out_interval="30" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,0;0,920700001,0;0,920700002,0" pos_count="2" out_interval="30" out_level_rate="0.33" />
+            <Upgrade level="3" player_level="1" cost="3,0,0;0,920700001,0;0,920700002,0" pos_count="3" out_interval="30" out_level_rate="0.67" />
+          </LevelList>
+        </Furniture>
+      </FurnitureList>
+    </Action>
+
+    <Action id="8" name="行为4" outreward="0,10007,100" anim_id="play" out_action_rate="0.001">
+      <FurnitureList>
+
+        <Furniture furniture_id="940400005" is_double="false">
+
+          <LevelList>
+            <Upgrade level="1" player_level="1" cost="3,0,0;0,920700001,0;0,920700002,0" pos_count="1" out_interval="30" out_level_rate="0" />
+            <Upgrade level="2" player_level="1" cost="3,0,0;0,920700001,0;0,920700002,0" pos_count="2" out_interval="30" out_level_rate="0.33" />
+            <Upgrade level="3" player_level="1" cost="3,0,0;0,920700001,0;0,920700002,0" pos_count="3" out_interval="30" out_level_rate="0.67" />
+          </LevelList>
+        </Furniture>
+
+      </FurnitureList>
+    </Action>
+  </ActionList>
+
+</Simulation>

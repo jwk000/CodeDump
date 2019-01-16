@@ -1,0 +1,26 @@
+[tag(stamina_buy)]
+class StaminaBuyCost{
+    int buy_num;
+    int need_diamond;
+}
+
+[tag(level)]
+class RoleLevel{
+    int value;
+    int exp;
+    int stamina;
+}
+
+[root]
+class RoleValue{
+    int change_nick_cost = 0; //改名消耗钻石
+    int level_max = 0; //等级最大
+    int daily_battle_limit = 0; //每日副本挑战次数限制
+    string daily_battle_reset_time; //每日副本挑战次数重置时间
+    int levelup_stamina = 0; //升级获得体力
+    int stamina_recover_interval = 0; //体力恢复间隔时间（秒），每次恢复1点
+    int daily_buy_stamina_limit = 0; //每日购买体力次数限制
+    string stamina_buy_reset_time; //每日购买次数重置时间
+    List<StaminaBuyCost> stamina_buy_list; //购买体力需要钻石
+    List<RoleLevel> level_list; //升级需要经验 体力上限
+}

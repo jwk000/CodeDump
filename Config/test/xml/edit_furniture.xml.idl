@@ -1,0 +1,25 @@
+class Shape{
+    int id;
+    int shape_type;
+}
+
+class SecondTab{
+    [key]
+    int id;
+    string name;
+    string icon;
+    Shape shape;
+}
+
+class FirstTab{
+    [key]
+    int id;
+    string name;
+    string icon;
+    Dict<int,SecondTab> second_tabs;
+}
+
+[root]
+class EditFurnitureConfig{
+    Dict<int,FirstTab> first_tabs;
+}

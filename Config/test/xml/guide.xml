@@ -1,0 +1,2296 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- 同一种引导的GroupId， StepId在改变前后保持按引导步骤的升序排列，即添加，删除某些步骤后，同一种引导的GroupId和StepId依然保持引导步骤的升序排列关系；新插入的配置不准使用配置中已使用过的GroupId, StepId(StepId指同一个Group的情况)；不准改变配置中已经存在的GroupId，StepId，因为改变后的会被认为是新的步骤 -->
+<Groups>
+	<!-- 阳台 -->
+	<Group groupid ="50000" guidetype = "0">
+		<Step id ="10000" type="0"  backto="10000" loginOpenUI="4" >
+		</Step>
+		<Step id ="20000" type="8"  backto="10000" padView="UIWorldMap">   
+			<lockui locktime="0" />
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="22000" type="8"  backto="10000">   
+			<lockui locktime="2.0" />
+			<enter_actions>
+				<action type="26" param1="shanxian01" npc="1" mode="8"/>
+				<action type="26" param1="yangtai_jinru_shanxian01" npc="2" mode="8"/>
+			</enter_actions>
+			<finish_conditions>
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id="23000" type="8" backto="10000">
+			<lockui locktime="0.1" />
+			<enter_actions>
+				<action type="26" param1="shanxian01_stand" npc="1" mode="2"/>
+				<action type="26" param1="yangtai_jinru_dengchang_stand" npc="2" mode="2"/>
+			</enter_actions>
+			<finish_conditions>
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id="30000" type="17" backto="10000" pos="207,135" rot="-20.5,31.85,-9.9">
+			<pop_tip_list>
+				<tip>我这是在哪儿？</tip>
+			</pop_tip_list>
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="40000" type="17" backto="10000" pos="-515,134" rot="-30.1,-29.7,8.54" flip="1">
+			<pop_tip_list>
+				<tip action="1">主人，这里是[c][f35103]炫舞世界[-][/c]，我已经等你很久啦！</tip>
+			</pop_tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot1"/>
+			</comm_actions>
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="45000" type="8"  backto="10000">   
+			<lockui locktime="1.167" />
+			<enter_actions>
+				<action type="26" param1="jiaohu01" npc="1" mode="8"/>
+				<action type="26" param1="yangtai_jinru_jiaohu01" npc="2" mode="8"/>
+			</enter_actions>
+			<finish_conditions>
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id="50000" type="17" backto="10000" pos="207,135" rot="-20.5,31.85,-9.9">
+			<pop_tip_list>
+				<tip>好大一只兔子呀，手感真好！</tip>
+			</pop_tip_list>
+			<enter_actions>
+				<action type="26" param1="jiaohu02" npc="1" mode="2"/>
+				<action type="26" param1="yangtai_jinru_jiaohu02" npc="2" mode="2"/>
+			</enter_actions>
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="60000" type="8"  backto="10000">   
+			<lockui locktime="0.833" />
+			<enter_actions>
+				<action type="26" param1="jiaohu03" npc="1" mode="8"/>
+				<action type="26" param1="yangtai_jinru_jiaohu03" npc="2" mode="8"/>
+			</enter_actions>
+			<finish_conditions>
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id="70000" type="17" backto="10000" pos="-515,134" rot="-30.1,-29.7,8.54" flip="1">
+			<pop_tip_list>
+				<tip action="">内心活动：（你才是兔子，你全家都是兔子……）</tip>
+				<tip action="1">( •̀ ω •́ )y我是你最可爱的机器人小管家~</tip>
+				<tip action="2">我的型号是X5M Type6 No.6。</tip>
+				<tip action="3">主人叫我66就好了！</tip>
+				<tip action="4">现在让我带你了解一下炫舞世界吧！</tip>
+			</pop_tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot2-1"/>
+				<action type="25" param1="ui_robot2-2"/>
+				<action type="25" param1="ui_robot3"/>
+				<action type="25" param1="ui_robot4"/>
+			</comm_actions>
+			<enter_actions>
+				<action type="26" param1="shanxian01_stand" npc="1" mode="2"/>
+				<action type="26" param1="yangtai_jinru_jiaohu_stand" npc="2" mode="2"/>
+			</enter_actions>
+			<exit_actions>
+				<action type="29" param1="0"/>
+			</exit_actions>
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="90000" type="1" backto="0">
+			<maskinfo winShowType="10" maskPos="750,150" masksize="380,300" anchorType="Center" rotz="0" isMaskTransparent = "true" windowpos="300,350"/>		
+			<tip_list>
+				<tip action="1,2">点击这里。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot5"/>
+			</comm_actions>
+			<enter_actions>
+				<action type="26" param1="yangtai_jinru_shanxian02_zhuanshen01" npc="2"/>
+				<action type="26" param1="yangtai_jinru_shanxian02_stand" npc="2" delay="2.333"/>
+			</enter_actions>
+			<exit_actions>
+				<action type="23" param1="true"/>
+			</exit_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="90001" type="8"  backto="0">   
+			<lockui locktime="0.833" />
+			<enter_actions>
+				<action type="26" param1="yangtai_jinru_shanxian02_zhuanshen02" npc="2"/>
+			</enter_actions>
+			<finish_conditions>
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="90002" type="8"  backto="0">   
+			<lockui locktime="0.1" />
+			<enter_actions>
+				<action type="26" param1="yangtai_jinru_zou" npc="2"/>
+			</enter_actions>
+			<finish_conditions>
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+	<!-- 主线第一关 -->
+	<Group groupid ="100000" guidetype = "0">
+		<Step id ="10000" type="9"  backto="15000" padView="UIWorldMap">   
+			<lockui locktime="0.5" />
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="11000" type="9"  backto="15000" padView="UIWorldMap">   
+			<lockui locktime="2.5" />
+			<map_parade_anim begin_pos="0.2" end_pos="0.5" duration="2.5" />
+			<enter_actions>
+				<action type="11" />
+			</enter_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="15000" type="9"  backto="15000" padView="UIWorldMap" lockOnInitial="true">   
+			<lockui locktime="1" />
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id="15001" type="1" backto="30000" padView="UIWorldMap">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-38,123" isMaskTransparent = "true"/>
+			<tip_list>
+				<tip action="1,2">这里可以看见炫舞世界全景，在炫舞世界可以做各种各样的事情哦~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot6"/>
+			</comm_actions>						
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="30000" type="1" backto="30000" padView="UIWorldMap">   			
+			<maskinfo winShowType="3" maskPos="-609,200" autoCollider="true" anchorType="Center" windowAnchorType="Center" windowpos="115,276"/>
+			<tip_list>
+				<tip action="1,3">[c][f35103]事务所[-][/c]是你日常训练和提升的地方。</tip>
+				<tip action="2,4">(///▽///)里面有我最喜欢的小姐姐。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="dengchang_stand" npc="3"/>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot7-1"/>
+				<action type="25" param1="ui_robot7-2"/>
+			</comm_actions>	 
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="40000" type="1" backto="30000"  padView="UIOffice" lockOnInitial="true">   
+			<maskinfo winShowType="3" maskPos="-940,-260" autoCollider="true" anchorType="Right" targetWaitSeconds="1.2"/>
+			<tip_list>
+				<tip action="1,2">这里有多个模式可以选择，我们先去看看[c][f35103]星动模式[-][/c]吧。</tip>				
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="dengchang_stand" npc="3"/>
+				<action type="25" param1="ui_robot8"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="50000" type="1" backto="30000" padView="UIChapterSelect" lockOnInitial="true">   
+			<maskinfo winShowType="2" maskPos="-8,-70" autoCollider="true" anchorType="Center" rotz="0"/>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="55000" type="9" backto="30000">
+			<finish_conditions>
+				<condition type="46"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="60000" type="1" backto="30000" padView="UIChapterSelect">   
+			<maskinfo winShowType="3" maskPos="98,282" autoCollider="true" anchorType="Center" windowAnchorType="Center" windowpos="110,-36" targetWaitSeconds="0.5"/>
+			<tip_list>
+				<tip action="1,2">先学习一下星动模式的操作方法吧！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="dengchang_stand" npc="3"/>
+				<action type="25" param1="ui_robot9"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<!-- 这步骤是局内对局结束后到结算界面-->
+		<Step id ="61000" type="0"  backto="30000" padView="UILoading">  <!-- 什么都不做 -->
+		</Step>
+		<Step id ="65000" type="0"  backto="30000" chapterid="101" stageid="10101" winNext="80000" loseNext="70000">
+			<trigger_conditions>
+				<condition type="36"/>
+			</trigger_conditions>
+		</Step>
+		<Step id ="70000" type="1" backto="30000" rollback="61000">   
+			<maskinfo winShowType="3" maskPos="-553,-466" autoCollider="true" anchorType="Right" windowAnchorType="Center" windowpos="272,-190"/>
+			<tip_list>
+				<tip>挑战失败了阿……不过不要紧，再来一次试试吧！</tip>
+			</tip_list>
+			<trigger_conditions>
+				<condition type="31"/>
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="80000" type="9" backto="0">
+			<trigger_conditions>
+				<condition type="37"/>
+			</trigger_conditions>
+			<finish_conditions>
+				<condition type="51" param1="UIMessageBox"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="81000" type="0" backto="0" isLocalStep="true">
+			<finish_conditions>
+				<condition type="52" param1="UIMessageBox"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="82000" type="9" backto="0" isLocalStep="true">
+			<finish_conditions>
+				<condition type="51" param1="UICommonLevelUpPop"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="83000" type="0" backto="0" isLocalStep="true">
+			<finish_conditions>
+				<condition type="52" param1="UICommonLevelUpPop"/>
+			</finish_conditions>
+		</Step>
+		<Step id="84000" type="1" backto="0" padView="UIMainMissionResult">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-24,148"/>
+			<tip_list>
+				<tip action="1,2">哇，你跳的好棒呀！第一次来就获得[c][f35103]S评价[-][/c]我还是第一次见呢~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot10"/>
+			</comm_actions>				
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="85000" type="1" backto="0" padView="UIMainMissionResult">   
+			<maskinfo winShowType="3" maskPos="-60,-30" autoCollider="true" anchorType="TopRight" rotz="-90" windowAnchorType="Center" windowpos="226,257" targetWaitSeconds="0.5"/>
+			<tip_list>
+				<tip action="1,2">收集S评价可以获得奖品，我带你去领奖吧！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot11"/>
+			</comm_actions>	
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="90000" type="9" backto="0">
+			<trigger_conditions>
+				<condition type="51" param1="UIChapterSelect"/>
+			</trigger_conditions>
+		</Step>
+	</Group>
+	<!-- 主线第一关 领取S评价奖励 -->
+	<Group groupid ="150000" guidetype = "0">
+		<Step id ="10000" type="0"  backto="10000" loginOpenUI="5" >
+		</Step>
+		<Step id ="20001" type="1" backto="10000" padView="UIChapterSelect" lockOnInitial="true"> 
+			<maskinfo winShowType="3" maskPos="-150,-420" masksize="410,370" maskOffset="-10,20" autoCollider="false" anchorType="Right" rotz="-90" windowAnchorType="Center" windowpos="300,-180"/>
+			<tip_list>
+				<tip action="1,2">( •̀ ω •́ )y快点击这个晃动的礼盒！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot12"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="30000" type="1" backto="0" padView="UIChapterReward" lockOnInitial="true"> 
+			<maskinfo winShowType="2" maskPos="-370,0" autoCollider="true" anchorType="Center" rotz="-90"/>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+				<condition type="62"/>
+				<condition type="51" param1="UIMessageBox"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="40000" type="0" backto="0">
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="52" param1="UIMessageBox"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="50000" type="1" backto="0" padView="UIChapterReward">
+			<maskinfo winShowType="3" maskPos="595,320" autoCollider="true" anchorType="Center" rotz="-90" windowAnchorType="Center" windowpos="-24,148"/>
+			<tip_list>
+				<tip action="1,2">wow~新衣服get！我们去试穿一下！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot13"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="60000" type="1" backto="0" padView="UIChapterSelect">
+			<maskinfo winShowType="3" maskPos="-60,-30" autoCollider="true" anchorType="TopRight" rotz="-90" windowAnchorType="Center" windowpos="226,257"/>
+			<tip_list>
+				<tip action="1,2">66带你飞回炫舞世界地图！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot121"/>
+			</comm_actions>
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+	<!-- 背包引导 -->
+	<Group groupid ="200000" guidetype = "0">
+		<Step id ="10000" type="9" backto="10000" padView="UIWorldMap" lockOnInitial="true">
+			<lockui locktime="1"/>
+			<finish_conditions>
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="10002" type="1" backto="10000" padView="UIWorldMap">
+			<maskinfo winShowType="3" maskPos="-360,100" autoCollider="true" anchorType="BottomRight" rotz="180" windowAnchorType="Center" windowpos="193,-180" targetWaitSeconds="1"/>
+			<tip_list>
+				<tip action="1,2">获得的服饰都可以在[c][f35103]背包[-][/c]中查看！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="dengchang_stand" npc="3"/>
+				<action type="25" param1="ui_robot14"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="20000" type="1" backto="0" padView="UIBackpack" lockOnInitial="true">   			
+			<maskinfo winShowType="3" maskPos="60,150" autoCollider="true" anchorType="Left" rotz="0" windowAnchorType="Center" windowpos="-383,90"/>
+			<tip_list>
+				<tip action="1,2">近期获得的物品都会在[c][f35103]最近[-][/c]页签下显示~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="dengchang_stand" npc="3"/>
+				<action type="25" param1="ui_robot15"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="30000" type="1" backto="0" padView="UIBackpack">
+			<maskinfo winShowType="3" maskPos="285,100" autoCollider="true" anchorType="Left" rotz="0" windowAnchorType="Center" windowpos="-144,45"/>
+			<tip_list>
+				<tip action="1,2">点击物品格子就可以[c][f35103]试穿[-][/c]啦~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="dengchang_stand" npc="3"/>
+				<action type="25" param1="ui_robot16"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+				<condition type="74"/> <!-- 等待换装完成 -->	
+			</finish_conditions>
+		</Step>
+		<Step id ="40000" type="1" backto="0" padView="UIBackpack">   			
+			<maskinfo winShowType="1" maskPos="50,100" masksize="380,300" isMaskTransparent = "true" anchorType="Center" rotz="0" windowAnchorType="Center" windowpos="-144,-150"/>
+			<tip_list>
+				<tip action="1,2">这件衣服好适合你呀！</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot17"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="50000" type="1" backto="0" padView="UIBackpack">   			
+			<maskinfo winShowType="3" maskPos="-60,-30" autoCollider="true" anchorType="TopRight" rotz="-90" windowAnchorType="Center" windowpos="283,252"/>
+			<tip_list>
+				<tip action="1,2">点击返回会[c][f35103]自动保存[-][/c]当前的装扮。</tip>				
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot18"/>
+			</comm_actions> 
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+	<!-- 休闲局引导 -->
+	<Group groupid ="400000" guidetype = "0">
+		<Step id ="1" type="3" backto="1" padView="UIWorldMap" lockOnInitial="true">
+			<unlock unlockID= "13000"/>
+			<finish_conditions>
+				<condition type="63"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="2" type="9"  backto="10000" padView="UIWorldMap">
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="54"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="10000" type="9"  backto="10000" padView="UIWorldMap" lockOnInitial="true">
+			<lockui locktime="0.5" />
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="11000" type="1" backto="10000" padView="UIWorldMap">   			
+			<maskinfo winShowType="3" maskPos="255,140" autoCollider="true" anchorType="Center" rotz="0" windowAnchorType="Center" windowpos="115,-210"/>
+			<tip_list>
+				<tip action="1,2">[c][f35103]对战中心[-][/c]解锁了，我们去逛逛吧。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="dengchang_stand" npc="3"/>
+				<action type="25" param1="ui_robot122"/>
+			</comm_actions>	 
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="20000" type="1" backto="10000" padView="UIMainArenaEntryNew" lockOnInitial="true">
+			<maskinfo winShowType="3" maskPos="-575,180" autoCollider="true" anchorType="Center" rotz="0" windowAnchorType="Center" windowpos="115,0"/>
+			<tip_list>
+				<tip action="1,2">[c][f35103]休闲局[-][/c]是个切磋技术的好地方！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="dengchang_stand" npc="3"/>
+				<action type="25" param1="ui_robot28"/>
+			</comm_actions>	 
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="30000" type="1" backto="10000" padView="UIHappyGame" lockOnInitial="true">
+			<maskinfo winShowType="3" maskPos="-570,-343" autoCollider="true" anchorType="Right" rotz="0" windowAnchorType="Center" windowpos="302,-115"/>
+			<tip_list>
+				<tip action="1,2">( •̀ ω •́ )/点击这里寻找对手！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="dengchang_stand" npc="3"/>
+				<action type="25" param1="ui_robot29"/>
+			</comm_actions>	 
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="40000" type="9"  backto="10000" padView="UIArenaBanSong" lockOnInitial="true">
+			<finish_conditions>
+				<condition type="71"/> <!-- 等待bang歌通知 -->
+			</finish_conditions>
+		</Step>
+		<Step id ="50000" type="1" backto="10000" padView="UIArenaBanSong">
+			<maskinfo winShowType="12" windowAnchorType="Center" windowpos="257,-435" maskPos="-1215,-146" masksize="0,0" rotz="-90" anchorType="Right" raycastByInput="true"/>
+			<tip_list>
+				<tip action="1,2">点击你[c][f35103]不喜欢[-][/c]的一首歌，去掉它。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot30"/>
+			</comm_actions>
+			<enter_actions>
+				<action type="32" param1="0"/>
+			</enter_actions>
+			<guide_effects>
+				<effect anchor="Center" pos="380,7" depth="0" path="eff_ui_xsyd_xiaoguo03.prefab"/>
+			</guide_effects>
+			<other_light_block_list>
+				<item AnchorType="Center" LightPos="860,320" ColliderSize="0,0" isNeedCollider="true"/>
+			</other_light_block_list>
+			<finish_conditions>
+				<condition type="72"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="51000" type="1" backto="10000" padView="UIArenaBanSong">
+			<maskinfo winShowType="3" maskPos="380,-380" autoCollider="true" anchorType="Center" windowAnchorType="Center" windowpos="318,-181"/>
+			<tip_list>
+				<tip action="1,2">选好以后，点击[c][f35103]提交[-][/c]。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="dengchang_stand" npc="3"/>
+				<action type="25" param1="ui_robot31"/>
+			</comm_actions>
+			<finish_conditions>
+				<condition type="73"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="60000" type="9" backto="10000">
+			<finish_conditions>
+				<condition type="51" param1="UILoading"/>
+			</finish_conditions>
+		</Step>
+		<!-- 这步骤是局内对局结束后到结算界面-->
+		<Step id ="61000" type="0" backto="10000" padView="UILoading">
+		</Step>
+		<!-- 等待结算 -->
+		<Step id ="70000" type="0" backto="10000">
+			<trigger_conditions>
+				<condition type="36"/>
+			</trigger_conditions>
+		</Step>
+		<Step id ="90000" type="9" backto="0">
+			<finish_conditions>
+				<condition type="51" param1="UICommonLevelUpPop"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="95000" type="0" backto="0" isLocalStep="true">
+			<finish_conditions>
+				<condition type="52" param1="UICommonLevelUpPop"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="100000" type="1" backto="0" padView="UIGameResultQuickMatch">   
+			<maskinfo winShowType="3" maskPos="-540,230" autoCollider="true" anchorType="Right" rotz="-90" windowAnchorType="Center" windowpos="-287,-12" targetWaitSeconds="2">
+				<maskInfoList maskPos="-540,230" autoCollider="true" anchorType="Right" rotz="-90" targetWaitSeconds="2"/>
+				<maskInfoList maskPos="-500,90" autoCollider="true" anchorType="Right" rotz="-90" targetWaitSeconds="2"/>
+				<maskInfoList maskPos="-430,-50" autoCollider="true" anchorType="Right" rotz="-90" targetWaitSeconds="2"/>
+				<maskInfoList maskPos="-380,-190" autoCollider="true" anchorType="Right" rotz="-90" targetWaitSeconds="2"/>
+			</maskinfo>
+			<tip_list>
+				<tip action="1,2">给欣赏的对手[c][f35103]点个赞[-][/c]是最基本的礼貌哦。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot32"/>
+			</comm_actions>
+			<pre_enter_actions>
+				<action type="31"/>
+			</pre_enter_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="110000" type="1" backto="0" padView="UIGameResultQuickMatch">   
+			<maskinfo winShowType="2" maskPos="-60,-30" autoCollider="true" anchorType="TopRight" rotz="-90"/>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="111000" type="9" backto="0">
+			<trigger_conditions>
+				<condition type="51" param1="UIHappyGame"/>
+			</trigger_conditions>
+		</Step>
+		<Step id ="120000" type="1" backto="0" padView="UIHappyGame" lockOnInitial="true">   
+			<maskinfo winShowType="3" maskPos="-80,-50" autoCollider="true" anchorType="TopRight" rotz="-90" windowpos="206,257" targetWaitSeconds="1"/>
+			<tip_list>
+				<tip action="1,3">如果你下次还想找人切磋一下，就再回来这里吧！</tip>
+				<tip action="2,4">现在我们去逛逛炫舞世界的其他地方吧~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot33"/>
+				<action type="25" param1="ui_robot34"/>
+			</comm_actions>
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="130000" type="1" backto="0" padView="UIMainArenaEntryNew" lockOnInitial="true">   
+			<maskinfo winShowType="2" maskPos="-80,-50" autoCollider="true" anchorType="TopRight" rotz="-90" targetWaitSeconds="1"/>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+	<!-- 世界地图解锁游戏大厅引导-->
+	<Group groupid ="500000" guidetype = "0">
+		<Step id ="1" type="3" backto="1" padView="UIWorldMap" lockOnInitial="true">   
+			<unlock unlockID= "1000"/>
+			<finish_conditions>
+				<condition type="63"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="2" type="9"  backto="10000" padView="UIWorldMap">
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="54"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="10000" type="9"  backto="10000" padView="UIWorldMap" lockOnInitial="true">   
+			<lockui locktime="0.5" />
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="15000" type="1" backto="10000" padView="UIWorldMap">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="306,-186" />
+			<tip_list>
+				<tip action="1,3">这里是[c][f35103]休闲大厅[-][/c]，可以认识很多志同道合的朋友。</tip>
+				<tip action="2,4">炫舞的老朋友们可以在这里找到[c][f35103]传统模式[-][/c]。</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot35"/>
+				<action type="25" param1="ui_robot36"/>
+			</comm_actions>  		   
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="-244,-43" ColliderSize="300,300"  isNeedCollider="false" />      
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="20000" type="9"  backto="10000" padView="UIWorldMap">   
+			<lockui locktime="2" />
+			<map_parade_anim begin_pos="0.5" end_pos="1.0" duration="2" />
+			<enter_actions>
+				<action type="11" />
+			</enter_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="30000" type="1" backto="10000" padView="UIWorldMap">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="181,-175" /> 
+			<tip_list>
+				<tip action="1,2">这里是[c][f35103]商城[-][/c]，漂亮的衣服，华丽的装饰……应有尽有。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot37"/>
+			</comm_actions>  
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="75,60" ColliderSize="300,300"  isNeedCollider="false" />      
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="40000" type="1" backto="10000" padView="UIWorldMap">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-16,-70" /> 
+			<tip_list>
+				<tip action="1,3">这里是[c][f35103]幸运邮轮[-][/c]，认证血统的地方。</tip>
+				<tip action="2,4">上船之前记得先洗个手，如果你足够欧的话，可以获得很多好东西。</tip>				
+			</tip_list> 
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot38"/>
+				<action type="25" param1="ui_robot39"/>
+			</comm_actions> 
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="-290,-255" ColliderSize="300,300"  isNeedCollider="false" />      
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+	<!-- 任务界面引导-->
+	<Group groupid ="600000" guidetype = "0">
+		<Step id ="1" type="3" backto="1" padView="UIWorldMap" lockOnInitial="true">   
+			<unlock unlockID= "15000"/>
+			<finish_conditions>
+				<condition type="63"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="2" type="9"  backto="10000" padView="UIWorldMap">
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="54"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="10000" type="9"  backto="10000" padView="UIWorldMap" lockOnInitial="true">   
+			<lockui locktime="0.5" />
+			<finish_conditions>
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="20000" type="1" backto="10000" padView="UIWorldMap" >   			
+			<maskinfo winShowType="3" maskPos="-220,100" autoCollider="true" anchorType="BottomRight" rotz="180" targetWaitSeconds="1.0" windowpos="96,-216"/>
+			<tip_list>
+				<tip action="1,2">在这里可以查看你的[c][f35103]任务[-][/c]。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot40"/>
+			</comm_actions> 
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="25000" type="1" backto="10000" padView="UIVitality" lockOnInitial="true">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-39,-170"/>
+			<tip_list>
+				<tip action="1,2">完成[c][f35103]每日活跃[-][/c]任务可以获得丰厚的奖励。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot41"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="30000" type="1" backto="0" padView="UIVitality" isconnectToNextStep="true">
+			<maskinfo winShowType="3" maskPos="660,30" autoCollider="true" anchorType="Center" rotz="-90" windowAnchorType="Center" windowpos="-39,-170" restoreHighlightOnClick="true"/>
+			<tip_list>
+				<tip action="1,2">有任务已经完成了，点击这里领取奖励。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot42"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+				<condition type="12"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="31000" type="9" backto="0">
+			<finish_conditions>
+				<condition type="51" param1="UIMessageBox"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="32000" type="0" backto="0" isLocalStep="true">
+			<finish_conditions>
+				<condition type="52" param1="UIMessageBox"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="33000" type="9" backto="0" isLocalStep="true">
+			<finish_conditions>
+				<condition type="51" param1="UICommonLevelUpPop"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="34000" type="0" backto="0" isLocalStep="true">
+			<finish_conditions>
+				<condition type="52" param1="UICommonLevelUpPop"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="40000" type="1" backto="0" padView="UIVitality" >
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0"/>
+			<tip_list>
+				<tip action="1,3">这里是成长任务，随着等级的提升，你会获得更多的任务和奖励。</tip>
+				<tip action="2,4">建议你经常来这里看看。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot43"/>
+				<action type="25" param1="ui_robot44"/>
+			</comm_actions>
+			<enter_actions>
+				<action type="32" param1="0"/>
+			</enter_actions>
+			<guide_effects>
+				<effect anchor="Center" pos="-690,362" depth="1" path="eff_ui_xsyd_xiaoguo04.prefab"/>
+			</guide_effects>
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="-700,360" ColliderSize="170,220"  isNeedCollider="false" />      
+			</other_light_block_list>
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="50000" type="1" backto="0" padView="UIVitality" >
+			<maskinfo winShowType="2" maskPos="695,440" autoCollider="true" anchorType="Center" rotz="-90"/>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+	<!-- 总结陈词 -->
+	<Group groupid ="700000" guidetype = "0">
+		<Step id ="10000" type="1" backto="0" padView="UIWorldMap" lockOnInitial="true">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-38,123" />
+			<tip_list>
+				<tip action="1,4">就先介绍到这里吧！</tip>
+				<tip action="2,5">炫舞世界还有很多好地方，主人可以慢慢探索</tip>
+				<tip action="3,6">如果不知道去哪儿，那就去做[c][f35103]任务[-][/c]拿奖励吧！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot45-1"/>
+				<action type="25" param1="ui_robot45-2"/>
+				<action type="25" param1="ui_robot46"/>
+			</comm_actions>   
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+
+	<!-- 技能触发引导 -->
+	<Group groupid ="900000" guidetype ="31">
+		<Step id="10000" type="0" backto="10000">
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIPlayerSkill"/>
+			</trigger_conditions>
+		</Step>
+		<Step id="25000" type="1" backto="10000" padView="UIPlayerSkill">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-38,123" isMaskTransparent="false"/>
+			<tip_list>
+				<tip action="1,2">(*^▽^*)主人，你可以学习[c][f35103]技能[-][/c]啦！</tip>
+				<tip action="1,3">技能的作用各不相同，你可以在这里[c][f35103]查看[-][/c]、[c][f35103]解锁[-][/c]和[c][f35103]装备[-][/c]它们。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot19"/>
+				<action type="25" param1="ui_robot20"/>
+			</comm_actions> 
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="30000" type="1" backto="30500">
+			<maskinfo winShowType="3" maskPos="440,0" autoCollider="true" anchorType="Left" rotz="90" windowAnchorType="Center" windowpos="-80,240"/>
+			<tip_list>
+				<tip action="1,2">来解锁你的第一个技能吧。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot21"/>
+			</comm_actions> 
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+				<condition type="75"/>
+			</finish_conditions>
+		</Step>
+		<Step id="30500" type="1" backto="30500" padView="UIPlayerSkill">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0"/> 
+			<tip_list>
+				<tip action="1,2">(●ˇ∀ˇ●)第一次是最珍贵的，但是适合的才是最好的。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot22"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="31000" type="1" backto="30500">
+			<maskinfo winShowType="1" rotz="90" windowAnchorType="Center" windowpos="280,-240"/>
+			<tip_list>
+				<tip action="1,2">[c][f35103]小贴士[-][/c]可以帮助你了解这些技能。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot23"/>
+			</comm_actions>
+			<enter_actions>
+				<action type="32" param1="0"/>
+			</enter_actions>
+			<guide_effects>
+				<effect anchor="Center" pos="290,-385" depth="0" path="eff_ui_xsyd_xiaoguo06.prefab"/>
+			</guide_effects>
+			<other_light_block_list>
+				<item AnchorType="Center" LightPos="400,-380" ColliderSize="100,60"  isNeedCollider="false"/>
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="40000" type="1" backto="0">
+			<maskinfo winShowType="3" maskPos="785,0" autoCollider="true" anchorType="Left" rotz="90" windowAnchorType="Center" windowpos="310,10"/>
+			<tip_list>
+				<tip action="1,2">点击这里装备技能。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot24"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="50000" type="1" backto="0">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-38,123"/>
+			<tip_list>
+				<tip action="1,3">有没有感觉自己变强了？</tip>
+				<tip action="2,4">啊？没有啊？没关系，找些对手挑战一下吧！</tip>
+				<tip action="2,5">[c][f35103]对战中心[-][/c]和[c][f35103]事务所[-][/c]都是不错的选择。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot25"/>
+				<action type="25" param1="ui_robot26"/>
+				<action type="25" param1="ui_robot123"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+
+	<!-- 触发引导 评选赛暂定1000000以后的为触发引导groupid -->
+	<Group groupid ="1000000" guidetype = "7">
+		<Step id="10000" type="1" backto="10000" padView="UIGarmentPVP">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-38,123" 
+			isMaskTransparent = "false"/> 
+			<tip_list>
+				<tip action="1">主人，这里是[c][f35103]评选赛[-][/c]赛场，在这里你可以当选手，也可以成为评审~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot89"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIGarmentPVP"/>
+				<condition type="55"/>
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="20000" type="1" backto="10000" padView="UIGarmentPVP">
+			<maskinfo winShowType="3" maskPos="-130,-420" autoCollider="true" anchorType="Right" windowAnchorType="Right" windowpos="-770,-320"/>
+			<tip_list>
+				<tip action="1">让我们先去体验下当选手的感觉吧~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot90"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49" />
+			</finish_conditions>
+		</Step>	
+		<Step id="30000" type="1" backto="10000" padView="UIGarmentPvPCollocation">
+			<maskinfo winShowType="1" windowcontent="" windowAnchorType="Top" windowpos="220,-255" 
+			isMaskTransparent = "false"/> 
+			<tip_list>
+				<tip action="1">看这里，这就是本期的[c][f35103]搭配主题[-][/c]啦~</tip>
+				<tip action="2">每次评审的时候，我们都需要根据主题来搭配服饰哟~</tip>
+			</tip_list>
+            <comm_actions>
+				<action type="25" param1="ui_robot91"/>
+				<action type="25" param1="ui_robot92"/>
+			</comm_actions>			
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="0,435" ColliderSize="300,300"  isNeedCollider="false" />          
+			</other_light_block_list>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49" />
+			</finish_conditions>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIGarmentPvPCollocation"/>
+			</trigger_conditions>
+		</Step>
+		<Step id="35000" type="0" backto="10000" >
+		</Step>
+		<Step id="40000" type="1" backto="10000" padView="UIGarmentPVP">
+			<maskinfo winShowType="3" maskPos="120,-230" autoCollider="true" anchorType="Left" windowAnchorType="Left" windowpos="618,-86"/>
+			<tip_list>
+				<tip action="1">现在让我们看看[c][f35103]兑换[-][/c]里面都有什么好东西吧！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot93"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="52" param1="UIGarmentPvPCollocation"/>
+			</trigger_conditions>
+		</Step>
+		<Step id="50000" type="1" backto="10000" padView="UIExchangePvp">
+			<maskinfo winShowType="1" windowcontent="" windowAnchorType="Center" windowpos="-38,123" isMaskTransparent = "false"/> 
+			<tip_list>
+				<tip action="1">每期评选赛结束的时候，都会根据排名给予[c][f35103]评选币[-][/c]哟!</tip>
+				<tip action="2">评选币可以用来在这里兑换丰厚的奖励哟~</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot94"/>
+				<action type="25" param1="ui_robot95"/>
+			</comm_actions>	
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIExchangePvp"/>
+			</trigger_conditions>
+		</Step>
+		<Step id="55000" type="0" backto="10000" >
+		</Step>
+		<Step id="60000" type="1" backto="10000" padView="UIGarmentPVP">
+			<maskinfo winShowType="3" maskPos="-270,-280" autoCollider="true" anchorType="Right" windowAnchorType="Right"  windowpos="-870,-150"/>
+			<tip_list>
+				<tip action="1">现在快让我们体验一把当评审的感觉吧！！</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot96"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="52" param1="UIExchangePvp"/>
+			</trigger_conditions>
+		</Step>
+		<Step id="70000" type="1" backto="0" padView="UIGarmentPVPRemark">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-38,123" /> 			
+			<tip_list>
+				<tip action="1">在当评审的时候，我们需要判断下谁的搭配更符合本期主题~</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot97"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIGarmentPVPRemark"/>
+			</trigger_conditions>
+		</Step>
+		<Step id="80000" type="1" backto="0" padView="UIGarmentPVPRemark">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="230,50" /> 			
+			<tip_list>
+				<tip action="1">哇~看起来左边的玩家更好一些~</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot98"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+			<enter_actions>
+				<action type="24"/>
+			</enter_actions>
+			<exit_actions>
+				<action type="28"/>
+			</exit_actions>
+		</Step>
+		<Step id="90000" type="1" backto="0" padView="UIGarmentPVPRemark">
+			<maskinfo winShowType="3" maskPos="-716,-390" autoCollider="true" anchorType="Center" windowAnchorType="Center" windowpos="-200,-190" /> 			
+			<tip_list>
+				<tip action="1">让我们给Ta[c][f35103]投一票[-][/c]吧~</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot99"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="95000" type="8" backto="0" padView="UIGarmentPVPRemark" >   
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="64"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+
+	<!-- 3d房间触发引导 -->
+	<Group groupid ="1100000" guidetype = "8">
+		<Step id="10000" type="1" backto="10000">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-38,123" isMaskTransparent = "true"/>
+            <tip_list>
+				<tip action="1">主人，这里是[c][f35103]休闲房间[-][/c]，在这里你可以与其他玩家切磋舞技哟~</tip> 
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot79"/>
+			</comm_actions>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="27"/>
+			</trigger_conditions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="20000" type="1" backto="10000" padView="UIGameRoom">
+			<maskinfo winShowType="1" windowAnchorType="Left" windowpos="1057,274"/> 
+			<tip_list>
+				<tip action="1">当当当！在这里你可以选择对局的[c][f35103]模式[-][/c]、[c][f35103]歌曲[-][/c]与[c][f35103]场景[-][/c]哟~</tip> 
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot80"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Left" LightPos="1080,500" ColliderSize="150,150"  isNeedCollider="false" />          
+			</other_light_block_list>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="40000" type="1" backto="10000" padView="UIGameRoom">
+			<maskinfo winShowType="1" windowAnchorType="Left" windowpos="1150,60"/> 
+			<tip_list>
+				<tip action="1">看这里，这个就是传说中的[c][f35103]K歌[-][/c]按钮！向其他玩家一展你美妙的歌喉吧！！</tip> 
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot81"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Right" LightPos="-78,73" ColliderSize="150,150"  isNeedCollider="false" />          
+			</other_light_block_list>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="43000" type="1" backto="10000" padView="UIGameRoom">
+			<maskinfo winShowType="1" windowAnchorType="Left" windowpos="1150,-230"/> 
+			<tip_list>
+				<tip action="1">咻，这是一个神奇的按钮，里面有[c][f35103]涂鸦[-][/c]和[c][f35103]骰子[-][/c]玩法哟~</tip>
+				<tip action="2">偷偷的告诉你，[c][f35103]隐藏界面UI[-][/c]的神奇开关也在这里面呢。</tip> 
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot82"/>
+				<action type="25" param1="ui_robot83"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Right" LightPos="-450,-460" ColliderSize="150,150"  isNeedCollider="false" />          
+			</other_light_block_list>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="45000" type="1" backto="10000" padView="UIGameRoom">
+			<maskinfo winShowType="1" windowAnchorType="Left" windowpos="850,-200"/> 
+			<tip_list>
+				<tip action="1">这个是[c][f35103]实时语音[-][/c]按钮，开启后你说的话能实时传递给房间内的其他人。</tip>   
+				<tip action="2">快去开启它，体验无限畅聊吧~</tip> 
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot84"/>
+				<action type="25" param1="ui_robot85"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="-430,-378" ColliderSize="150,150"  isNeedCollider="false" />          
+			</other_light_block_list>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="50000" type="1" backto="0" padView="UIGameRoom">
+			<maskinfo winShowType="1" windowAnchorType="Left" windowpos="1100,-255"/>
+			<tip_list>
+				<tip action="1">现在你成为房主啦，这里就是[c][f35103]开始[-][/c]按钮！点击这里开始对局~</tip> 
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot86"/>
+			</comm_actions>
+			<other_light_block_list>
+				<item AnchorType="Right" LightPos="-127,-400" ColliderSize="210,210"  isNeedCollider="false" />          
+			</other_light_block_list>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+	<!-- 3d房间触发引导 分支引导被别人邀请进入的房间-->
+	<Group groupid ="1200000" guidetype = "9">
+		<Step id="10000" type="0" backto="0">
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="29"/>
+			</trigger_conditions>
+		</Step>
+		<Step id="20000" type="1" backto="0">
+			<maskinfo winShowType="1" maskPos="99,-71" masksize="239,183" anchorType="Right"
+					windowAnchorType="Left" windowpos="1100,-240"/>	
+			<tip_list>
+				<tip action="1">当你加入其它玩家的房间时，这里会显示[c][f35103]准备按钮[-][/c]</tip>   
+				<tip action="2">只有所有的玩家都准备了，房主才能开始对局哟~</tip> 
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot87"/>
+				<action type="25" param1="ui_robot88"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<other_light_block_list>       
+				<item AnchorType="Right" LightPos="-128,-400" ColliderSize="210,210" isNeedCollider="false" />                               
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+	<!-- 花园触发引导-->
+	<Group groupid ="1400000" guidetype = "11">
+		<Step id ="10000" type="1" backto="10000" padView="UIGardenPlant" >  
+			<maskinfo winShowType="1" windowcontent="哇，你拥有自己的秘密花园啦！" 
+					windowAnchorType="Center" windowpos="380,-60" isMaskTransparent = "true"/> 
+			<tip_list>
+				<tip action="1">哇，你拥有自己的秘密[c][f35103]花园[-][/c]啦！</tip>
+				<tip action="2">这里不但可以[c][f35103]种花、插花，[-][/c]还能和小伙伴们互动呢~</tip>
+				<tip action="3">66在这里献上贺礼了，赶快收下吧！</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot100"/>
+				<action type="25" param1="ui_robot101"/>
+				<action type="25" param1="ui_robot102"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="35"/>
+			</trigger_conditions>
+			<enter_actions>
+				<action type="24" />
+			</enter_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<!-- 客户端发送种子奖励框客户端假数据-->
+		<Step id ="15000" type="0"  backto="10000">
+			<lockui locktime="1" />
+			<enter_actions>
+				<action type="18" />
+			</enter_actions>
+		</Step>
+		<Step id ="16000" type="0"  backto="10000">   
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="52" param1="UIMessageBox"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="17000" type="1"  backto="10000">  
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="314,-48" isMaskTransparent = "true"/>
+			<tip_list>
+				<tip action="1">点击花盆，可以对花盆单独操作。</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot103"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="20000" type="1"  backto="10000">  
+			<maskinfo winShowType="3" maskPos="-330,-450" autoCollider="true" anchorType="Center" rotz="75"
+				 windowAnchorType="Center" windowpos="314,-270"/>
+			<tip_list>
+				<tip action="1">点击这里可以简单快捷的[c][f35103]全部播种[-][/c]，试试吧！</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot104"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="30000" type="1" backto="10000" padView="UIGardenPlantSeedList" >  
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="184,270"/>
+			<tip_list>
+				<tip action="1">在这里可以选择[c][f35103]种子[-][/c]，花园等级越高种子种类就越多，要努力升级哦~</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot105"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="-382,265" ColliderSize="300,300"  isNeedCollider="false" />  			
+			</other_light_block_list>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIGardenPlantSeedList"/>
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="35000" type="1" backto="10000" padView="UIGardenPlantSeedList" >  
+			<maskinfo winShowType="3" maskPos="90,-440" autoCollider="true" anchorType="Center" rotz="75"
+				windowAnchorType="Center" windowpos="350,-190"/>
+			<tip_list>
+				<tip action="1">选择你想要播种的种子后，点击[c][f35103]播种[-][/c]按钮就可以播种花朵啦~</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot106"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="40000" type="8"  backto="10000" padView="UIGardenPlant">   
+			<lockui locktime="1.5" />
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="50000" type="1" backto="10000" padView="UIGardenPlant" >  
+			<maskinfo winShowType="3" maskPos="-165,-450" autoCollider="true" anchorType="Center" rotz="75"
+				windowAnchorType="Center" windowpos="320,-181" />	
+			<tip_list>
+				<tip action="1">要按时给花朵[c][f35103]浇水[-][/c]，保证花朵不会枯萎哦~</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot107"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+		</Step>
+		<Step id ="60000" type="8"  backto="10000" padView="UIGardenPlant">   
+			<lockui locktime="2" />
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="70000" type="1" backto="10000" padView="UIGardenPlant">  
+			<maskinfo winShowType="3" maskPos="320,-450" autoCollider="true" anchorType="Center" rotz="75"
+				windowAnchorType="Center" windowpos="320,-181" />
+			<tip_list>
+				<tip action="1">快看，花朵盛开了！赶快[c][f35103]收获[-][/c]吧~</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot108"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="80000" type="8"  backto="0" padView="UIGardenPlant">   
+			<lockui locktime="2" />
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="90000" type="1" backto="0" padView="UIGardenPlant">  
+			<maskinfo winShowType="3" maskPos="135,-420" autoCollider="true" anchorType="Left" rotz="0"
+					windowAnchorType="Center" windowpos="-230,-222"/>
+			<tip_list>
+				<tip action="1">花朵可以用来[c][f35103]插花[-][/c]，赶快去试试吧！</tip>
+			</tip_list> 
+			<comm_actions>
+				<action type="25" param1="ui_robot109"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+
+	<!-- 触发引导 染色引导-->
+	<Group groupid ="2100000" guidetype = "18">
+		<Step id="10000" type="1" backto="10000" padView="UIWorkshopDyeing">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0"/>
+			<tip_list>
+				<tip action="1">这里是[c][f35103]染色工坊[-][/c]，在这里可以轻松将衣服染成与众不同的颜色。</tip>
+			</tip_list>
+            <comm_actions>
+				<action type="25" param1="ui_robot65"/>
+			</comm_actions>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIWorkshopDyeing"/>
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="15000" type="1" backto="10000" padView="UIWorkshopDyeing">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="300,0"/>
+			<tip_list>
+				<tip action="1">这些颜色独特的衣服都是可以染出来的~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot66"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Left" LightPos="200,-510" ColliderSize="10,10" isNeedCollider="false"/>
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+
+		<Step id="30000" type="1" backto="10000" padView="UIWorkshopDyeing">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-475,-192"/> 
+			<tip_list>
+				<tip action="1">染色前你需要准备好合适的[c][f35103]染料瓶[-][/c]</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot67"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="310,-152" ColliderSize="300,300"  isNeedCollider="false" />
+			</other_light_block_list>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="40000" type="1" backto="10000" padView="UIWorkshopDyeing">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-131,-192" /> 
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="543,-151" ColliderSize="300,300"  isNeedCollider="false" />  
+				<item AnchorType="Center" LightPos="756,-151" ColliderSize="300,300"  isNeedCollider="false" />  	
+				<item AnchorType="Center" LightPos="720,-375" ColliderSize="300,300"  isNeedCollider="false" />  				
+			</other_light_block_list>
+			<tip_list>
+				<tip action="1">还需要准备一件[c][f35103]可以染色的衣服[-][/c]，当然金币也是必不可少的~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot68"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="50000" type="1" backto="0" padView="UIWorkshopDyeing">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0" /> 
+			<tip_list>
+				<tip action="1">成功染色后会获得一件熟悉又陌生的服饰，这大概就是染色的魅力吧。</tip>
+				<tip action="2">请答应我，准备好必需品后一定会来体验下这极具魅力的染色。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot69"/>
+				<action type="25" param1="ui_robot70"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+
+	<!-- 触发引导 打造引导-->
+	<Group groupid ="2200000" guidetype = "19">
+		<Step id="10000" type="1" backto="10000" padView="UIForgeGoodsCtrl">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-87,0"/> 
+			<tip_list>
+				<tip action="1">这里是[c][f35103]打造工坊[-][/c]，在这里你可以用打造材料制作出漂亮的服饰。</tip>
+			</tip_list>
+            <comm_actions>
+				<action type="25" param1="ui_robot124"/>
+			</comm_actions>
+			<enter_actions>
+				<action type="24" />
+			</enter_actions>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIForgeGoodsCtrl"/>
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="20000" type="1" backto="10000" padView="UIForgeGoodsCtrl">
+			<maskinfo winShowType="3" maskPos="490,180" autoCollider="true" anchorType="Left" rotz="0" windowAnchorType="Center" windowpos="0,0"/>
+			<tip_list>
+				<tip action="1">所有可以打造出的物品都会显示在这个列表中</tip>
+				<tip action="2">这个看起来不错，我们先来做一个试试手。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot125"/>
+				<action type="25" param1="ui_robot126"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="30000" type="1" backto="0" padView="UIForgeGoodsCtrl">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="350,-100" /> 
+			<tip_list>
+				<tip action="1">这是打造成功会获得的物品。</tip>
+				<tip action="2">点击图标区域还可以进入[c][f35103]预览形象[-][/c]哦~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot54"/>
+				<action type="25" param1="ui_robot55"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="480,180" ColliderSize="300,300"  isNeedCollider="false" />    				
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="40000" type="1" backto="0" padView="UIForgeGoodsCtrl">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="350,100" /> 
+			<tip_list>
+				<tip action="1">材料和金币都是打造必备品~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot56"/>
+			</comm_actions>
+			<other_light_block_list>
+				<item AnchorType="Center" LightPos="480,-300" ColliderSize="300,300"  isNeedCollider="false" />
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="50000" type="1" backto="10000" padView="UIForgeGoodsCtrl">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="350,0"/> 
+			<tip_list>
+				<tip action="1">木有材料么？有66在~莫慌！</tip>
+				<tip action="2">66用小包包给你带了一些来！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot57"/>
+				<action type="25" param1="ui_robot58"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="50001" type="8" backto="10000">
+			<lockui locktime="0.1" />
+			<finish_conditions>
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id="55000" type="5" backto="0" padView="UIForgeGoodsCtrl">
+			<reward type="item" boy_id="920000008" girl_id="920000008" num="20"/>  
+			<reward type="item" boy_id="920000001" girl_id="920000001" num="8"/>  
+			<reward type="gb" boy_id="0" girl_id="0" num="12000"/> 
+			<server_tasks>
+				<task type="1">
+					<reward type="item" boy_id="920000008" girl_id="920000008" num="20"/>  
+					<reward type="item" boy_id="920000001" girl_id="920000001" num="8"/>  
+					<reward type="gb" boy_id="0" girl_id="0" num="12000"/> 
+				</task>
+			</server_tasks>
+		</Step>
+		<Step id ="60000" type="0" backto="0">
+			<finish_conditions>
+				<condition type="52" param1="UIMessageBox"/>
+				<condition type="76"/>
+			</finish_conditions>
+		</Step>
+		<Step id="70000" type="1" backto="0" padView="UIForgeGoodsCtrl">
+			<maskinfo winShowType="3" maskPos="-480,-420" autoCollider="true" anchorType="Right" rotz="0" windowAnchorType="Center" windowpos="350,-250"/>
+			<tip_list>
+				<tip action="1">快！快！戳这里！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot59"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="75000" type="0" backto="0">
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="52" param1="UIMessageBox"/>
+			</finish_conditions>
+		</Step>
+		<Step id="80000" type="1" backto="0" padView="UIForgeGoodsCtrl">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0"/>
+			<tip_list>
+				<tip action="1">打造成功啦！掌握了打造技巧也不要骄傲哦。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot60"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+	<!-- 触发引导 花园插花引导-->
+	<Group groupid ="2300000" guidetype = "20">
+		<Step id="10000" type="1" backto="10000" padView="UIGardenFlorist">
+			<maskinfo winShowType="1" windowcontent="欢迎来到神奇的超时空极光！在这里极光会帮您扫描宝藏。" windowAnchorType="Center" windowpos="300,-300" isMaskTransparent = "true" /> 
+			<tip_list>
+				<tip action="1">欢迎来到[c][f35103]花艺工坊[-][/c]~</tip>
+				<tip action="2">插好的花束可以用来送给小伙伴，同时还能获得丰厚的奖励呢！</tip>
+				<tip action="3">接下来我来教你如何插花吧~</tip>
+			</tip_list>
+            <comm_actions>
+				<action type="25" param1="ui_robot110"/>
+				<action type="25" param1="ui_robot111"/>
+				<action type="25" param1="ui_robot112"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIGardenFlorist"/>
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+			<enter_actions>
+				<action type="24" />
+			</enter_actions>
+		</Step>
+		<Step id="20000" type="1" backto="10000" padView="UIGardenFlorist">
+			<maskinfo winShowType="1" maskPos="215,182" masksize="222,234" anchorType="Left" rotz="0"
+			windowcontent="每次插花需要把这6个格子填满~我先来帮你填满前5个格子吧！" windowAnchorType="Center" windowpos="-470,-325" isMaskTransparent = "true" />
+			<tip_list>
+				<tip action="1">每次插花需要把这6个格子填满~我先来帮你填满前5个格子吧！</tip>
+				<tip action="2">忘了告诉你，每次插花成功都可以随机打开一个[c][f35103]宝箱[-][/c]！是不是很棒！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot113"/>
+				<action type="25" param1="ui_robot114"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+			<exit_actions>
+				<action type="19" />
+			</exit_actions>
+		</Step>
+		<Step id="30000" type="8" backto="10000" padView="UIGardenFlorist">
+			<lockui locktime="0.6" />
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id="40000" type="1" backto="10000" padView="UIGardenFlorist">
+			<maskinfo winShowType="3" maskPos="-760,210" autoCollider="true" anchorType="Center" rotz="0"
+			windowcontent="在这里选择配方，每次插花需要选择6种花，每种5朵。" windowAnchorType="Center" windowpos="-380,-50"/>
+			<tip_list>
+				<tip action="1">最后一个关键的由你来选择，试着插第一束花吧~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot115"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="50000" type="1" backto="10000" padView="UIGardenFlorist">
+			<maskinfo winShowType="3" maskPos="-580,110" autoCollider="true" anchorType="Right" rotz="0"
+			windowAnchorType="Center" windowpos="320,-350"/>
+			<tip_list>
+				<tip action="1">材料已经放好了，点击[c][f35103]插花[-][/c]按钮见证奇迹吧~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot116"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="60000" type="8" backto="0" padView="UIGardenFlorist">
+			<lockui locktime="5" />
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id="70000" type="1" backto="0" padView="UIGardenFlorist">
+			<maskinfo winShowType="1" windowcontent="欢迎来到神奇的超时空极光！在这里极光会帮您扫描宝藏。" windowAnchorType="Center" windowpos="300,-320" isMaskTransparent = "true" /> 
+			<tip_list>
+				<tip action="1">哇，插花成功了，好棒啊！</tip>
+				<tip action="2">点击花束可以直接把它送给小伙伴，也可以存放到背包中今后用呢~</tip>
+				<tip action="3">秘密花园是不是神奇而美丽？想要获得更多奖励，要记得常来插花哦~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot117"/>
+				<action type="25" param1="ui_robot118"/>
+				<action type="25" param1="ui_robot119"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIGardenRewardPool"/>
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+
+	<!-- 触发引导 进化引导-->
+	<Group groupid ="2500000" guidetype = "22">
+		<Step id="10000" type="1" backto="10000" padView="UIWorkshopEvolve">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0"/>
+			<tip_list>
+				<tip action="1">这里是[c][f35103]进化工坊[-][/c]，在这里你可以让漂亮的衣服完成究极进化。</tip>
+			</tip_list>
+            <comm_actions>
+				<action type="25" param1="ui_robot61"/>
+			</comm_actions>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIWorkshopEvolve"/>
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="15000" type="1" backto="10000" padView="UIWorkshopEvolve">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="300,0"/>
+			<tip_list>
+				<tip action="1">这里的物品都可以通过进化获得。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot62"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Left" LightPos="200,-510" ColliderSize="10,10" isNeedCollider="false"/>
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+
+		<Step id="30000" type="1" backto="10000" padView="UIWorkshopEvolve">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-250,-140"/> 
+			<tip_list>
+				<tip action="1">进化需要的东西会显示在这个位置，基础服装和金币都是必要的。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot63"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="484,-103" ColliderSize="300,300"  isNeedCollider="false" />    
+				<item AnchorType="Center" LightPos="487,-234" ColliderSize="300,300"  isNeedCollider="false" />  				
+				<item AnchorType="Center" LightPos="618,-327" ColliderSize="300,300"  isNeedCollider="false" />  				
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="40000" type="1" backto="0" padView="UIWorkshopEvolve">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0"/> 
+			<tip_list>
+				<tip action="1">有了能进化的衣服就来这里吧~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot64"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+
+	<!-- 触发引导 合成引导-->
+	<Group groupid ="2600000" guidetype = "23">
+		<Step id="10000" type="1" backto="10000" padView="UIItemComPositionCtrl">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0"/> 
+			<tip_list>
+				<tip action="1">这里是[c][f35103]合成工坊[-][/c]，在这里你可以将[c][f35103]碎片[-][/c]拼凑回完整的模样~</tip>
+			</tip_list>
+            <comm_actions>
+				<action type="25" param1="ui_robot71"/>
+			</comm_actions>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIItemComPositionCtrl"/>
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="15000" type="1" backto="10000" padView="UIItemComPositionCtrl">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="300,0"/> 
+			<tip_list>
+				<tip action="1">这些衣服都是可以合成出来的~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot72"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Left" LightPos="200,-510" ColliderSize="10,10" isNeedCollider="false"/>
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		
+		<Step id="30000" type="1" backto="10000" padView="UIItemComPositionCtrl">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-440,0"/>
+			<tip_list>
+				<tip action="1">一次合成多少件服饰是可以在这里设置的。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot73"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="529,-24" ColliderSize="300,300"  isNeedCollider="false" />    
+				<item AnchorType="Center" LightPos="244,-326" ColliderSize="300,300"  isNeedCollider="false" />  				
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="40000" type="1" backto="10000" padView="UIItemComPositionCtrl">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-350,-250" />
+			<tip_list>
+				<tip action="1">准备好[c][f35103]碎片[-][/c]就可以立刻开始合成。没错！只需要碎片！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot74"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="480,-174" ColliderSize="300,300"  isNeedCollider="false" />  			
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="50000" type="1" backto="0" padView="UIItemComPositionCtrl">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0"/>
+			<tip_list>
+				<tip action="1">酷爱去嗖基氺囨吧~（翻译：快去收集碎片吧~）</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot75"/>
+			</comm_actions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+
+	<!-- 欢乐匹配打开引导-->
+	<Group groupid ="2700000" guidetype = "24">
+		<Step id="10000" type="0" backto="0" padView="UIHappyGame">
+			<enter_actions>
+				<action type="24"/>
+			</enter_actions>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="61"/>
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="70"/>
+			</finish_conditions>
+		</Step>
+
+	</Group>
+
+	<!-- 触发引导 K歌引导-->
+	<Group groupid ="2800000" guidetype = "25">
+		<Step id="10000" type="1" backto="0" padView="UIKaraokeSelect">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-43,213"/>
+			<tip_list>
+				<tip action="1">点击这里下载伴奏。下载完成的伴奏才能用来K歌哦！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot76"/>
+			</comm_actions>
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="622,193" ColliderSize="124,115"  isNeedCollider="false" />  			
+			</other_light_block_list>
+			<enter_actions>
+				<action type="24"/>
+			</enter_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="51" param1="UIKaraokeSelect"/>
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="20000" type="1" backto="0" padView="UIKaraokeSelect">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="-130,-220"/>
+			<tip_list>
+				<tip action="1,2">下载好的伴奏和手机里的伴奏可以在这里找到哦！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+				<action type="25" param1="ui_robot77"/>
+			</comm_actions>
+			<enter_actions>
+				<action type="32" param1="0"/>
+			</enter_actions>
+			<guide_effects>
+				<effect anchor="Center" pos="-693,-252" depth="0" path="eff_ui_xsyd_xiaoguo08.prefab"/>
+			</guide_effects>
+			<other_light_block_list>                                    
+				<item AnchorType="Center" LightPos="-702,-257" ColliderSize="166,200"  isNeedCollider="false" />  			
+			</other_light_block_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="30000" type="1" backto="0" padView="UIKaraokeSelect">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0"/> 
+			<tip_list>
+				<tip action="1">选择下载好的伴奏，点击确定就可以开始演唱。选择[c][f35103]清唱[-][/c]将不播放伴奏。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="25" param1="ui_robot78"/>
+			</comm_actions>
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+			<exit_actions>
+				<action type="28" />
+			</exit_actions>
+
+		</Step>
+	</Group>
+
+
+	<!--gve 活动房间引导 房主引导-->
+	<Group groupid ="2900000" guidetype = "26">
+		<Step id="10000" type="1" backto="0">		
+			<maskinfo winShowType="1" maskPos="1944,484" masksize="1944,484" anchorType="Left" rotz="0"
+			windowcontent="您当前正处于周活动房间中在这里可以查看本次的[c][f35103]过关条件[-][/c]" windowAnchorType="Center" windowpos="270,300"/>
+			<other_light_block_list>                                    
+				<item AnchorType="Left" LightPos="1222,505" ColliderSize="140,81"  isNeedCollider="false" />  			
+			</other_light_block_list>
+			<enter_actions>
+				<action type="32" param1="0"/>
+			</enter_actions>
+			<guide_effects>
+				<effect anchor="Left" pos="1225,500" depth="1" path="eff_ui_xsyd_xiaoguo07.prefab"/>
+			</guide_effects>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="57" />
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="20000" type="1" backto="0" >
+			<maskinfo winShowType="1" maskPos="1385,484" masksize="300,300" anchorType="Left" rotz="0"
+			windowcontent="在这里可以查看歌曲列表并切换歌曲" windowAnchorType="Center" windowpos="270,300"/>
+
+			<other_light_block_list>                                    
+				<item AnchorType="Left" LightPos="800,484" ColliderSize="1944,1080"  isNeedCollider="false" />  			
+			</other_light_block_list>
+
+			<npc_action_list>
+				<action type_id="1"  resource_str="dengchang_stand"/>           
+			</npc_action_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+
+		</Step>
+	</Group>
+
+	<!--gve 活动房间引导 非房主引导-->
+	<Group groupid ="3000000" guidetype = "27">
+		<Step id="10000" type="1" backto="0" padView="UIGameRoom" padViewIsTop="true">		
+			<maskinfo winShowType="1" maskPos="1944,484" masksize="1944,484" anchorType="Left" rotz="0"
+			windowcontent="您当前正处于周活动房间中在这里可以查看本次的[c][f35103]过关条件[-][/c]" windowAnchorType="Center" windowpos="270,300"/>
+			<other_light_block_list>                                    
+				<item AnchorType="Left" LightPos="1222,505" ColliderSize="140,81"  isNeedCollider="false" />  			
+			</other_light_block_list>
+			<enter_actions>
+				<action type="32" param1="0"/>
+			</enter_actions>
+			<guide_effects>
+				<effect anchor="Left" pos="1225,500" depth="1" path="eff_ui_xsyd_xiaoguo07.prefab"/>
+			</guide_effects>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="58" />
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+
+	<!-- 首次温暖局引导 -->
+	<Group groupid ="3200000" guidetype = "28">
+		<Step id ="10000" type="0" backto="10000">
+			<trigger_conditions>
+				<condition type="66"/>
+			</trigger_conditions>
+			<finish_conditions>
+				<condition type="67"/>
+			</finish_conditions>
+		</Step>
+		<Step id ="20000" type="1" backto="0" padView="UIArenaResultGuide" >
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="63,-247" fontSize="28" descBgWidth="1033" descWidth="720" isMaskTransparent="true"/>
+			<tip_list>
+				<tip>比赛结束，根据名次，计算[c][f35103]胜点[-][/c]，越高段位竞争越激烈。</tip>
+				<tip>完成比赛，可积累[c][f35103]舞者积分[-][/c]，积分即可直接获得胜点！</tip>
+				<tip>在局内，音符密集时开启[c][f35103]爆气[-][/c]，可有效延长爆气时间！</tip>
+			</tip_list>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+	<!-- 竞技场2V2打开引导-->
+	<Group groupid ="3300000" guidetype = "30">
+		<Step id="10000" type="0" backto="0" padView="Arena2V2">
+			<enter_actions>
+				<action type="24"/>
+			</enter_actions>
+			<trigger_conditions>	<!-- 引导触发条件 -->
+				<condition type="68"/>
+			</trigger_conditions>
+			<finish_conditions>	<!-- 引导完成条件 -->
+				<condition type="69"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+
+	<!-- 社区引导 -->
+	<Group groupid ="3400000" guidetype ="32">
+		<Step id="10000" type="0" backto="10000">
+			<trigger_conditions>
+				<condition type="51" param1="UICommunity"/>
+			</trigger_conditions>
+		</Step>
+		<Step id="20000" type="1" backto="10000" padView="UICommunity">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0" isMaskTransparent="true"/>
+			<tip_list>
+				<tip action="1">[c][f35103]社区[-][/c]里好热闹啊，有好多漂亮的小姐姐~</tip>
+				<tip action="1">⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄66好想和她们一起玩，快走吧！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="chongbai" npc="3"/>
+			</comm_actions> 
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="30000" type="1" backto="10000" padView="UICommunity">
+			<maskinfo winShowType="3" windowAnchorType="Center" windowpos="0,0" maskPos="30,110" autoCollider="true" anchorType="Left" rotz="0"/>
+			<tip_list>
+				<tip action="1">点击[c][f35103]社区指引[-][/c]，就能知道现在有什么好玩的活动啦！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+			</comm_actions> 
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="35000" type="9" backto="10000">
+			<lockui locktime="0.5" />
+			<finish_conditions>
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id="40000" type="1" backto="50000" padView="UICommunity">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0"/>
+			<tip_list>
+				<tip action="1">参加活动需要提前准备活动道具。</tip>
+				<tip action="1">当你感到迷茫时，可以在这里获得指引噢~</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+			</comm_actions>
+			<other_light_block_list>
+				<item AnchorType="Left" LightPos="200,-170" ColliderSize="0,0" isNeedCollider="false"/>
+			</other_light_block_list>
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="50000" type="1" backto="50000" padView="UICommunity">
+			<maskinfo winShowType="3" windowAnchorType="Center" windowpos="0,0" maskPos="495,495" autoCollider="true" anchorType="Left" rotz="0"/>
+			<tip_list>
+				<tip action="1">点击打开[c][f35103]地图[-][/c]，可以查看活动都在哪里举办。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+			</comm_actions>
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="55000" type="9" backto="50000" padView="UICommunityMap">
+			<lockui locktime="0.1" />
+			<finish_conditions>
+				<condition type="50"/>
+			</finish_conditions>
+		</Step>
+		<Step id="60000" type="1" backto="50000" padView="UICommunityMap">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="270,-80"/>
+			<tip_list>
+				<tip action="1">快看，玫红色的小标记是主人的[c][f35103]当前位置[-][/c]。</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+			</comm_actions>
+			<pre_enter_actions>
+				<action type="34" param1="0"/>
+			</pre_enter_actions>
+			<enter_actions>
+				<action type="32" param1="0"/>
+				<action type="33" param1="0"/>
+			</enter_actions>
+			<guide_effects>
+				<effect anchor="BottomLeft" pos="-30,0" depth="0" path="eff_ui_xsyd_xiaoguo05.prefab"/>
+			</guide_effects>
+			<other_light_block_list>
+				<item AnchorType="Center" LightPos="0,0" ColliderSize="0,0" isNeedCollider="false"/>
+			</other_light_block_list>
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="70000" type="1" backto="50000" padView="UICommunityMap">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="270,-80" isMaskTransparent="true"/>
+			<tip_list>
+				<tip action="1">地图上还标记了每个活动[c][f35103]NPC[-][/c]的位置和活动[c][f35103]区域[-][/c]噢！</tip>
+				<tip action="1">有了[c][f35103]地图[-][/c]，主人再也不用担心迷路啦！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+			</comm_actions> 
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="80000" type="1" backto="0" padView="UICommunityMap">
+			<maskinfo winShowType="2" maskPos="-60,-30" autoCollider="true" anchorType="TopRight" rotz="-90"/>
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+		<Step id="90000" type="1" backto="0" padView="UICommunity">
+			<maskinfo winShowType="1" windowAnchorType="Center" windowpos="0,0" isMaskTransparent="true"/>
+			<tip_list>
+				<tip action="1">在[c][f35103]社区[-][/c]里，主人还可以[c][f35103]跳跃[-][/c]、[c][f35103]自由飞行[-][/c]、[c][f35103]滑翔[-][/c]……</tip>
+				<tip action="1">主人对什么最感兴趣呢，快去试试吧！</tip>
+			</tip_list>
+			<comm_actions>
+				<action type="26" param1="kaixin" npc="3"/>
+			</comm_actions> 
+			<finish_conditions>
+				<condition type="49"/>
+			</finish_conditions>
+		</Step>
+	</Group>
+
+	<other_guide_config>
+		<!--下面配置的是种花引导所需的种子id 可选的有：（对应item.xml中的配置）-->
+		<!--921200001 紫罗兰种子 -->    <!--921200002 茉莉花种子 -->    <!--921200003 风信子种子 -->    <!--921200004 曼陀罗种子 -->	<!--921200005 嘴唇花种子 -->
+		<!--921200006 玫瑰花种子 -->	<!--921200007 百合花种子 -->	<!--921200008 菊花种子   -->	<!--921200009 栀子花种子 -->	<!--921200010 蓝玫瑰种子 -->
+		<!--921200011 康乃馨种子 -->	<!--921200012 向日葵种子 -->	<!--921200013 满天星种子 -->	<!--921200014 薰衣草种子 -->	<!--921200015 勿忘我种子 -->
+		<!--921200016 绣球花种子 -->	<!--921200017 米兰花种子 -->	<!--921200018 蕙兰花种子 -->	<!--921200019 铃兰花种子 -->	<!--921200020 兰花种子   -->
+		<!--921200021 珍珠梅种子 -->	<!--921200022 雏菊种子   -->	<!--921200023 迎春花种子 -->	<!--921200024 光叶子种子 -->
+		<garden_guide_seed_id>921200001</garden_guide_seed_id><!--此处必须配成主花的种子id-->
+		<!--每个种子的产出数量 -->
+		<garden_per_seed_harvest_num>7</garden_per_seed_harvest_num>
+		<!--插花每个槽消耗的花朵数量-->
+		<garden_synthetic_flower_per_need>2</garden_synthetic_flower_per_need>
+
+
+		<!--下面配置的是插花引导所需的花束信息，可选的有：（对应item.xml中的配置），只需要配置两种即可-->
+		<!--921400001 紫罗兰 -->    <!--921400002 茉莉花 -->    <!--921400003 风信子 -->    <!--921400004 曼陀罗 -->	<!--921400005 嘴唇花 -->
+		<!--921400006 玫瑰花 -->	<!--921400007 百合花 -->	<!--921400008 菊花   -->	<!--921400009 栀子花 -->	<!--921400010 蓝玫瑰 -->
+		<!--921400011 康乃馨 -->	<!--921400012 向日葵 -->	<!--921400013 满天星 -->	<!--921400014 薰衣草 -->	<!--921400015 勿忘我 -->
+		<!--921400016 绣球花 -->	<!--921400017 米兰花 -->	<!--921400018 蕙兰花 -->	<!--921400019 铃兰花 -->	<!--921400020 兰花   -->
+		<!--921400021 珍珠梅 -->	<!--921400022 雏菊   -->	<!--921400023 迎春花 -->	<!--921400024 光叶子 -->    <!--921400025 七彩玫瑰   -->
+		<!--921400026 七色堇 -->	<!--921400027 八面玲珑 -->	<!--921400028 彼岸花 -->	<!--921400029 血色玫瑰 -->	<!--921400030 魅蓝幻想   -->
+		<!--921400031 紫菱绅士 -->	<!--921400032 紫菱公主 -->	<!--921400033 梦幻绅士 -->	<!--921400034 梦幻公主 -->	
+		<garden_synthetic_flower_list>
+			<!--id: 花束的物品id（上述列表中） num: 数量（暂时最少为15）-->
+			<flower id="921400013"  num="6" type="1"/>  <!--此处配置点缀花的id   type值不要更改-->
+			<flower id="921400026"  num="4" type="2"/>  <!--此处配置魔法花的id   type值不要更改-->
+		</garden_synthetic_flower_list>
+
+		<collection_position_config>
+			<item type_id="1" pos="-715,-36"    xiaoyao_pos="11,11"/>   <!--此处如果需要增加type_id 需要和程序沟通-->
+			<item type_id="2" pos="-342,150"    xiaoyao_pos="215,22"/>
+			<item type_id="3" pos="-42,-220"    xiaoyao_pos="350,216"/>
+			<item type_id="4" pos="380,42"      xiaoyao_pos="350,-327"/>
+			<item type_id="5" pos="638,-250"    xiaoyao_pos="-200,-225"/>
+			<item type_id="6" pos="736,247"     xiaoyao_pos="-113,215"/>
+		</collection_position_config>
+
+		<!--引导打造生成物的ID-->
+		<forge_product_id_boy>0001012201</forge_product_id_boy>
+		<forge_product_id_girl>1001001401</forge_product_id_girl>
+		<!--休闲、欢乐局介绍title图片路径-->
+		<happy_match_title_res>background/arenaIcon/hl_yindao01</happy_match_title_res>
+		<!--休闲、欢乐局介绍内容图片路径-->
+		<happy_match_res>
+			<res picture="background/arenaIcon/hl_yindao01"/>
+			<res picture="background/arenaIcon/hl_yindao02"/>
+		</happy_match_res>
+
+		<!--竞技场2v2介绍title图片路径-->
+		<arena2v2_match_title_res>background/arenaIcon/hl_yindao01</arena2v2_match_title_res>
+		<!--竞技场2v2介绍内容图片路径-->
+		<arena2v2_match_res>
+			<res picture="background/arenaIcon/hl_yindao01"/>
+			<res picture="background/arenaIcon/hl_yindao02"/>
+		</arena2v2_match_res>
+	</other_guide_config>
+
+</Groups>

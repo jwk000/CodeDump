@@ -1,0 +1,53 @@
+class RewardInfo{
+    int type;
+    int boy_id;
+    int girl_id;
+    int num;
+}
+class SeatNeed{
+    [reward]
+    RewardInfo need;
+}
+class AnnyMisc{
+    int campaign_id;
+    int carnival_activity;
+}
+
+class SeatMisc{
+    int seat_a_id;
+    int seat_b_id;
+    int seat_c_id;
+}
+
+
+
+class SeatUpgrade{
+    int seat_id;
+    int next_seat_id;
+    [Need]
+    SeatNeed need;
+}
+
+class Seat{
+    [tag(Misc)]
+    SeatMisc misc;
+    [tag(Upgrades)]
+    List<SeatUpgrade> upgrade;
+}
+
+class Day{
+    [key]
+    int dayid;
+    [reward]
+    RewardInfo reward;
+}
+
+[root]
+class AnniversaryConfig
+{
+    [tag(Misc)]
+    AnnyMisc misc;
+    Seat seat;
+    [tag(Signin)]
+    Dict<int,Day> signin_cfg;
+}

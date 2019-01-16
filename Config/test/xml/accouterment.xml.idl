@@ -1,0 +1,18 @@
+using common;
+
+class Accouterment{
+    [key]
+    int id;
+    string name;
+    int gender=0;
+    int type=0;
+    int sub_type=0;
+    bool is_wing=false;
+    bool can_overlay=true;
+    List<bodyPart> bodyPartList;
+}
+
+[root]
+class AccoutermentList{
+    Dict<int,Accouterment> data; 
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Root>
+
+    <FirstTab id="1" name="木制家具" icon="xxx/xxx/xxx">
+        <SecondTab id="1" name="桌子" icon="xxx/xxx/xxx">
+            <Shape id="1" shape_type="1"/>
+            <Shape id="2" shape_type="10"/>
+            <Shape id="3" shape_type="15"/>
+        </SecondTab>
+    </FirstTab>
+
+    <FirstTab id="2" name="厨房用品" icon="xxx/xxx/xxx">
+        <SecondTab id="1" name="桌子" icon="xxx/xxx/xxx">
+            <Shape id="1" shape_type="1"/>
+            <Shape id="2" shape_type="10"/>
+            <Shape id="3" shape_type="15"/>
+        </SecondTab>
+    </FirstTab>
+
+</Root>
