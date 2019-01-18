@@ -122,10 +122,20 @@ namespace CodeDump
             return ss[0].Trim();
         }
 
+        public static void parseGenericType(ref string line)
+        {
+            Regex reg = new Regex(@"<.+>");
+            Match m = reg.Match(line);
+            if (m.Success)
+            {
+                string r = m.Value.Replace(" ", "");
+                line = line.Replace(m.Value, r);
+            }
+        }
+
         public static IDLMeta Parse(string idl)
         {
             IDLMeta meta = new IDLMeta();
-            meta.meta_class.Clear();
             IDLClass m_class = null;
             IDLEnum m_enum = null;
             string[] lines = File.ReadAllLines(idl);
@@ -157,14 +167,15 @@ namespace CodeDump
                 }
 
                 //引用
-                if (Regex.IsMatch(lines[i], @"^\s*using\s+(\w+);\s*$"))
+                Match match = Regex.Match(lines[i], @"^\s*using\s+(\w+);\s*$");
+                if (match.Success)
                 {
-                    Match match = Regex.Match(lines[i], @"^\s*using\s+(\w+);\s*$");
                     IDLUsing u = new IDLUsing();
                     u.comment = comment;
                     u.using_name = match.Groups[1].Value;
                     u.Meta = meta;
                     meta.using_meta.Add(u);
+                    comment = null;
                     continue;
                 }
 
@@ -199,31 +210,32 @@ namespace CodeDump
                     continue;
                 }
                 //枚举开始
-                if (Regex.IsMatch(lines[i], @"^\s*enum\s*\w+\s*{?\s*$"))
+                match = Regex.Match(lines[i], @"^\s*enum\s*(\w+)\s*{?\s*$");
+                if (match.Success)
                 {
                     if (m_parseState != ParseState.End)
                     {
                         throw new Exception($"idl文件错误：第{i + 1}行,{lines[i]}");
                     }
                     m_parseState = ParseState.BeginEnum;
-                    Match match = Regex.Match(lines[i], @"^\s*enum\s*(\w+)\s*{?\s*$");
                     m_enum = new IDLEnum();
                     m_enum.comment = comment;
                     m_enum.enum_name = match.Groups[1].Value;
                     m_enum.Meta = meta;
                     attr = null;//用完清空
+                    comment = null;
                     continue;
                 }
 
                 //结构体开始
-                if (Regex.IsMatch(lines[i], @"^\s*(struct|class)\s*\w+\s*{?\s*$"))
+                match = Regex.Match(lines[i], @"^\s*(struct|class)\s*(\w+)\s*{?\s*$");
+                if (match.Success)
                 {
                     if (m_parseState != ParseState.End)
                     {
                         throw new Exception($"idl文件错误：第{i + 1}行,{lines[i]}");
                     }
                     m_parseState = ParseState.BeginClass;
-                    Match match = Regex.Match(lines[i], @"^\s*(struct|class)\s*(\w+)\s*{?\s*$");
                     m_class = new IDLClass();
                     m_class.comment = comment;
                     m_class.class_name = match.Groups[2].Value;
@@ -234,6 +246,7 @@ namespace CodeDump
                         meta.root_class_name = m_class.class_name;
                     }
                     attr = null;//用完清空
+                    comment = null;
                     continue;
                 }
 
@@ -241,6 +254,7 @@ namespace CodeDump
                 //结构体
                 if (m_parseState == ParseState.BeginClass)
                 {
+                    parseGenericType(ref lines[i]);
                     string def = parseDefaultValue(ref lines[i]);
                     Match m = Regex.Match(lines[i], @"\s*(\S+)\s+(\w+)\s*;\s*$");
                     if (m.Success == false)
@@ -261,6 +275,7 @@ namespace CodeDump
                     }
                     m_class.fieldList.Add(field);
                     attr = null;//用完清空
+                    comment = null;
                     continue;
                 }
 
@@ -280,6 +295,7 @@ namespace CodeDump
                     item.Enum = m_enum;
                     m_enum.enum_fields.Add(item.item_name, item);
                     attr = null;//用完清空
+                    comment = null;
                     continue;
                 }
 
@@ -331,58 +347,58 @@ namespace CodeDump
             fieldtype.type_name = typename;
             switch (typename)
             {
-                case "int": { fieldtype.type = eIDLType.INT; break; }
-                case "float": { fieldtype.type = eIDLType.FLOAT; break; }
-                case "string": { fieldtype.type = eIDLType.STRING; break; }
-                case "bool": { fieldtype.type = eIDLType.BOOL; break; }
+                case "int": { fieldtype.type = eIDLType.INT; return true; }
+                case "float": { fieldtype.type = eIDLType.FLOAT; return true; }
+                case "string": { fieldtype.type = eIDLType.STRING; return true; }
+                case "bool": { fieldtype.type = eIDLType.BOOL; return true; }
                 default:
-                    Match m = Regex.Match(typename, @"List<(\w+)>");
-                    if (m.Success)
-                    {
-                        fieldtype.type = eIDLType.LIST;
-                        fieldtype.inner_type = new IDLType[1] { new IDLType() };
-                        string inner_name = m.Groups[1].Value;
-                        if (!ParseFieldType(meta, inner_name, fieldtype.inner_type[0]))
-                        {
-                            return false;
-                        }
-                        break;
-                    }
-
-                    m = Regex.Match(typename, @"Dict<(\w+),(\w+)>");
-                    if (m.Success)
-                    {
-                        fieldtype.type = eIDLType.DICT;
-                        fieldtype.inner_type = new IDLType[2] { new IDLType(), new IDLType() };
-                        string key_name = m.Groups[1].Value;
-                        if (!ParseFieldType(meta, key_name, fieldtype.inner_type[0]))
-                        {
-                            return false;
-                        }
-                        string value_name = m.Groups[2].Value;
-                        if (!ParseFieldType(meta, value_name, fieldtype.inner_type[1]))
-                        {
-                            return false;
-                        }
-                        break;
-                    }
-
-                    if (FindUsingClass(meta, typename) != null)
-                    {
-                        fieldtype.type = eIDLType.CLASS;
-                        break;
-                    }
-
-                    if (FindUsingEnum(meta, typename) != null)
-                    {
-                        fieldtype.type = eIDLType.ENUM;
-                        break;
-                    }
-
-                    Console.WriteLine("解析类型名称错误，未能识别{0}", typename);
-                    return false;
+                    break;
             }
-            return true;
+            Match m = Regex.Match(typename, @"List<(\w+)>");
+            if (m.Success)
+            {
+                fieldtype.type = eIDLType.LIST;
+                fieldtype.inner_type = new IDLType[1] { new IDLType() };
+                string inner_name = m.Groups[1].Value;
+                if (!ParseFieldType(meta, inner_name, fieldtype.inner_type[0]))
+                {
+                    return false;
+                }
+                return true;
+            }
+
+            m = Regex.Match(typename, @"Dict<(\w+),(\w+)>");
+            if (m.Success)
+            {
+                fieldtype.type = eIDLType.DICT;
+                fieldtype.inner_type = new IDLType[2] { new IDLType(), new IDLType() };
+                string key_name = m.Groups[1].Value;
+                if (!ParseFieldType(meta, key_name, fieldtype.inner_type[0]))
+                {
+                    return false;
+                }
+                string value_name = m.Groups[2].Value;
+                if (!ParseFieldType(meta, value_name, fieldtype.inner_type[1]))
+                {
+                    return false;
+                }
+                return true;
+            }
+
+            if (FindUsingClass(meta, typename) != null)
+            {
+                fieldtype.type = eIDLType.CLASS;
+                return true;
+            }
+
+            if (FindUsingEnum(meta, typename) != null)
+            {
+                fieldtype.type = eIDLType.ENUM;
+                return true;
+            }
+
+            Console.WriteLine("解析类型名称错误，未能识别{0}", typename);
+            return false;
         }
 
     }

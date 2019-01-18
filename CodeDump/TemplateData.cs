@@ -326,7 +326,8 @@ namespace CodeDump
             {
                 return GetClassFieldName(lst.First());
             }
-            return null;
+
+            return c.fieldList[0].field_name;
         }
 
         public string GetClassComment(object obj)
