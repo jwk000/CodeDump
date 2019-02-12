@@ -45,7 +45,7 @@ namespace CodeDump
                 {
                     if (lang.Contains(Path.GetExtension(tpl)))
                     {
-                        code_gen.GenerateCode(idlfile, tpl, tardir);
+                        code_gen.GenerateAllCodes(idlfile, tpl, tardir);
                     }
                 }
                 Console.ReadKey();
@@ -69,7 +69,7 @@ namespace CodeDump
                         //遍历template文件
                         foreach (string tpl in Directory.EnumerateFiles(tpldir))
                         {
-                            code_gen.GenerateCode(idl, tpl, tardir);
+                            code_gen.GenerateAllCodes(idl, tpl, tardir);
                         }
                     }
                 }

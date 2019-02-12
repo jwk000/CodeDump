@@ -32,56 +32,330 @@ namespace CodeDump
 
     class IDLEnumField
     {
-        public IDLEnum Enum { get; set; }
         public string item_name;
         public string item_value;
         public string comment;
+
+        public IDLEnum Enum { get; set; }
+        public string Name { get { return item_name; } }
+        public string Value { get { return item_value; } }
+        public string Comment { get { return comment; } }
+
     }
 
     class IDLEnum
     {
-        public IDLMeta Meta { get; set; }
-
         public string enum_name;
         public string comment;
         public Dictionary<string, IDLEnumField> enum_fields = new Dictionary<string, IDLEnumField>();
+
+        public IDLMeta Meta { get; set; }
+        public string Comment { get { return comment; } }
+        public string Name { get { return enum_name; } }
+        public List<IDLEnumField> FieldList { get { return enum_fields.Values.ToList(); } }
     }
 
     class IDLClassField
     {
-        public IDLClass Class { get; set; }
         public IDLType field_type = new IDLType();
         public string type_name;
         public string field_name;
         public string comment;
         public string default_value;
         public IDLAttr field_attrs = new IDLAttr();
+
+        public IDLMeta Meta { get { return Class.Meta; } }
+        public IDLClass Class { get; set; }
+        public string Name{get{return field_name;}}
+        public string IsOptional
+        {
+            get
+            {
+                if (field_attrs != null && field_attrs.attr_type == eIDLAttr.OPTIONAL)
+                {
+                    return "true";
+                }
+                return "false";
+            }
+        }
+        public string DictKeyName
+        {
+            get
+            {
+                if (field_type.type != eIDLType.DICT) return null;
+
+                IDLClass c = IDLParser.FindUsingClass(Class.Meta, DictValueType);
+                if (c != null)
+                {
+                    return c.Key;
+                }
+                return null;
+            }
+        }
+        public string Index
+        {
+            get
+            {
+                int idx = Class.fieldList.IndexOf(this) + 1;
+                return idx.ToString();
+            }
+        }
+        public string AttrName
+        {
+            get
+            {
+                if (field_attrs == null) return null;
+                return field_attrs.attr_name;
+            }
+        }
+        public string AttrParam
+        {
+            get
+            {
+                if (field_attrs == null) return null;
+                return field_attrs.attr_param;
+            }
+        }
+        public string Tag
+        {
+            get
+            {
+                if (field_attrs != null && field_attrs.attr_type == eIDLAttr.TAG)
+                {
+                    return field_attrs.attr_param;
+                }
+                return field_name;
+            }
+        }
+        public string Comment { get { return comment; } }
+        public string MetaType
+        { get
+            {
+                switch (field_type.type)
+                {
+                    case eIDLType.BOOL:
+                        return "bool";
+                    case eIDLType.STRING:
+                        return "string";
+                    case eIDLType.INT:
+                        return "int";
+                    case eIDLType.FLOAT:
+                        return "float";
+                    case eIDLType.ENUM:
+                        return "enum";
+                    case eIDLType.CLASS:
+                        return "class";
+                    case eIDLType.DICT:
+                        {
+                            if (field_attrs != null && field_attrs.attr_type == eIDLAttr.STRING)
+                                return "dict_string";
+                            if (field_type.inner_type[1].type == eIDLType.CLASS)
+                                return "dict_class";
+                        }
+                        return "error";
+                    case eIDLType.LIST:
+                        {
+                            if (field_attrs != null && field_attrs.attr_type == eIDLAttr.STRING)
+                                return "list_string";
+                        }
+                        {
+                            if (field_type.inner_type[0].type == eIDLType.CLASS)
+                                return "list_class";
+                        }
+                        {
+                            if (field_type.inner_type[0].type < eIDLType.CLASS)
+                                return "list_basic";
+                        }
+                        return "error";
+                }
+                return GetFieldTypeName(field_type, Meta.lang);
+            }
+        }
+        public string Type
+        {
+            get
+            {
+                if (field_type.type != eIDLType.CLASS) return null;
+                return GetFieldTypeName(field_type, Meta.lang);
+            }
+        }
+        public string DictKeyType
+        {
+            get
+            {
+                if (field_type.type != eIDLType.DICT) return null;
+                return GetFieldTypeName(field_type.inner_type[0], Meta.lang);
+            }
+        }
+        public string DictValueType
+        {
+            get
+            {
+                if (field_type.type != eIDLType.DICT) return null;
+                return GetFieldTypeName(field_type.inner_type[1], Meta.lang);
+            }
+        }
+        public string DictValueTag
+        {
+            get
+            {
+                if (field_type.type != eIDLType.DICT) return null;
+                IDLType type = field_type.inner_type[1];
+                IDLClass cls = IDLParser.FindUsingClass(Class.Meta, type.type_name);
+                if (cls != null)
+                {
+                    return cls.Tag;
+                }
+                return GetFieldTypeName(field_type.inner_type[1], Meta.lang);
+            }
+        }
+        public string ListValueType
+        {
+            get
+            {
+                if (field_type.type != eIDLType.LIST) return null;
+                return GetFieldTypeName(field_type.inner_type[0], Meta.lang);
+            }
+        }
+        public string ListValueTag
+        {
+            get
+            {
+                if (field_type.type != eIDLType.LIST) return null;
+                IDLType type = field_type.inner_type[0];
+                IDLClass cls = IDLParser.FindUsingClass(Class.Meta, type.type_name);
+                if (cls != null)
+                {
+                    return cls.Tag;
+                }
+                return GetFieldTypeName(field_type.inner_type[0], Meta.lang);
+            }
+        }
+        public string DefaultValue
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(default_value))
+                {
+                    return default_value;
+                }
+                if (field_type.type == eIDLType.BOOL)
+                {
+                    return "false";
+                }
+                if (field_type.type == eIDLType.INT)
+                {
+                    return "0";
+                }
+                if (field_type.type == eIDLType.FLOAT)
+                {
+                    return "0.0f";
+                }
+
+                return null;
+            }
+        }
+        public string GetFieldTypeName(IDLType t, CodeLanguage lang)
+        {
+            switch (t.type)
+            {
+                case eIDLType.INT:
+                    return "int";
+                case eIDLType.FLOAT:
+                    return "float";
+                case eIDLType.BOOL:
+                    return "bool";
+                case eIDLType.CLASS:
+                    return t.type_name;
+                case eIDLType.ENUM:
+                    return t.type_name;
+                case eIDLType.STRING when lang == CodeLanguage.CPP:
+                    return "std::string";
+                case eIDLType.LIST when lang == CodeLanguage.CPP:
+                    return "std::vector<" + GetFieldTypeName(t.inner_type[0], lang) + ">";
+                case eIDLType.DICT when lang == CodeLanguage.CPP:
+                    return "std::map<" + GetFieldTypeName(t.inner_type[0], lang) + "," + GetFieldTypeName(t.inner_type[1], lang) + ">";
+                case eIDLType.STRING when lang == CodeLanguage.CS:
+                    return "string";
+                case eIDLType.LIST when lang == CodeLanguage.CS:
+                    return "List<" + GetFieldTypeName(t.inner_type[0], lang) + ">";
+                case eIDLType.DICT when lang == CodeLanguage.CS:
+                    return "H3DDictionary<" + GetFieldTypeName(t.inner_type[0], lang) + "," + GetFieldTypeName(t.inner_type[1], lang) + ">";
+
+            }
+            return null; ;
+        }
+
     }
     class IDLClass
     {
-        public IDLMeta Meta { get; set; }
-
         public IDLAttr class_attr;
         public string class_name;
         public string comment;
         public List<IDLClassField> fieldList = new List<IDLClassField>();
+
+        public IDLMeta Meta { get; set; }
+        public string Name { get { return class_name; } }
+        public string Tag
+        {
+            get
+            {
+                if (class_attr != null && class_attr.attr_type == eIDLAttr.TAG)
+                {
+                    return class_attr.attr_param;
+                }
+                return class_name;
+            }
+        }
+        public string AttrName
+        {
+            get
+            {
+                if (class_attr == null) return null;
+                return class_attr.attr_name;
+            }
+        }
+        public string AttrParam
+        {
+            get
+            {
+                if (class_attr == null) return null;
+                return class_attr.attr_param;
+            }
+        }
+        public string Key
+        {
+            get
+            {
+                var lst = fieldList.Where(f => f.field_attrs != null && f.field_attrs.attr_type == eIDLAttr.KEY);
+                if (lst.Count() > 0)
+                {
+                    return lst.First().Name;
+                }
+                return fieldList[0].field_name;
+            }
+        }
+        public string Comment
+        {
+            get { return comment;}
+        }
+        public List<IDLClassField> FieldList { get { return fieldList; } }
     }
 
     class IDLUsing
     {
         public string comment;
         public string using_name;
+
+
         public IDLMeta Meta { get; set; }
-    }
-    enum ParseState
-    {
-        End,
-        BeginClass,
-        BeginEnum
+        public string Name { get { return using_name + ".h";} }
+        public string Comment { get { return comment; } }
     }
 
     class IDLMeta
     {
+        public CodeLanguage lang;
         public string meta_name;
         public string code_file_name;
         public string meta_file_path;
@@ -90,12 +364,25 @@ namespace CodeDump
         public Dictionary<string, IDLClass> meta_class = new Dictionary<string, IDLClass>();
         public Dictionary<string, IDLEnum> meta_enum = new Dictionary<string, IDLEnum>();
 
+        public string Name { get { return meta_name; } }
+        public string FilePath { get { return meta_file_path; } }
+        public string CodeFileName { get { return code_file_name; } }
+        public string HasRoot{get{return string.IsNullOrEmpty(root_class_name) ? "false" : "true";}}
+        public string RootClassName{get{return root_class_name;}}
+        public List<IDLClass> ClassList { get { return meta_class.Values.ToList(); } }
+        public List<IDLEnum> EnumList { get { return meta_enum.Values.ToList(); } }
     }
 
     static class IDLParser
     {
 
-        public static string parseComment(ref string line)
+     enum ParseState
+    {
+        End,
+        BeginClass,
+        BeginEnum
+    }
+       public static string parseComment(ref string line)
         {
             for (int i = 0; i < line.Length; i++)
             {

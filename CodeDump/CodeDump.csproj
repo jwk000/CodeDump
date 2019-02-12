@@ -63,9 +63,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeGen.cs" />
     <Compile Include="CodeGenHelper.cs" />
     <Compile Include="FileTimeChecker.cs" />
+    <Compile Include="GlobalMeta.cs" />
     <Compile Include="IDLAttr.cs" />
     <Compile Include="IDLMeta.cs" />
     <Compile Include="Program.cs" />

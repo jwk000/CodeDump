@@ -20,7 +20,6 @@ namespace CodeDump
 
     class CodeGenHelper
     {
-        CodeGen m_code_gen = new CodeGen();
         FileTimeChecker m_file_time_checker = new FileTimeChecker();
 
         public static Dictionary<string, IDLMeta> all_xml_meta = new Dictionary<string, IDLMeta>();
@@ -137,7 +136,36 @@ namespace CodeDump
             }
             return meta;
         }
-        public bool GenerateCode(string idl, string template, string dir)
+
+        public bool GenerateCode(IDLMeta meta, string template, string codefile)
+        {
+            string[] lines = File.ReadAllLines(template);
+            //解析规则
+            var rules = TemplateRuleParser.Parse(lines.ToList());
+            //展开规则
+            List<string> code = new List<string>();
+            TemplateData data = new TemplateData();
+            data.SetGlobalVariant("Meta", meta);
+            foreach (var rule in rules)
+            {
+                var code_line = rule.Apply(meta, data);
+                code.AddRange(code_line);
+            }
+            //写入文件
+            using (FileStream fs = new FileStream(codefile, FileMode.Create, FileAccess.Write))
+            {
+                using (StreamWriter sw = new StreamWriter(fs))
+                {
+                    foreach (var line in code)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+            }
+            return true;
+        }
+
+        public bool GenerateAllCodes(string idl, string template, string dir)
         {
             if (!File.Exists(idl))
             {
@@ -169,9 +197,9 @@ namespace CodeDump
             {
                 return false;
             }
-
+            meta.lang = lang;
             meta.code_file_name = tplfile.Substring(0,tplfile.IndexOf('.'));
-            if (!m_code_gen.GenerateCode(lang, meta, template, codefile))
+            if (!GenerateCode(meta, template, codefile))
             {
                 Console.WriteLine("生成IDL文件{0}的代码失败！", idl);
                 return false;
