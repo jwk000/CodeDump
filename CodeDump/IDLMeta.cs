@@ -52,7 +52,7 @@ namespace CodeDump
         public IDLMeta Meta { get; set; }
         public string Comment { get { return comment; } }
         public string Name { get { return enum_name; } }
-        public List<IDLEnumField> FieldList { get { return enum_fields.Values.ToList(); } }
+        public object[] FieldList { get { return enum_fields.Values.ToArray(); } }
     }
 
     class IDLClassField
@@ -175,7 +175,6 @@ namespace CodeDump
         {
             get
             {
-                if (field_type.type != eIDLType.CLASS) return null;
                 return GetFieldTypeName(field_type, Meta.lang);
             }
         }
@@ -339,7 +338,7 @@ namespace CodeDump
         {
             get { return comment;}
         }
-        public List<IDLClassField> FieldList { get { return fieldList; } }
+        public object[] FieldList { get { return fieldList.ToArray(); } }
     }
 
     class IDLUsing
@@ -360,17 +359,18 @@ namespace CodeDump
         public string code_file_name;
         public string meta_file_path;
         public string root_class_name;
-        public List<IDLUsing> using_meta = new List<IDLUsing>();
+        public List<IDLUsing> meta_using = new List<IDLUsing>();
         public Dictionary<string, IDLClass> meta_class = new Dictionary<string, IDLClass>();
         public Dictionary<string, IDLEnum> meta_enum = new Dictionary<string, IDLEnum>();
 
         public string Name { get { return meta_name; } }
         public string FilePath { get { return meta_file_path; } }
-        public string CodeFileName { get { return code_file_name; } }
+        public string FileName { get { return code_file_name; } }
         public string HasRoot{get{return string.IsNullOrEmpty(root_class_name) ? "false" : "true";}}
         public string RootClassName{get{return root_class_name;}}
-        public List<IDLClass> ClassList { get { return meta_class.Values.ToList(); } }
-        public List<IDLEnum> EnumList { get { return meta_enum.Values.ToList(); } }
+        public object[] UsingList { get { return meta_using.ToArray(); } }
+        public object[] ClassList { get {return meta_class.Values.ToArray();} }
+        public object[] EnumList { get { return meta_enum.Values.ToArray(); } }
     }
 
     static class IDLParser
@@ -461,7 +461,7 @@ namespace CodeDump
                     u.comment = comment;
                     u.using_name = match.Groups[1].Value;
                     u.Meta = meta;
-                    meta.using_meta.Add(u);
+                    meta.meta_using.Add(u);
                     comment = null;
                     continue;
                 }
@@ -600,7 +600,7 @@ namespace CodeDump
                 return enumtype;
             }
 
-            foreach (var u in meta.using_meta)
+            foreach (var u in meta.meta_using)
             {
                 var c = CodeGenHelper.FindMetaEnum(u.using_name, enum_name);
                 if (c != null)
@@ -619,7 +619,7 @@ namespace CodeDump
                 return classtype;
             }
 
-            foreach (var u in meta.using_meta)
+            foreach (var u in meta.meta_using)
             {
                 var c = CodeGenHelper.FindMetaClass(u.using_name, class_name);
                 if (c != null)

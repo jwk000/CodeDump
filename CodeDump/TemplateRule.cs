@@ -38,6 +38,7 @@ namespace CodeDump
             if (rule != null)
             {
                 rule.RuleInfo = this;
+                rule.rule_lines = new List<string>();
             }
             return rule;
 
@@ -49,7 +50,7 @@ namespace CodeDump
         List<string> rule_lines { get; set; }
         string rule_params { get; set; }
 
-        List<string> Apply(object obj, TemplateData data);
+        List<string> Apply(TemplateData data);
     }
 
     static class TemplateRuleParser
@@ -58,7 +59,7 @@ namespace CodeDump
         static List<RuleMatchInfo> match_rule_info = new List<RuleMatchInfo>();
         static TemplateRuleParser()
         {
-            match_rule_info.Add(new RuleMatchInfo { match_text_begin = @"@{IF\(.+\)}", match_text_end = "@{END_IF}", rule_type = eTemplateRule.IF});
+            match_rule_info.Add(new RuleMatchInfo { match_text_begin = @"@{IF\(.+\)}", match_text_end = "@{END_IF}", rule_type = eTemplateRule.IF });
             match_rule_info.Add(new RuleMatchInfo { match_text_begin = @"@{SWITCH\(.+\)}", match_text_end = "@{END_SWITCH}", rule_type = eTemplateRule.SWITCH });
             match_rule_info.Add(new RuleMatchInfo { match_text_begin = @"@{FOREACH\(.+\)}", match_text_end = "@{END_FOREACH}", rule_type = eTemplateRule.FOREACH });
         }
@@ -77,12 +78,20 @@ namespace CodeDump
             return text;
         }
 
-        public static bool MatchEnd(string line, RuleMatchInfo rmt)
+        public static bool MatchEnd(string line, RuleMatchInfo matchtxt)
         {
-            if (rmt.match_text_end == line.Trim())
+            //寻找end的时候要检查深度
+            Regex reg = new Regex(matchtxt.match_text_begin);
+            if (reg.IsMatch(line.Trim()))
             {
-                rmt.match_deepth--;
-                if (rmt.match_deepth == 0)
+                matchtxt.match_deepth++;
+                return false;
+            }
+
+            if (matchtxt.match_text_end == line.Trim())
+            {
+                matchtxt.match_deepth--;
+                if (matchtxt.match_deepth == 0)
                 {
                     return true;
                 }
@@ -99,23 +108,27 @@ namespace CodeDump
             ITemplateRule rule = null;
             for (int i = 0; i < rule_lines.Count; i++)
             {
-                if (info==null || info.rule_type == eTemplateRule.METATEXT)
+                if (info == null || info.rule_type == eTemplateRule.METATEXT)
                 {
-                    info = MatchBegin(rule_lines[i]);
-                    rule = info.CreateRule();
-                    if (info.rule_type == eTemplateRule.METATEXT)
+                    var match_info = MatchBegin(rule_lines[i]);
+                    if (match_info != info)
                     {
-                        rule.rule_lines.Add(rule_lines[i]);
-                        continue;
+                        if (rule != null && rule.rule_lines.Count > 0)
+                        {
+                            extend_rules.Add(rule);
+                        }
+                        info = match_info;
+                        rule = info.CreateRule();
+                        if (info.rule_type != eTemplateRule.METATEXT)
+                        {
+                            //匹配行含有参数
+                            rule.rule_params = rule_lines[i];
+                            //跳过匹配行
+                            continue;
+                        }
                     }
 
-                    if (rule.rule_lines.Count > 0)
-                    {
-                        extend_rules.Add(rule);
-                    }
-                    //匹配行含有参数
-                    rule.rule_params = rule_lines[i];
-                    info = null;
+                    rule.rule_lines.Add(rule_lines[i]);
                     continue;
                 }
 
@@ -126,29 +139,33 @@ namespace CodeDump
                         extend_rules.Add(rule);
                     }
                     info = null;
+                    rule = null;
                     continue;
                 }
 
                 rule.rule_lines.Add(rule_lines[i]);
 
             }
-
+            if (rule != null && rule.rule_lines.Count > 0)
+            {
+                extend_rules.Add(rule);
+            }
             return extend_rules;
         }
 
     }
 
-    class RuleMeta:ITemplateRule
+    class RuleMeta : ITemplateRule
     {
         public RuleMatchInfo RuleInfo { get; set; }
         public List<string> rule_lines { get; set; }
         public string rule_params { get; set; }
-        public List<string> Apply(object obj, TemplateData data)
+        public List<string> Apply(TemplateData data)
         {
             List<string> result = new List<string>();
             foreach (var line in rule_lines)
             {
-                string s = data.ExtendMetaData(obj, line);
+                string s = data.ExtendMetaData(line);
                 result.Add(s);
             }
 
@@ -156,18 +173,6 @@ namespace CodeDump
         }
 
     }
-    class RulePlainText : ITemplateRule
-    {
-        public RuleMatchInfo RuleInfo { get; set; }
-        public List<string> rule_lines { get; set; }
-        public string rule_params { get; set; }
-
-        public List<string> Apply(object obj, TemplateData data)
-        {
-            return rule_lines;
-        }
-    }
-
 
     class RuleIf : ITemplateRule
     {
@@ -229,7 +234,7 @@ namespace CodeDump
             return false;
         }
 
-        public List<string> Apply(object obj, TemplateData data)
+        public List<string> Apply(TemplateData data)
         {
             Regex reg = new Regex(@"@{\w+\((.+)\)}");
             Match m = reg.Match(rule_params);
@@ -271,7 +276,7 @@ namespace CodeDump
             List<ITemplateRule> extend_rules = TemplateRuleParser.Parse(extend_lines);
             foreach (var rule in extend_rules)
             {
-                var ss = rule.Apply(obj, data);
+                var ss = rule.Apply(data);
                 result.AddRange(ss);
             }
 
@@ -284,7 +289,7 @@ namespace CodeDump
         public List<string> rule_lines { get; set; }
         public string rule_params { get; set; }
 
-        public List<string> Apply(object obj, TemplateData data)
+        public List<string> Apply(TemplateData data)
         {
             Regex reg = new Regex(@"@{SWITCH\((.+)\)}");
             Match m = reg.Match(rule_params);
@@ -295,7 +300,7 @@ namespace CodeDump
             }
 
             string condition = m.Groups[1].Value;
-
+            condition = data.ExtraMetaData(condition) as string;
             Regex regcase = new Regex(@"@{CASE\((.+)\)}");
             bool find_case = false; //寻找else
 
@@ -326,7 +331,7 @@ namespace CodeDump
             List<ITemplateRule> extend_rules = TemplateRuleParser.Parse(extend_lines);
             foreach (var rule in extend_rules)
             {
-                var ss = rule.Apply(obj, data);
+                var ss = rule.Apply(data);
                 result.AddRange(ss);
             }
 
@@ -339,8 +344,8 @@ namespace CodeDump
         public RuleMatchInfo RuleInfo { get; set; }
         public List<string> rule_lines { get; set; }
         public string rule_params { get; set; }
-        
-        public List<string> Apply(object obj, TemplateData data)
+
+        public List<string> Apply(TemplateData data)
         {
             Regex reg = new Regex(@"@{FOREACH\((\w+)\s+IN\s+(.+)\)}");
             Match m = reg.Match(rule_params);
@@ -352,25 +357,18 @@ namespace CodeDump
 
             string var_name = m.Groups[1].Value;
             string extra = m.Groups[2].Value;
-            Array var_array = data.ExtraMetaData(obj, extra) as Array;
+            object[] var_array = data.ExtraMetaData(extra) as object[];
 
             List<string> result = new List<string>();
             foreach (object v in var_array)
             {
-                if(!data.localVariantDict.ContainsKey(var_name))
-                {
-                    data.localVariantDict.Add(var_name, v);
-                }
-                else
-                {
-                    data.localVariantDict[var_name] = v;
-                }
+                data.SetLocalVariant(var_name, v);
 
                 List<string> res = new List<string>();
                 List<ITemplateRule> extend_rules = TemplateRuleParser.Parse(rule_lines);
                 foreach (var rule in extend_rules)
                 {
-                    var ss = rule.Apply(obj, data);
+                    var ss = rule.Apply(data);
                     res.AddRange(ss);
                 }
                 result.AddRange(res);

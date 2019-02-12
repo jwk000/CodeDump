@@ -148,7 +148,7 @@ namespace CodeDump
             data.SetGlobalVariant("Meta", meta);
             foreach (var rule in rules)
             {
-                var code_line = rule.Apply(meta, data);
+                var code_line = rule.Apply(data);
                 code.AddRange(code_line);
             }
             //写入文件

@@ -40,54 +40,49 @@ namespace CodeDump
             localVariantDict.Add(name, obj);
         }
 
-        public string GetVariantString2(string objname, string fieldname)
-        {
-            object obj = null;
-            if (localVariantDict.TryGetValue(objname, out obj))
-            {
-                FieldInfo field = obj.GetType().GetField(fieldname);
-                return field.GetValue(obj).ToString();
-            }
-            if (globalVariantDict.TryGetValue(objname, out obj))
-            {
-                FieldInfo field = obj.GetType().GetField(fieldname);
-                return field.GetValue(obj).ToString();
-            }
 
-            return null;
-        }
-        public string GetVariantString(string objname, string fieldname)
+        public object GetVariantObject(string objname, string fieldname)
         {
             object obj = null;
             if (localVariantDict.TryGetValue(objname, out obj))
             {
                 PropertyInfo info = obj.GetType().GetRuntimeProperty(fieldname);
-                return info.GetValue(obj).ToString();
+                return info.GetValue(obj);
             }
             if (globalVariantDict.TryGetValue(objname, out obj))
             {
                 PropertyInfo info = obj.GetType().GetRuntimeProperty(fieldname);
-                return info.GetValue(obj).ToString();
+                return info.GetValue(obj);
             }
 
             return null;
+
         }
 
         //提取对象
-        public object ExtraMetaData(object meta, string extra)
+        public object ExtraMetaData(string extra)
         {
-            return meta.GetType().GetRuntimeProperty(extra).GetValue(meta);
+            Regex reg = new Regex(@"\${(\w+).(\w+)}");
+            var m = reg.Match(extra);
+            if(!m.Success)
+            {
+                return false;
+            }
+            string objname = m.Groups[1].Value;
+            string fieldname = m.Groups[2].Value;
+
+            return GetVariantObject(objname, fieldname);
         }
         //展开宏
-        public string ExtendMetaData(object meta, string line)
+        public string ExtendMetaData(string line)
         {
             Regex reg = new Regex(@"\${(\w+).(\w+)}");
             return reg.Replace(line, m =>
             {
                 string objname = m.Groups[1].Value;
                 string fieldname = m.Groups[2].Value;
-                string s = GetVariantString(objname, fieldname);
-                return s ?? m.Groups[0].Value;
+                string s = GetVariantObject(objname, fieldname) as string;
+                return s;// ?? m.Groups[0].Value;
             });
 
         }
