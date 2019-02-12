@@ -1,0 +1,43 @@
+2019-2-12
+---
+CodeDump v1.0 完成。
+1. 实现了规则和数据的分离，规则部分可以单独使用了。
+2. 数据通过反射获取，可以方便扩展数据项了。只要把对象注册到模板数据字典中即可使用。
+3. G代表系统默认的数据项，一般包含时间、目录等通用信息，目前只有一个G.DateTime。
+
+2019-1-30
+---
+规则解析增加深度计数，删除了IF0/IF1/IF2这种语法
+增加了foreach规则，用于替换原来的class field展开规则
+重构了规则和数据的关系，规则抽象为语法宏，数据抽象为文本宏
+规则现在只有流程控制if/switch/foreach和meta展开规则了
+数据直接使用meta对象的属性反射得到值，与meta对象解耦了
+
+2019-1-16
+---
+增加了switch case规则，用于替代原来的class field类型选择规则
+
+2019-1-14
+---
+规范了规则命令的命名，方便记忆。
+删除了不常用的规则。如@{AFTER_META_TEXT}。
+简化了ifelse规则，有IF/IF0/IF1/IF2四级可用。
+增加@{BEGIN_FIELD_TYPE_BASIC}规则，表示bool int float string基本类型。
+
+
+2018-8-1
+---
+新增tag属性，用来标记变量节点名称，用法如下：
+
+[tag(Scene)]
+class SceneData{//类名为SceneData而xml中标签名为Scene
+    [tag(SceneLevelList)]
+    List<SceneLevel> levels; //变量名为levels而标签名为SceneLevelList
+}
+
+[root]
+class HomeConfig{
+    [tag(SceneList)] //变量名为scenes而xml中标签名为SceneList
+    Dict<int,SceneData> scenes;
+}
+
