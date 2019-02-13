@@ -8,6 +8,75 @@ using System.Text.RegularExpressions;
 
 namespace CodeDump
 {
+    enum eIDLAttr
+    {
+        NOATTR,
+        ROOT,//root class
+        KEY, //dict的key
+        STRING,//从string解析复杂字段
+        IN,//枚举限定
+        RANGE,//范围检查
+        OPTIONAL,//可选的字段，默认为必须有
+        TAG,//标签名 xml标签和类名不一致用
+        REWARD,//奖励类型，特殊解析
+    }
+
+    class IDLAttr
+    {
+        public eIDLAttr attr_type = eIDLAttr.NOATTR;
+        public string attr_name;
+        public string attr_param;
+
+        public static IDLAttr ParseAttr(string line)
+        {
+            string attrstr = line.Substring(line.IndexOf('[') + 1, line.IndexOf(']') - line.IndexOf('[') - 1);
+            //处理带参数的属性
+            string[] ss = attrstr.Split('(');
+            string attrname = ss[0];
+            string attrparam = null;
+
+            if (ss.Length > 1)
+            {
+                attrparam = ss[1].Split(')')[0];
+            }
+
+            if (!string.IsNullOrEmpty(attrstr))
+            {
+                if (attrname == "root")
+                {
+                    return new IDLAttr { attr_type = eIDLAttr.ROOT, attr_name = attrname, attr_param = attrparam };
+                }
+                if (attrname == "key")
+                {
+                    return new IDLAttr { attr_type = eIDLAttr.KEY, attr_name = attrname, attr_param = attrparam };
+                }
+                if (attrname == "string")
+                {
+                    return new IDLAttr { attr_type = eIDLAttr.STRING, attr_name = attrname, attr_param = attrparam };
+                }
+                if (attrname == "optional")
+                {
+                    return new IDLAttr { attr_type = eIDLAttr.OPTIONAL, attr_name = attrname, attr_param = attrparam };
+                }
+                if (attrname == "tag")
+                {
+                    return new IDLAttr { attr_type = eIDLAttr.TAG, attr_name = attrname, attr_param = attrparam };
+                }
+                if (attrname == "range")
+                {
+                    return new IDLAttr { attr_type = eIDLAttr.RANGE, attr_name = attrname, attr_param = attrparam };
+                }
+                if (attrname == "reward")
+                {
+                    return new IDLAttr { attr_type = eIDLAttr.REWARD, attr_name = attrname, attr_param = attrparam };
+                }
+            }
+            return null;
+
+        }
+
+    }
+
     enum eIDLType
     {
         INVALID,
@@ -66,7 +135,7 @@ namespace CodeDump
 
         public IDLMeta Meta { get { return Class.Meta; } }
         public IDLClass Class { get; set; }
-        public string Name{get{return field_name;}}
+        public string Name { get { return field_name; } }
         public string IsOptional
         {
             get
@@ -129,7 +198,8 @@ namespace CodeDump
         }
         public string Comment { get { return comment; } }
         public string MetaType
-        { get
+        {
+            get
             {
                 switch (field_type.type)
                 {
@@ -336,7 +406,7 @@ namespace CodeDump
         }
         public string Comment
         {
-            get { return comment;}
+            get { return comment; }
         }
         public object[] FieldList { get { return fieldList.ToArray(); } }
     }
@@ -348,7 +418,7 @@ namespace CodeDump
 
 
         public IDLMeta Meta { get; set; }
-        public string Name { get { return using_name + ".h";} }
+        public string Name { get { return using_name + ".h"; } }
         public string Comment { get { return comment; } }
     }
 
@@ -366,23 +436,23 @@ namespace CodeDump
         public string Name { get { return meta_name; } }
         public string FilePath { get { return meta_file_path; } }
         public string FileName { get { return code_file_name; } }
-        public string HasRoot{get{return string.IsNullOrEmpty(root_class_name) ? "false" : "true";}}
-        public string RootClassName{get{return root_class_name;}}
+        public string HasRoot { get { return string.IsNullOrEmpty(root_class_name) ? "false" : "true"; } }
+        public string RootClassName { get { return root_class_name; } }
         public object[] UsingList { get { return meta_using.ToArray(); } }
-        public object[] ClassList { get {return meta_class.Values.ToArray();} }
+        public object[] ClassList { get { return meta_class.Values.ToArray(); } }
         public object[] EnumList { get { return meta_enum.Values.ToArray(); } }
     }
 
     static class IDLParser
     {
+        enum ParseState
+        {
+            End,
+            BeginClass,
+            BeginEnum
+        }
 
-     enum ParseState
-    {
-        End,
-        BeginClass,
-        BeginEnum
-    }
-       public static string parseComment(ref string line)
+        public static string parseComment(ref string line)
         {
             for (int i = 0; i < line.Length; i++)
             {

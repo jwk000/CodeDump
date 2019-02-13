@@ -66,11 +66,9 @@
     <Compile Include="CodeGenHelper.cs" />
     <Compile Include="FileTimeChecker.cs" />
     <Compile Include="GlobalMeta.cs" />
-    <Compile Include="IDLAttr.cs" />
     <Compile Include="IDLMeta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TemplateData.cs" />
     <Compile Include="TemplateRule.cs" />
   </ItemGroup>
   <ItemGroup>

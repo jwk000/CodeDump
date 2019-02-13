@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Reflection;
 
 namespace CodeDump
 {
@@ -20,146 +21,23 @@ namespace CodeDump
     class RuleMatchInfo
     {
         public eTemplateRule rule_type = eTemplateRule.METATEXT;
-
         public string match_text_begin;
         public string match_text_end;
         public int match_deepth;
 
-
-        public ITemplateRule CreateRule()
-        {
-            ITemplateRule rule = null;
-
-            if (rule_type == eTemplateRule.METATEXT) rule = new RuleMeta();
-            else if (rule_type == eTemplateRule.IF) rule = new RuleIf();
-            else if (rule_type == eTemplateRule.SWITCH) rule = new RuleSwitch();
-            else if (rule_type == eTemplateRule.FOREACH) rule = new RuleForeach();
-
-            if (rule != null)
-            {
-                rule.RuleInfo = this;
-                rule.rule_lines = new List<string>();
-            }
-            return rule;
-
-        }
     }
     interface ITemplateRule
     {
-        RuleMatchInfo RuleInfo { get; set; }
+        RuleMatchInfo match_info { get; set; }
         List<string> rule_lines { get; set; }
-        string rule_params { get; set; }
-
+        string rule_param_line { get; set; }
         List<string> Apply(TemplateData data);
     }
-
-    static class TemplateRuleParser
+    class RuleMetaText : ITemplateRule
     {
-        static RuleMatchInfo text = new RuleMatchInfo { rule_type = eTemplateRule.METATEXT };
-        static List<RuleMatchInfo> match_rule_info = new List<RuleMatchInfo>();
-        static TemplateRuleParser()
-        {
-            match_rule_info.Add(new RuleMatchInfo { match_text_begin = @"@{IF\(.+\)}", match_text_end = "@{END_IF}", rule_type = eTemplateRule.IF });
-            match_rule_info.Add(new RuleMatchInfo { match_text_begin = @"@{SWITCH\(.+\)}", match_text_end = "@{END_SWITCH}", rule_type = eTemplateRule.SWITCH });
-            match_rule_info.Add(new RuleMatchInfo { match_text_begin = @"@{FOREACH\(.+\)}", match_text_end = "@{END_FOREACH}", rule_type = eTemplateRule.FOREACH });
-        }
-
-        public static RuleMatchInfo MatchBegin(string line)
-        {
-            foreach (var matchtxt in match_rule_info)
-            {
-                Regex reg = new Regex(matchtxt.match_text_begin);
-                if (reg.IsMatch(line.Trim()))
-                {
-                    matchtxt.match_deepth++;
-                    return matchtxt;
-                }
-            }
-            return text;
-        }
-
-        public static bool MatchEnd(string line, RuleMatchInfo matchtxt)
-        {
-            //寻找end的时候要检查深度
-            Regex reg = new Regex(matchtxt.match_text_begin);
-            if (reg.IsMatch(line.Trim()))
-            {
-                matchtxt.match_deepth++;
-                return false;
-            }
-
-            if (matchtxt.match_text_end == line.Trim())
-            {
-                matchtxt.match_deepth--;
-                if (matchtxt.match_deepth == 0)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-
-        public static List<ITemplateRule> Parse(List<string> rule_lines)
-        {
-            List<ITemplateRule> extend_rules = new List<ITemplateRule>();
-
-            RuleMatchInfo info = null;
-            ITemplateRule rule = null;
-            for (int i = 0; i < rule_lines.Count; i++)
-            {
-                if (info == null || info.rule_type == eTemplateRule.METATEXT)
-                {
-                    var match_info = MatchBegin(rule_lines[i]);
-                    if (match_info != info)
-                    {
-                        if (rule != null && rule.rule_lines.Count > 0)
-                        {
-                            extend_rules.Add(rule);
-                        }
-                        info = match_info;
-                        rule = info.CreateRule();
-                        if (info.rule_type != eTemplateRule.METATEXT)
-                        {
-                            //匹配行含有参数
-                            rule.rule_params = rule_lines[i];
-                            //跳过匹配行
-                            continue;
-                        }
-                    }
-
-                    rule.rule_lines.Add(rule_lines[i]);
-                    continue;
-                }
-
-                if (MatchEnd(rule_lines[i], info))
-                {
-                    if (rule.rule_lines.Count > 0)
-                    {
-                        extend_rules.Add(rule);
-                    }
-                    info = null;
-                    rule = null;
-                    continue;
-                }
-
-                rule.rule_lines.Add(rule_lines[i]);
-
-            }
-            if (rule != null && rule.rule_lines.Count > 0)
-            {
-                extend_rules.Add(rule);
-            }
-            return extend_rules;
-        }
-
-    }
-
-    class RuleMeta : ITemplateRule
-    {
-        public RuleMatchInfo RuleInfo { get; set; }
+        public RuleMatchInfo match_info { get; set; }
         public List<string> rule_lines { get; set; }
-        public string rule_params { get; set; }
+        public string rule_param_line { get; set; }
         public List<string> Apply(TemplateData data)
         {
             List<string> result = new List<string>();
@@ -173,12 +51,11 @@ namespace CodeDump
         }
 
     }
-
     class RuleIf : ITemplateRule
     {
-        public RuleMatchInfo RuleInfo { get; set; }
+        public RuleMatchInfo match_info { get; set; }
         public List<string> rule_lines { get; set; }
-        public string rule_params { get; set; }
+        public string rule_param_line { get; set; }
 
         public virtual string ElseMatchText => "@{ELSE}";
 
@@ -239,7 +116,7 @@ namespace CodeDump
             Match m = reg.Match(line);
             if (!m.Success)
             {
-                Console.WriteLine("{0}格式错误 {1}", RuleInfo.rule_type, rule_params);
+                Console.WriteLine("{0}格式错误 {1}", match_info.rule_type, rule_param_line);
                 return false;
             }
 
@@ -248,7 +125,7 @@ namespace CodeDump
         }
         public List<string> Apply(TemplateData data)
         {
-            bool condition_is_true = CheckIfLine(rule_params);
+            bool condition_is_true = CheckIfLine(rule_param_line);
             List<string> extend_lines = new List<string>();
 
             bool find_else = false; //寻找else
@@ -301,17 +178,17 @@ namespace CodeDump
     }
     class RuleSwitch : ITemplateRule
     {
-        public RuleMatchInfo RuleInfo { get; set; }
+        public RuleMatchInfo match_info { get; set; }
         public List<string> rule_lines { get; set; }
-        public string rule_params { get; set; }
+        public string rule_param_line { get; set; }
 
         public List<string> Apply(TemplateData data)
         {
             Regex reg = new Regex(@"@{SWITCH\((.+)\)}");
-            Match m = reg.Match(rule_params);
+            Match m = reg.Match(rule_param_line);
             if (!m.Success)
             {
-                Console.WriteLine("{0}格式错误 {1}", RuleInfo.rule_type, rule_params);
+                Console.WriteLine("{0}格式错误 {1}", match_info.rule_type, rule_param_line);
                 return null;
             }
 
@@ -357,17 +234,17 @@ namespace CodeDump
     }
     class RuleForeach : ITemplateRule
     {
-        public RuleMatchInfo RuleInfo { get; set; }
+        public RuleMatchInfo match_info { get; set; }
         public List<string> rule_lines { get; set; }
-        public string rule_params { get; set; }
+        public string rule_param_line { get; set; }
 
         public List<string> Apply(TemplateData data)
         {
             Regex reg = new Regex(@"@{FOREACH\((\w+)\s+IN\s+(.+)\)}");
-            Match m = reg.Match(rule_params);
+            Match m = reg.Match(rule_param_line);
             if (!m.Success)
             {
-                Console.WriteLine("{0}格式错误 {1}", RuleInfo.rule_type, rule_params);
+                Console.WriteLine("{0}格式错误 {1}", match_info.rule_type, rule_param_line);
                 return null;
             }
 
@@ -392,6 +269,201 @@ namespace CodeDump
 
 
             return result;
+        }
+
+    }
+    //规则解析器
+    static class TemplateRuleParser
+    {
+        static RuleMatchInfo matchtext = new RuleMatchInfo { rule_type = eTemplateRule.METATEXT };
+        static List<RuleMatchInfo> matchlist = new List<RuleMatchInfo>();
+        static TemplateRuleParser()
+        {
+            matchlist.Add(new RuleMatchInfo { match_text_begin = @"@{IF\(.+\)}", match_text_end = "@{END_IF}", rule_type = eTemplateRule.IF });
+            matchlist.Add(new RuleMatchInfo { match_text_begin = @"@{SWITCH\(.+\)}", match_text_end = "@{END_SWITCH}", rule_type = eTemplateRule.SWITCH });
+            matchlist.Add(new RuleMatchInfo { match_text_begin = @"@{FOREACH\(.+\)}", match_text_end = "@{END_FOREACH}", rule_type = eTemplateRule.FOREACH });
+        }
+        public static ITemplateRule CreateRule(RuleMatchInfo info)
+        {
+            ITemplateRule rule = null;
+
+            if (info.rule_type == eTemplateRule.METATEXT) rule = new RuleMetaText();
+            else if (info.rule_type == eTemplateRule.IF) rule = new RuleIf();
+            else if (info.rule_type == eTemplateRule.SWITCH) rule = new RuleSwitch();
+            else if (info.rule_type == eTemplateRule.FOREACH) rule = new RuleForeach();
+
+            if (rule != null)
+            {
+                rule.match_info = info;
+                rule.rule_lines = new List<string>();
+            }
+            return rule;
+        }
+
+        public static RuleMatchInfo MatchBegin(string line)
+        {
+            foreach (var match in matchlist)
+            {
+                Regex reg = new Regex(match.match_text_begin);
+                if (reg.IsMatch(line.Trim()))
+                {
+                    match.match_deepth++;
+                    return match;
+                }
+            }
+            return matchtext;
+        }
+        public static bool MatchEnd(string line, RuleMatchInfo matchtxt)
+        {
+            //寻找end的时候要检查深度
+            Regex reg = new Regex(matchtxt.match_text_begin);
+            if (reg.IsMatch(line.Trim()))
+            {
+                matchtxt.match_deepth++;
+                return false;
+            }
+
+            if (matchtxt.match_text_end == line.Trim())
+            {
+                matchtxt.match_deepth--;
+                if (matchtxt.match_deepth == 0)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public static List<ITemplateRule> Parse(List<string> rule_lines)
+        {
+            List<ITemplateRule> extend_rules = new List<ITemplateRule>();
+
+            RuleMatchInfo info = null;
+            ITemplateRule rule = null;
+            for (int i = 0; i < rule_lines.Count; i++)
+            {
+                if (info == null || info.rule_type == eTemplateRule.METATEXT)
+                {
+                    var match_info = MatchBegin(rule_lines[i]);
+                    if (match_info != info)
+                    {
+                        if (rule != null && rule.rule_lines.Count > 0)
+                        {
+                            extend_rules.Add(rule);
+                        }
+                        info = match_info;
+                        rule = CreateRule(info);
+                        if (info.rule_type != eTemplateRule.METATEXT)
+                        {
+                            //匹配行含有参数
+                            rule.rule_param_line = rule_lines[i];
+                            //跳过匹配行
+                            continue;
+                        }
+                    }
+
+                    rule.rule_lines.Add(rule_lines[i]);
+                    continue;
+                }
+
+                if (MatchEnd(rule_lines[i], info))
+                {
+                    if (rule.rule_lines.Count > 0)
+                    {
+                        extend_rules.Add(rule);
+                    }
+                    info = null;
+                    rule = null;
+                    continue;
+                }
+
+                rule.rule_lines.Add(rule_lines[i]);
+
+            }
+            if (rule != null && rule.rule_lines.Count > 0)
+            {
+                extend_rules.Add(rule);
+            }
+            return extend_rules;
+        }
+
+    }
+    //模板数据
+    class TemplateData
+    {
+        //全局变量
+        public Dictionary<string, object> globalVariantDict = new Dictionary<string, object>();
+        //局部变量
+        public Dictionary<string, object> localVariantDict = new Dictionary<string, object>();
+
+        public TemplateData()
+        {
+            globalVariantDict.Add("G", new GlobalMeta());
+        }
+        public void SetGlobalVariant(string name, object obj)
+        {
+            if (globalVariantDict.ContainsKey(name))
+            {
+                globalVariantDict[name] = obj;
+                return;
+            }
+            globalVariantDict.Add(name, obj);
+        }
+
+        public void SetLocalVariant(string name, object obj)
+        {
+            if (localVariantDict.ContainsKey(name))
+            {
+                localVariantDict[name] = obj;
+                return;
+            }
+            localVariantDict.Add(name, obj);
+        }
+
+
+        public object GetVariantObject(string objname, string fieldname)
+        {
+            object obj = null;
+            if (localVariantDict.TryGetValue(objname, out obj))
+            {
+                PropertyInfo info = obj.GetType().GetRuntimeProperty(fieldname);
+                return info.GetValue(obj);
+            }
+            if (globalVariantDict.TryGetValue(objname, out obj))
+            {
+                PropertyInfo info = obj.GetType().GetRuntimeProperty(fieldname);
+                return info.GetValue(obj);
+            }
+
+            return null;
+
+        }
+
+        //提取对象
+        public object ExtraMetaData(string extra)
+        {
+            Regex reg = new Regex(@"\${(\w+).(\w+)}");
+            var m = reg.Match(extra);
+            if (!m.Success)
+            {
+                return false;
+            }
+            string objname = m.Groups[1].Value;
+            string fieldname = m.Groups[2].Value;
+
+            return GetVariantObject(objname, fieldname);
+        }
+        //展开宏
+        public string ExtendMetaData(string line)
+        {
+            Regex reg = new Regex(@"\${(\w+).(\w+)}");
+            return reg.Replace(line, m =>
+            {
+                string objname = m.Groups[1].Value;
+                string fieldname = m.Groups[2].Value;
+                string s = GetVariantObject(objname, fieldname) as string;
+                return s;// ?? m.Groups[0].Value;
+            });
+
         }
 
     }
