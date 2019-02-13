@@ -78,7 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="code_malicious_128px_15142_easyicon.net.ico" />
-    <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

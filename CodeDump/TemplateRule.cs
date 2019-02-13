@@ -233,20 +233,22 @@ namespace CodeDump
 
             return false;
         }
-
-        public List<string> Apply(TemplateData data)
+        public bool CheckIfLine(string line)
         {
             Regex reg = new Regex(@"@{\w+\((.+)\)}");
-            Match m = reg.Match(rule_params);
+            Match m = reg.Match(line);
             if (!m.Success)
             {
                 Console.WriteLine("{0}格式错误 {1}", RuleInfo.rule_type, rule_params);
-                return null;
+                return false;
             }
 
             string condition = m.Groups[1].Value;
-            bool condition_is_true = CheckIfCondition(condition);
-
+            return CheckIfCondition(condition);
+        }
+        public List<string> Apply(TemplateData data)
+        {
+            bool condition_is_true = CheckIfLine(rule_params);
             List<string> extend_lines = new List<string>();
 
             bool find_else = false; //寻找else
@@ -257,6 +259,20 @@ namespace CodeDump
                     find_else = true;
                     continue;
                 }
+                //寻找其他if
+                if (Regex.IsMatch(s, @"@{ELSEIF\(.+\)}"))
+                {
+                    if (condition_is_true)
+                    {
+                        find_else = true;
+                    }
+                    else
+                    {
+                        condition_is_true = CheckIfLine(s);
+                    }
+                    continue;
+                }
+
                 if (condition_is_true)
                 {
                     if (find_else) break;
