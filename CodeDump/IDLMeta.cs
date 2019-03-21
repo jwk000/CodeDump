@@ -658,7 +658,7 @@ namespace CodeDump
                     field.default_value = def;
                     field.field_attrs = attr;
                     field.Class = m_class;
-                    if (!ParseFieldType(meta, field.type_name, field.field_type))
+                    if (!ParseFieldType(meta, field.type_name, field.field_type, true))
                     {
                         throw new Exception($"idl文件错误：第{i + 1}行,{lines[i]}");
                     }
@@ -731,7 +731,7 @@ namespace CodeDump
             }
             return null;
         }
-        public static bool ParseFieldType(IDLMeta meta, string typename, IDLType fieldtype)
+        public static bool ParseFieldType(IDLMeta meta, string typename, IDLType fieldtype, bool undefinedasclass=false)
         {
             fieldtype.type_name = typename;
             switch (typename)
@@ -749,7 +749,7 @@ namespace CodeDump
                 fieldtype.type = eIDLType.LIST;
                 fieldtype.inner_type = new IDLType[1] { new IDLType() };
                 string inner_name = m.Groups[1].Value;
-                if (!ParseFieldType(meta, inner_name, fieldtype.inner_type[0]))
+                if (!ParseFieldType(meta, inner_name, fieldtype.inner_type[0], undefinedasclass))
                 {
                     return false;
                 }
@@ -767,7 +767,7 @@ namespace CodeDump
                     return false;
                 }
                 string value_name = m.Groups[2].Value;
-                if (!ParseFieldType(meta, value_name, fieldtype.inner_type[1]))
+                if (!ParseFieldType(meta, value_name, fieldtype.inner_type[1], undefinedasclass))
                 {
                     return false;
                 }
@@ -786,6 +786,11 @@ namespace CodeDump
                 return true;
             }
 
+            if(undefinedasclass)
+            {
+                fieldtype.type = eIDLType.CLASS;
+                return true;
+            }
             Console.WriteLine("解析类型名称错误，未能识别{0}", typename);
             return false;
         }

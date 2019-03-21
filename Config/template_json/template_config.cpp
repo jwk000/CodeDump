@@ -11,7 +11,16 @@ bool ${Meta.Name}Parser::Initialize(const char* file)
 
 bool ${Meta.Name}Parser::LoadConfig(nlohmann::json& root, bool init)
 {
-    return Parse${Meta.RootClassName}(root, m_config);
+    try
+    {
+        return Parse${Meta.RootClassName}(root, m_config);
+    }
+    catch(nlohmann::detail::exception ex)
+    {
+     	LogError("${Meta.Name}Parser::LoadConfig error: ", ex.what());
+		lightAssert(false && "${Meta.Name}Parser::LoadConfig error ");
+		return false;   
+    }
 }
 
 @{FOREACH(Class IN ${Meta.ClassList})}

@@ -14,12 +14,12 @@ namespace CodeDump
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("usage1: CodeDump --xmldir=test/xml/ --tpldir=template/ --tardir=test/dumpcode/");
+            Console.WriteLine("usage1: CodeDump --idldir=test/xml/ --tpldir=template/ --tardir=test/dumpcode/");
             Console.WriteLine("usage2: CodeDump --idl=xxx.idl --lang=cpp;cs");
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
-            string xmldir = "./xml/";
+            string idldir = "./xml/";
             string tpldir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "template/");
             string tardir = "./dumpcode/";
             string idlfile = "";
@@ -27,7 +27,7 @@ namespace CodeDump
             for (int i = 0; i < args.Length; i++)
             {
                 var ss = args[i].Split('=');
-                if (ss[0] == "--xmldir") xmldir = ss[1];
+                if (ss[0] == "--idldir") idldir = ss[1];
                 if (ss[0] == "--tpldir") tpldir = ss[1];
                 if (ss[0] == "--tardir") tardir = ss[1];
                 if (ss[0] == "--idl") idlfile = ss[1];
@@ -53,7 +53,7 @@ namespace CodeDump
             }
 
             //先特殊处理一下公共引用
-            string commonidl = Path.Combine(xmldir, "common.idl");
+            string commonidl = Path.Combine(idldir, "common.idl");
             if (File.Exists(commonidl))
             {
                 code_gen.ParseIDL(commonidl);
@@ -75,9 +75,9 @@ namespace CodeDump
                 }
             };
 
-            DoGenerater(xmldir);
+            DoGenerater(idldir);
             //遍历子目录
-            foreach (string dir in Directory.EnumerateDirectories(xmldir))
+            foreach (string dir in Directory.EnumerateDirectories(idldir))
             {
                 DoGenerater(dir);
             }

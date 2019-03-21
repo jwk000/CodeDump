@@ -1,2 +1,2 @@
-CodeDump.exe --xmldir=gy/ --tpldir=template/ --tardir=gy/
+..\CodeDump\bin\Debug\CodeDump.exe --idldir=test/json/ --tpldir=template_json/ --tardir=test/json/code/
 pause

@@ -1,0 +1,932 @@
+{
+    "mapDesignData": {
+        "Earth4": {
+            "id": "Earth4",
+            "name": "毒镖",
+            "desc": "投掷神秘毒镖造成<color=#60be00>%[PoisonDamage]毒素伤害</color>，并制造一滩浸毒地表。",
+            "descSpecial": "附加中毒状态，持续3回合。<br>伤害值基于你的等级以及来自智力的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 4.0,
+            "resistedBy": "MagicalArmor",
+            "range": 15.0,
+            "category": "CategoryEarth",
+            "effList": null
+        },
+        "Earth2": {
+            "id": "Earth2",
+            "name": "魔盔甲",
+            "desc": "提供<color=#8be6ea>%[PhysicalArmor]物理护甲</color>。当魔盔甲加身时，目标不能被传送。移除中毒、流血、燃烧、酸蚀、腐朽状态。",
+            "descSpecial": "附加魔盔甲状态，持续3回合。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 4.0,
+            "resistedBy": "MagicalArmor",
+            "range": 15.0,
+            "category": "CategoryEarth",
+            "effList": null
+        },
+        "Earth3": {
+            "id": "Earth3",
+            "name": "剧毒污染",
+            "desc": "对周围的敌人和亡灵盟友造成<color=#60be00>%[PoisonDamage]毒素伤害</color>并向他们投毒。将水面、浸血地表和云雾变为毒性物质！",
+            "descSpecial": "附加中毒状态，持续2回合。<br>伤害值基于你的等级以及来自智力的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 0.0,
+            "category": "CategoryEarth",
+            "effList": null
+        },
+        "Transform1": {
+            "id": "Transform1",
+            "name": "鞭挞之触",
+            "desc": "抽打你的对手，造成<color=#000000>%[PhysicalDamage]物理伤害</color>并使他们萎缩。",
+            "descSpecial": "附加萎缩状态，持续1回合。<br>伤害值基于你的等级以及来自力量的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 3.0,
+            "resistedBy": "PhysicalArmor",
+            "range": 8.0,
+            "category": "CategoryTransform",
+            "effList": null
+        },
+        "Transform2": {
+            "id": "Transform2",
+            "name": "变色龙斗篷",
+            "desc": "允许你融入任何环境，犹如隐身一般。",
+            "descSpecial": "附加隐身状态，持续2回合。<br>不会打破隐身或潜行状态。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 6.0,
+            "resistedBy": "MagicalArmor",
+            "range": 0.0,
+            "category": "CategoryTransform",
+            "effList": null
+        },
+        "Transform3": {
+            "id": "Transform3",
+            "name": "牛角冲撞",
+            "desc": "你的前额长出华丽的角，让你如斗牛一般。你可以奔向敌人，顶伤他们。技能有效期间报复能力加1，不能与美杜莎之首同时使用。",
+            "descSpecial": "附加牛角冲撞状态，持续4回合。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 0,
+            "cd": 6.0,
+            "resistedBy": "MagicalArmor",
+            "range": 0.0,
+            "category": "CategoryTransform",
+            "effList": null
+        },
+        "Transform4": {
+            "id": "Transform4",
+            "name": "鸡爪妖术",
+            "desc": "把目标变成一只小鸡。咯咯哒！",
+            "descSpecial": "附加小鸡形态状态，持续2回合。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 6.0,
+            "resistedBy": "PhysicalArmor",
+            "range": 2.0,
+            "category": "CategoryTransform",
+            "effList": null
+        },
+        "Earth1": {
+            "id": "Earth1",
+            "name": "落石术",
+            "desc": "一块被注满粘油的巨石，造成<color=#753800>%[EarthDamage]大地伤害</color>。巨石在落点生成油污区域。",
+            "descSpecial": "伤害值基于你的等级以及来自智力的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 15.0,
+            "category": "CategoryEarth",
+            "effList": null
+        },
+        "Archer2": {
+            "id": "Archer2",
+            "name": "致残射击",
+            "desc": "造成<color=#000000>%[PhysicalDamage]物理伤害</color>并使目标残废。",
+            "descSpecial": "附加致残状态，持续1回合。<br>伤害值基于你的普通攻击以及来自敏捷的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 3,
+            "cd": 3.0,
+            "resistedBy": "PhysicalArmor",
+            "range": 13.0,
+            "category": "CategoryArcher",
+            "effList": null
+        },
+        "Archer1": {
+            "id": "Archer1",
+            "name": "弹射箭",
+            "desc": "射出一只普通的箭矢，造成<color=#000000>%[PhysicalDamage]物理伤害</color>，然后在5m范围内分裂并射向最多2个目标。",
+            "descSpecial": "伤害值基于你的普通攻击以及来自敏捷的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 4.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategoryArcher",
+            "effList": null
+        },
+        "Fire1": {
+            "id": "Fire1",
+            "name": "灼烧匕首",
+            "desc": "向选中的目标区域投掷三把燃烧的匕首，每把匕首生成一处燃烧地表并造成<color=#fe6e27>%[FireDamage]火焰伤害</color>。",
+            "descSpecial": "附加燃烧状态，持续2回合。<br>伤害值基于你的等级以及来自智力的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 15.0,
+            "category": "CategoryFire",
+            "effList": [
+                {
+                    "effId": "Fire1-P1",
+                    "effType": "Projectile",
+                    "locateType": "Standalone",
+                    "targetPosOffsetX": 0.0,
+                    "targetPosOffsetY": 0.0,
+                    "targetPosOffsetZ": 0.0
+                },
+                {
+                    "effId": "Fire1-P1",
+                    "effType": "Projectile",
+                    "locateType": "Standalone",
+                    "targetPosOffsetX": 0.0,
+                    "targetPosOffsetY": 0.0,
+                    "targetPosOffsetZ": 0.0
+                },
+                {
+                    "effId": "Fire1-P1",
+                    "effType": "Projectile",
+                    "locateType": "Standalone",
+                    "targetPosOffsetX": 0.0,
+                    "targetPosOffsetY": 0.0,
+                    "targetPosOffsetZ": 0.0
+                }
+            ]
+        },
+        "Archer4": {
+            "id": "Archer4",
+            "name": "急救术",
+            "desc": "给予目标<color=#8be6ea>%[Heal]生命值</color>治疗。治愈致残、击倒、失明、沉默、流血、燃烧、中毒、患病。",
+            "descSpecial": "回复%[Heal]生命值。<br>附加精力充沛状态，持续1回合。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 4.0,
+            "resistedBy": "MagicalArmor",
+            "range": 8.0,
+            "category": "CategoryArcher",
+            "effList": null
+        },
+        "Archer3": {
+            "id": "Archer3",
+            "name": "元素箭头",
+            "desc": "瞄准近战半径内的一块表面。1回合内，与该表面对应的元素伤害将附加到你的远程武器攻击和远程武器技能上。",
+            "descSpecial": null,
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 4.0,
+            "resistedBy": "MagicalArmor",
+            "range": 3.0,
+            "category": "CategoryArcher",
+            "effList": null
+        },
+        "Fire4": {
+            "id": "Fire4",
+            "name": "加速",
+            "desc": "使目标角色加速。加速使每1点AP的移动距离增加2米，每回合增加额外1AP，并消除减速和致残状态。",
+            "descSpecial": "附加加速状态，持续2回合。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 15.0,
+            "category": "CategoryFire",
+            "effList": [
+                {
+                    "effId": "Fire4-B1",
+                    "effType": "Buff",
+                    "locateType": null,
+                    "targetPosOffsetX": 0.0,
+                    "targetPosOffsetY": 0.0,
+                    "targetPosOffsetZ": 0.0
+                }
+            ]
+        },
+        "Air4": {
+            "id": "Air4",
+            "name": "乘风之势",
+            "desc": "控制自然的力量，增加你和盟友的移动速度1.5m（光环范围为10m）",
+            "descSpecial": "附加乘风之势光环状态，持续4回合。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 6.0,
+            "resistedBy": "MagicalArmor",
+            "range": 0.0,
+            "category": "CategoryAir",
+            "effList": null
+        },
+        "Fire3": {
+            "id": "Fire3",
+            "name": "引燃",
+            "desc": "使你附近每个敌人着火，对每人造成<color=#fe6e27>%[FireDamage]火焰伤害</color>。点燃所有易燃的表面。",
+            "descSpecial": "附加燃烧状态，持续2回合。<br>伤害值基于你的等级以及来自智力的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 2.0,
+            "resistedBy": "MagicalArmor",
+            "range": 0.0,
+            "category": "CategoryFire",
+            "effList": [
+                {
+                    "effId": "Fire3-E1",
+                    "effType": "Effect",
+                    "locateType": null,
+                    "targetPosOffsetX": 0.0,
+                    "targetPosOffsetY": 0.0,
+                    "targetPosOffsetZ": 0.0
+                },
+                {
+                    "effId": "Fire3-P1",
+                    "effType": "Projectile",
+                    "locateType": null,
+                    "targetPosOffsetX": 0.0,
+                    "targetPosOffsetY": 0.0,
+                    "targetPosOffsetZ": 0.0
+                }
+            ]
+        },
+        "Air3": {
+            "id": "Air3",
+            "name": "致盲之光",
+            "desc": "你周围的敌人受到<color=#7469c8>%[AirDamage]雷电伤害</color>。你获得一个在5m半径范围内致盲敌人的状态。",
+            "descSpecial": "附加致盲之光状态，持续1回合。<br>伤害值基于你的等级以及来自智力的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 4.0,
+            "resistedBy": "MagicalArmor",
+            "range": 0.0,
+            "category": "CategoryAir",
+            "effList": null
+        },
+        "Fire2": {
+            "id": "Fire2",
+            "name": "心静神宁",
+            "desc": "目标进入冷静状态，力量、敏捷和智力增加%[Strength]，智慧增加%[Wisdom]。移除失明、恐惧、魅惑、被嘲讽、沉睡、被激怒和疯狂状态。",
+            "descSpecial": "附加冷静状态，持续3回合。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 15.0,
+            "category": "CategoryFire",
+            "effList": [
+                {
+                    "effId": "Fire2-B1",
+                    "effType": "Buff",
+                    "locateType": null,
+                    "targetPosOffsetX": 0.0,
+                    "targetPosOffsetY": 0.0,
+                    "targetPosOffsetZ": 0.0
+                }
+            ]
+        },
+        "Air2": {
+            "id": "Air2",
+            "name": "电击之触",
+            "desc": "近距离电击一个目标，造成<color=#7469c8>%[AirDamage]雷电伤害</color>。",
+            "descSpecial": "附加麻痹状态，持续2回合。<br>伤害值基于你的等级以及来自智力的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 2.0,
+            "category": "CategoryAir",
+            "effList": null
+        },
+        "Air1": {
+            "id": "Air1",
+            "name": "电能释放",
+            "desc": "对目标角色释放电流震荡，造成<color=#7469c8>%[AirDamage]雷电伤害</color>，并使其陷入麻痹状态。",
+            "descSpecial": "附加麻痹状态，持续2回合。<br>伤害值基于你的等级以及来自智力的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategoryAir",
+            "effList": null
+        },
+        "Water1": {
+            "id": "Water1",
+            "name": "冰雹打击",
+            "desc": "冰雹从天而降，给敌人施加冰冷状态，并造成<color=#3a83c2>%[IceDamage]冰霜伤害</color>。在着陆点形成冰面。",
+            "descSpecial": "附加冻僵状态，持续2回合。<br>伤害值基于你的等级以及来自智力的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 3,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategoryWater",
+            "effList": null
+        },
+        "Death2": {
+            "id": "Death2",
+            "name": "腐烂之触",
+            "desc": "对目标角色造成<color=#000000>%[PhysicalDamage]物理伤害</color>。施加腐朽状态，目标在接受治疗法术和使用药剂时会因此受到穿刺伤害。",
+            "descSpecial": "附加腐朽状态，持续2回合。<br>伤害值基于你的等级以及来自智力的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 3.0,
+            "resistedBy": "PhysicalArmor",
+            "range": 2.0,
+            "category": "CategoryDeath",
+            "effList": null
+        },
+        "Water2": {
+            "id": "Water2",
+            "name": "冰霜护甲",
+            "desc": "冰在目标附近凝结成防御屏障，提供<color=#7e00fd>%[MagicalArmor]魔法护甲</color>。治愈燃烧、中毒、眩晕、冻结、窒息和石化。",
+            "descSpecial": "附加魔法护罩状态，持续3回合。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 4.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategoryWater",
+            "effList": null
+        },
+        "Death3": {
+            "id": "Death3",
+            "name": "吸血狂人",
+            "desc": "目标角色吞噬周围的浸血地表，恢复生命值。血液越多，治疗效果越大！",
+            "descSpecial": "回复18生命值，取决于相关地表地形。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategoryDeath",
+            "effList": null
+        },
+        "Death1": {
+            "id": "Death1",
+            "name": "操纵尸体",
+            "desc": "需要以一具尸体作为目标，操纵浮肿的尸体为你战斗。浮肿的尸体可爆炸并造成物理伤害。",
+            "descSpecial": "在你的目标位置召唤一个浮肿的尸体。<br>炸毁你的目标。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategoryDeath",
+            "effList": null
+        },
+        "Water3": {
+            "id": "Water3",
+            "name": "恢复",
+            "desc": "恢复目标的生命值，同时解除中毒及流血状态。",
+            "descSpecial": "回复%[Heal]生命值，持续2回合。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 4.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategoryWater",
+            "effList": null
+        },
+        "Water4": {
+            "id": "Water4",
+            "name": "降雨",
+            "desc": "制造不断扩大的水面，熄灭火苗。让该区域的角色潮湿。",
+            "descSpecial": "附加潮湿状态，持续1回合。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 6.0,
+            "resistedBy": "MagicalArmor",
+            "range": 8.0,
+            "category": "CategoryWater",
+            "effList": null
+        },
+        "Battle2": {
+            "id": "Battle2",
+            "name": "战争践踏",
+            "desc": "把你的武器扎进地里，击倒你面前的非盟友目标，对其造成<color=#000000>%[PhysicalDamage]物理伤害</color>。同时清除未受诅咒的地表和云。",
+            "descSpecial": "附加击倒状态，持续1回合。<br>伤害值基于你的普通攻击以及来自力量的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 4.0,
+            "resistedBy": "PhysicalArmor",
+            "range": 10.0,
+            "category": "CategoryBattle",
+            "effList": null
+        },
+        "Battle3": {
+            "id": "Battle3",
+            "name": "弹射盾牌",
+            "desc": "将盾牌掷向敌人，造成<color=#000000>%[PhysicalDamage]物理伤害</color>。盾牌可以在5m范围内反弹到另一个敌人。",
+            "descSpecial": "伤害值基于你的盾牌的物理护甲值。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 2.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategoryBattle",
+            "effList": null
+        },
+        "Battle1": {
+            "id": "Battle1",
+            "name": "致残打击",
+            "desc": "用横扫攻击打残你的目标及其附近所有敌方角色，造成<color=#000000>%[PhysicalDamage]物理伤害</color>。",
+            "descSpecial": "附加致残状态，持续1回合。<br>伤害值基于你的普通攻击以及来自力量的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 3.0,
+            "resistedBy": "PhysicalArmor",
+            "range": 2.2,
+            "category": "CategoryBattle",
+            "effList": null
+        },
+        "Death4": {
+            "id": "Death4",
+            "name": "文群肆虐",
+            "desc": "放出一大群巨蚊，吸取敌人的血液，造成<color=#000000>%[PhysicalDamage]物理伤害</color>并治愈你自己。",
+            "descSpecial": "回复生命值，取决于造成的伤害。<br>附加流血状态，持续2回合。<br>伤害值基于你的等级以及来自智力的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 4.0,
+            "resistedBy": "PhysicalArmor",
+            "range": 13.0,
+            "category": "CategoryDeath",
+            "effList": null
+        },
+        "Battle4": {
+            "id": "Battle4",
+            "name": "横冲直撞",
+            "desc": "笔直的向指定地点冲过去，所经之处所有敌人受到<color=#000000>%[PhysicalDamage]物理伤害</color>并被击倒。",
+            "descSpecial": "附加击倒状态，持续1回合。<br>伤害值基于你的普通攻击以及来自力量的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 5.0,
+            "resistedBy": "PhysicalArmor",
+            "range": 12.0,
+            "category": "CategoryBattle",
+            "effList": null
+        },
+        "Assassin1": {
+            "id": "Assassin1",
+            "name": "反冲",
+            "desc": "越过敌人，在其身后落地并对敌人背刺，造成<color=#000000>%[PhysicalDamage]物理伤害</color>。",
+            "descSpecial": "100%几率发动背刺。<br>伤害值基于你的普通攻击以及来自敏捷的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 8.0,
+            "category": "CategoryAssassin",
+            "effList": null
+        },
+        "Assassin2": {
+            "id": "Assassin2",
+            "name": "肾上腺素",
+            "desc": "立刻得到2个行动点数，但是在下一回合失去2个行动点数。超过最高上限的行动点数将丢失。",
+            "descSpecial": "立即获得2点行动点数，但下一回合将失去2点行动点数。<br>不会打破隐身或潜行状态。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 0,
+            "cd": 4.0,
+            "resistedBy": "MagicalArmor",
+            "range": 0.0,
+            "category": "CategoryAssassin",
+            "effList": null
+        },
+        "Transform3-1": {
+            "id": "Transform3-1",
+            "name": "蛮牛冲击",
+            "desc": "迅速冲撞敌人，造成<color=#000000>%[PhysicalDamage]物理伤害</color>并施加流血状态。",
+            "descSpecial": "附加留学状态，持续1回合。<br>伤害值基于你的普通攻击以及来自力量的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 1.0,
+            "resistedBy": "PhysicalArmor",
+            "range": 12.0,
+            "category": "CategoryTransform",
+            "effList": null
+        },
+        "Assassin3": {
+            "id": "Assassin3",
+            "name": "催眠药剂",
+            "desc": "摧毁<color=#7e00fd>%[MagicalArmor]魔法护甲</color>，并尝试令目标陷入沉睡。",
+            "descSpecial": "附加沉睡状态，持续1回合。<br>不会打破隐身或潜行状态。<br>伤害值基于你的等级以及来自敏捷的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategoryAssassin",
+            "effList": null
+        },
+        "Assassin4": {
+            "id": "Assassin4",
+            "name": "飞刀",
+            "desc": "向对手投掷一枚飞刀，造成<color=#000000>%[PhysicalDamage]物理伤害</color>。可以触发背刺！",
+            "descSpecial": "可以触发背刺。<br>伤害值基于你的普攻攻击力以及来自敏捷的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 1.0,
+            "resistedBy": "MagicalArmor",
+            "range": 8.0,
+            "category": "CategoryAssassin",
+            "effList": null
+        },
+        "Summon4": {
+            "id": "Summon4",
+            "name": "召唤魔妖",
+            "desc": "用魔法召唤出人形元素魔妖，元素类型与召唤物现身时所处的地表类型相匹配。魔妖可通过注能获得加成。一旦你达到10级召唤等级，你将能召唤出巨型魔妖斗士！",
+            "descSpecial": "召唤物的强度将取决于施法者的等级和召唤学派能力。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 6.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategorySummon",
+            "effList": null
+        },
+        "Summon3": {
+            "id": "Summon3",
+            "name": "次元闪电",
+            "desc": "发射一枚不稳定的闪电，造成随机类型的<color=#ff0000>%[Damage]</color>伤害，并形成对应类型的地表。",
+            "descSpecial": "伤害值基于你的等级以及来自智力的加成。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 1.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategorySummon",
+            "effList": null
+        },
+        "Summon2": {
+            "id": "Summon2",
+            "name": "远眺注能",
+            "desc": "为魔妖解锁远程攻击。提供<color=#7e00fd>%[MagicalArmor]魔法护甲</color>（数值取决于你的等级）。",
+            "descSpecial": "附加远眺注能",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 1,
+            "cd": 3.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategorySummon",
+            "effList": null
+        },
+        "Summon1": {
+            "id": "Summon1",
+            "name": "元素图腾",
+            "desc": "瞄准地面并召唤相应元素的图腾。每回合，该图腾会向视线内的目标发射投射物。",
+            "descSpecial": "召唤物的强度将取决于施法者的等级和召唤学派能力。",
+            "icon": null,
+            "memorySlot": 1,
+            "actionPt": 2,
+            "cd": 1.0,
+            "resistedBy": "MagicalArmor",
+            "range": 13.0,
+            "category": "CategorySummon",
+            "effList": null
+        }
+    },
+    "langueContainers": {},
+    "mapEffect": {
+        "Fire3-E1": {
+            "id": "Fire3-E1",
+            "name": "引燃之火伤",
+            "desc": "直接火伤，附加燃烧Debuff",
+            "elementType": "Fire",
+            "comTargeting": {
+                "refSubject": "Caster",
+                "shape": "Round",
+                "target": "Enemy",
+                "mapParams": {
+                    "radius": 15.0
+                }
+            },
+            "comEvaluate": {
+                "minExpression": "[Damage]=15*[Caster.Intelligence]+10*[Caster.Level]",
+                "maxExpression": null
+            },
+            "comTrigger": {
+                "entries": [
+                    {
+                        "timing": "Hit",
+                        "type": "Buff",
+                        "triggerTargetId": "Fire-B1",
+                        "targetAffected": "Target",
+                        "triggerParams": null
+                    }
+                ]
+            },
+            "comRender": null,
+            "comDisplace": null
+        }
+    },
+    "mapBuff": {
+        "Fire-B1": {
+            "id": "Fire-B1",
+            "name": "燃烧Debuff",
+            "desc": "两回合的燃烧Debuff",
+            "status": "Burning",
+            "removeStatus": "Wet",
+            "comGroups": [
+                {
+                    "comEvaluate": {
+                        "minExpression": "[Host.FireResist]=0.9*[Host.FireResist]",
+                        "maxExpression": null
+                    },
+                    "comActivate": {
+                        "activateType": "Casted",
+                        "mapParams": null
+                    }
+                },
+                {
+                    "comEvaluate": {
+                        "minExpression": "[Host.WaterResist]=1.2*[Host.WaterResist]",
+                        "maxExpression": null
+                    },
+                    "comActivate": {
+                        "activateType": "Casted",
+                        "mapParams": null
+                    }
+                },
+                {
+                    "comEvaluate": {
+                        "minExpression": "[Damage]=1.5*[Caster.Intelligence]+2*[Caster.Level]",
+                        "maxExpression": null
+                    },
+                    "comActivate": {
+                        "activateType": "RoundLoop",
+                        "mapParams": {
+                            "times": 2.0,
+                            "period": 1.0
+                        }
+                    }
+                }
+            ],
+            "comTrigger": null,
+            "comRender": null,
+            "comRemove": {
+                "refSubject": "Entity",
+                "removeTiming": "RoundLoop",
+                "mapParams": {
+                    "period": 2.0
+                },
+                "forceRemoveTime": 0.0
+            }
+        },
+        "Fire4-B1": {
+            "id": "Fire4-B1",
+            "name": "加速Buff",
+            "desc": "",
+            "status": "Hasted",
+            "removeStatus": "Slowed",
+            "comGroups": [
+                {
+                    "comEvaluate": {
+                        "minExpression": "[Host.MoveDistance]=[Host.MoveDistance]+2",
+                        "maxExpression": null
+                    },
+                    "comActivate": {
+                        "activateType": "Casted",
+                        "mapParams": null
+                    }
+                },
+                {
+                    "comEvaluate": {
+                        "minExpression": "[Host.ActionPtPerTurn]=[Host.ActionPtPerTurn]+1",
+                        "maxExpression": null
+                    },
+                    "comActivate": {
+                        "activateType": "Casted",
+                        "mapParams": null
+                    }
+                },
+                {
+                    "comEvaluate": {
+                        "minExpression": "[Host.ActionPt]=[Host.ActionPt]+1",
+                        "maxExpression": null
+                    },
+                    "comActivate": {
+                        "activateType": "Casted",
+                        "mapParams": null
+                    }
+                }
+            ],
+            "comTrigger": null,
+            "comRender": null,
+            "comRemove": {
+                "refSubject": "Entity",
+                "removeTiming": "RoundLoop",
+                "mapParams": {
+                    "period": 2.0
+                },
+                "forceRemoveTime": 0.0
+            }
+        },
+        "Fire2-B1": {
+            "id": "Fire2-B1",
+            "name": "心静神宁Buff",
+            "desc": "",
+            "status": "ClearMinded",
+            "removeStatus": "Blinded,Terrified,Charmed,Taunted,Sleeping,Enraged,Mad",
+            "comGroups": [
+                {
+                    "comEvaluate": {
+                        "minExpression": "[Host.Strength]=[Host.Strength.BaseValue]+FLOOR([Host.Level]/4)+1",
+                        "maxExpression": null
+                    },
+                    "comActivate": {
+                        "activateType": "Casted",
+                        "mapParams": null
+                    }
+                },
+                {
+                    "comEvaluate": {
+                        "minExpression": "[Host.Dexterity]=[Host.Dexterity.BaseValue]+FLOOR([Host.Level]/4)+1",
+                        "maxExpression": null
+                    },
+                    "comActivate": {
+                        "activateType": "Casted",
+                        "mapParams": null
+                    }
+                },
+                {
+                    "comEvaluate": {
+                        "minExpression": "[Host.Intelligence]=[Host.Intelligence.BaseValue]+FLOOR([Host.Level]/4)+1",
+                        "maxExpression": null
+                    },
+                    "comActivate": {
+                        "activateType": "Casted",
+                        "mapParams": null
+                    }
+                },
+                {
+                    "comEvaluate": {
+                        "minExpression": "[Host.Wisdom]=[Host.Wisdom.BaseValue]+FLOOR([Host.Level]/2)+1",
+                        "maxExpression": null
+                    },
+                    "comActivate": {
+                        "activateType": "Casted",
+                        "mapParams": null
+                    }
+                }
+            ],
+            "comTrigger": null,
+            "comRender": null,
+            "comRemove": {
+                "refSubject": "Entity",
+                "removeTiming": "RoundLoop",
+                "mapParams": {
+                    "period": 3.0
+                },
+                "forceRemoveTime": 0.0
+            }
+        }
+    },
+    "mapProjectile": {
+        "Fire3-P1": {
+            "id": "Fire3-P1",
+            "name": "引燃之点燃",
+            "desc": "一个自带温度场的投射物，可以点燃易燃物",
+            "elementType": "Fire",
+            "comTargeting": {
+                "refSubject": "Caster",
+                "shape": "DynamicRound",
+                "target": "Environment,Enemy",
+                "mapParams": {
+                    "speed_radius": 10.0,
+                    "speed_radius_max": 10.0,
+                    "radius_max": 2.0,
+                    "radius": 0.0
+                }
+            },
+            "comEvaluate": null,
+            "comTrigger": {
+                "entries": [
+                    {
+                        "timing": "Hit",
+                        "type": "TemperatureField",
+                        "triggerTargetId": null,
+                        "targetAffected": null,
+                        "triggerParams": {
+                            "temperature": "500",
+                            "radius": "1"
+                        }
+                    }
+                ]
+            },
+            "comRender": null,
+            "comDisplace": null,
+            "comRemove": {
+                "refSubject": "Entity",
+                "removeTiming": "TimeLoop",
+                "mapParams": null,
+                "forceRemoveTime": 1.5
+            }
+        },
+        "Fire1-P1": {
+            "id": "Fire1-P1",
+            "name": "火匕首",
+            "desc": "燃烧匕首的投射物",
+            "elementType": "Fire",
+            "comTargeting": {
+                "refSubject": "Entity",
+                "shape": "Rectangle",
+                "target": "All",
+                "mapParams": {
+                    "width": 1.0,
+                    "height": 2.0
+                }
+            },
+            "comEvaluate": {
+                "minExpression": "2",
+                "maxExpression": "3"
+            },
+            "comTrigger": {
+                "entries": [
+                    {
+                        "timing": "Dead",
+                        "type": "Surface",
+                        "triggerTargetId": "SurfaceFire",
+                        "targetAffected": null,
+                        "triggerParams": {
+                            "period": "2",
+                            "trigger-ref": "Entity"
+                        }
+                    },
+                    {
+                        "timing": "Dead",
+                        "type": "Buff",
+                        "triggerTargetId": "Fire-B1",
+                        "targetAffected": "Target",
+                        "triggerParams": null
+                    }
+                ]
+            },
+            "comRender": null,
+            "comDisplace": {
+                "subject": "Entity",
+                "type": "Bezier2",
+                "mapParams": {
+                    "bezier2_ctrl_offset": 2.0,
+                    "v0": 10.0
+                }
+            },
+            "comRemove": {
+                "refSubject": "Entity",
+                "removeTiming": "Hit",
+                "mapParams": null,
+                "forceRemoveTime": 5.0
+            }
+        }
+    },
+    "mapSupportSkill": null
+}

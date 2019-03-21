@@ -1,0 +1,138 @@
+[root]
+class SkillContainer{
+    Dict<string, SkillData> mapDesignData;
+    Dict<string, EffectData> mapEffect;
+    Dict<string, BuffData> mapBuff;
+    Dict<string, ProjectileData> mapProjectile;
+    Dict<string, SupportSkillData> mapSupportSkill;
+}
+
+
+class SkillData{
+    string id;
+    string name;
+    string desc;
+    string descSpecial;
+    string icon;
+    int memorySlot;//记忆槽
+    int actionPt;//行动点
+    float cd;
+    string resistedBy;//被何种护甲抵抗
+    float range;
+    string category;
+    List<SkillEffectInfo> effList;
+}
+class SkillEffectInfo{
+    string effId;
+    string effType;
+    string locateType;
+    float targetPosOffsetX;
+    float targetPosOffsetY;
+    float targetPosOffsetZ;
+}
+
+
+class EffectData{
+    string id;
+    string name;
+    string desc;
+    string elementType;
+    ComTargeting comTargeting;
+    ComEvaluate comEvaluate;
+    ComTrigger comTrigger;
+    ComRender comRender;
+    ComDisplace comDisplace;
+}
+
+class ComTargeting{
+    string refSubject;
+    string shape;
+    string target;
+    Dict<string,float> mapParams;
+}
+
+class ComEvaluate{
+    string minExpression;
+    string maxExpression;
+}
+
+class ComTrigger{
+    List<ComTriggerEntry> entries;
+}
+
+class ComTriggerEntry{
+    string timing;
+    string type;
+    string triggerTargetId;
+    string targetAffected;
+    Dict<string,string> triggerParams;
+}
+
+class ComRender{
+    string renderEntityID;
+}
+
+class ComDisplace{
+    string subject;
+    string type;
+    Dict<string,float> mapParams;
+}
+
+
+class BuffData{
+    string id;
+    string name;
+    string desc;
+    string status;
+    string removeStatus;
+    List<BuffComGroup> comGroups;
+    ComTrigger comTrigger;
+    ComRender comRender;
+    ComRemove comRemove;
+}
+
+class ComRemove{
+    string refSubject;
+    string removeTiming;
+    Dict<string,float> mapParams;
+    float forceRemoveTime;
+}
+
+class BuffComGroup
+{
+    ComEvaluate comEvaluate;
+    ComActivate comActivate;
+}
+
+class ComActivate{
+    string activateType;
+    Dict<string,float> mapParams;
+}
+class ComReplace{
+    string targetType;
+    string targetId;
+}
+class SupportSkillData
+{
+    string id;
+    string name;
+    string desc;
+    string elementType;
+    ComEvaluate comEvaluate;
+    ComActivate comActivate;
+    ComReplace comReplace;
+}
+
+class ProjectileData{
+    string id;
+    string name;
+    string desc;
+    string elementType;
+    ComTargeting comTargeting;
+    ComEvaluate comEvaluate;
+    ComTrigger comTrigger;
+    ComRender comRender;
+    ComDisplace comDisplace;
+    ComRemove comRemove;
+
+}

@@ -77,7 +77,7 @@ namespace CodeDump
             List<char> tar = new List<char>();
             for (int i = 0; i < c.Length; i++)
             {
-                if (char.IsUpper(c[i]))
+                if (i>0 && char.IsUpper(c[i]))
                 {
                     tmp.Add('_');
                 }
@@ -87,7 +87,7 @@ namespace CodeDump
             if (totype == NameManglingType.AaBb || totype == NameManglingType.aaBb)
             {
                 bool toup = totype == NameManglingType.AaBb;
-                for (int i = 0; i < tmp.Count; i++)
+                for (int i = 0, j=0; i < tmp.Count; i++)
                 {
                     if (tmp[i] == '_')
                     {
@@ -96,11 +96,14 @@ namespace CodeDump
                     }
                     if (toup)
                     {
-                        tar.Add(char.ToUpper(c[i]));
+                        tar.Add(char.ToUpper(c[j]));
                         toup = false;
-                        continue;
                     }
-                    tar.Add(c[i]);
+                    else
+                    {
+                        tar.Add(c[j]);
+                    }
+                    j++;
                 }
 
                 return new string(tar.ToArray());
