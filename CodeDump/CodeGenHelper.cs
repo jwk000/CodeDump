@@ -146,6 +146,11 @@ namespace CodeDump
             List<string> code = new List<string>();
             TemplateData data = new TemplateData();
             data.SetGlobalVariant("Meta", meta);
+            //meta变量注入
+            foreach(var kv in meta.meta_variant)
+            {
+                data.SetGlobalVariant(kv.Key, kv.Value);
+            }
             foreach (var rule in rules)
             {
                 var code_line = rule.Apply(data);

@@ -1,0 +1,10 @@
+//给meta添加成员变量
+set ProjectName=Project_Match
+
+
+class MatchPlayerResult
+{
+    int score;
+    string nick;
+}
+

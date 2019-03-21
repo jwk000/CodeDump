@@ -19,6 +19,7 @@ namespace CodeDump
         OPTIONAL,//可选的字段，默认为必须有
         TAG,//标签名 xml标签和类名不一致用
         REWARD,//奖励类型，特殊解析
+        BASE,//基类名称
     }
 
     class IDLAttr
@@ -69,6 +70,10 @@ namespace CodeDump
                 if (attrname == "reward")
                 {
                     return new IDLAttr { attr_type = eIDLAttr.REWARD, attr_name = attrname, attr_param = attrparam };
+                }
+                if(attrname == "base")
+                {
+                    return new IDLAttr { attr_type = eIDLAttr.BASE, attr_name = attrname, attr_param = attrparam };
                 }
             }
             return null;
@@ -404,6 +409,17 @@ namespace CodeDump
                 return fieldList[0].field_name;
             }
         }
+        public string Base
+        {
+            get
+            {
+                if (class_attr != null && class_attr.attr_type == eIDLAttr.BASE)
+                {
+                    return class_attr.attr_param;
+                }
+                return "BaseClassNotFound";
+            }
+        }
         public string Comment
         {
             get { return comment; }
@@ -429,10 +445,14 @@ namespace CodeDump
         public string code_file_name;
         public string meta_file_path;
         public string root_class_name;
+        
         public List<IDLUsing> meta_using = new List<IDLUsing>();
         public Dictionary<string, IDLClass> meta_class = new Dictionary<string, IDLClass>();
         public Dictionary<string, IDLEnum> meta_enum = new Dictionary<string, IDLEnum>();
+        public Dictionary<string, string> meta_variant = new Dictionary<string, string>();
 
+        int _auto_id = 0;
+        public string AutoIncID { get { return (++_auto_id).ToString(); } }
         public string Name { get { return meta_name; } }
         public string FilePath { get { return meta_file_path; } }
         public string FileName { get { return code_file_name; } }
@@ -441,6 +461,8 @@ namespace CodeDump
         public object[] UsingList { get { return meta_using.ToArray(); } }
         public object[] ClassList { get { return meta_class.Values.ToArray(); } }
         public object[] EnumList { get { return meta_enum.Values.ToArray(); } }
+        public string GetVar(string key) { return meta_variant.TryGetValue(key, out string val) ? val : null; }
+
     }
 
     static class IDLParser
@@ -522,9 +544,17 @@ namespace CodeDump
                     attr = IDLAttr.ParseAttr(lines[i]);
                     continue;
                 }
-
+                //变量
+                Match match = Regex.Match(lines[i], @"^\s*set\s+(\w+)\s*=\s*(\w+)\s*;\s*$");
+                if (match.Success)
+                {
+                    string key = match.Groups[1].Value;
+                    string val = match.Groups[2].Value;
+                    meta.meta_variant.Add(key, val);
+                    continue;
+                }
                 //引用
-                Match match = Regex.Match(lines[i], @"^\s*using\s+(\w+);\s*$");
+                match = Regex.Match(lines[i], @"^\s*using\s+(\w+)\s*;\s*$");
                 if (match.Success)
                 {
                     IDLUsing u = new IDLUsing();
