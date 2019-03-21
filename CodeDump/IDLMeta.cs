@@ -226,6 +226,8 @@ namespace CodeDump
                                 return "dict_string";
                             if (field_type.inner_type[1].type == eIDLType.CLASS)
                                 return "dict_class";
+                            if (field_type.inner_type[0].type < eIDLType.CLASS)
+                                return "dict_basic";
                         }
                         return "error";
                     case eIDLType.LIST:
