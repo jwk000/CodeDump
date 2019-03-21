@@ -2,6 +2,9 @@
 #include "${Meta.Name}_event.h"
 #include "${Meta.Name}_meta.h"
 
-@{FOREACH(Class IN ${Meta.ClassList})}
-REFELCTION_SUPPORT(${Class.Name});
-@{END_FOREACH}
+BIBO_DLL_EXPORT int _Init${Meta.Name}Library()
+{
+    Declare${Meta.Name}InfoMetas();
+    Declare${Meta.Name}EventMetas();
+	return 0;
+}

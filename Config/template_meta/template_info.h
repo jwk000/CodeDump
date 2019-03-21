@@ -33,3 +33,5 @@ struct ${Class.Name}:public ISerializable
 @{FOREACH(Class IN ${Meta.ClassList})}
 REFELCTION_SUPPORT(${Class.Name}, (METAID_BASE(${Meta.ProjectName}) + ${Meta.AutoIncID}));
 @{END_FOREACH}
+
+void Declare${Meta.Name}InfoMetas();

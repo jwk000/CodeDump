@@ -1,7 +1,7 @@
 #pragma once
 
-#include "products/Project_Mobile/mobile/mobile/shared/h3d_mobile_event.h"
 #include "${Meta.Name}_info.h"
+#include "products/Project_Mobile/mobile/mobile/shared/h3d_mobile_event.h"
 
 @{FOREACH(Enum IN ${Meta.EnumList})}
 ${Enum.Comment}
@@ -30,3 +30,5 @@ struct ${Class.Name}:public ${Class.Base}
 @{FOREACH(Class IN ${Meta.ClassList})}
 REFELCTION_SUPPORT(${Class.Name}, (METAID_BASE(${Meta.ProjectName}) + ${Meta.AutoIncID}));
 @{END_FOREACH}
+
+void Declare${Meta.Name}EventMetas();
