@@ -21,7 +21,7 @@ enum ${Enum.Name}
 ${Class.Comment}
 struct ${Class.Name}:public ISerializable
 {
-    SERIALIZABLE_DECLARE(Class.Name);
+    SERIALIZABLE_DECLARE(${Class.Name});
 @{FOREACH(Field IN ${Class.FieldList})}
     ${Field.Type} ${Field.Name}; ${Field.Comment}
 @{END_FOREACH}
@@ -31,7 +31,7 @@ struct ${Class.Name}:public ISerializable
 
 
 @{FOREACH(Class IN ${Meta.ClassList})}
-REFELCTION_SUPPORT(${Class.Name}, (METAID_BASE(${Meta.ProjectName}) + ${Meta.AutoIncID}));
+REFELCTION_SUPPORT(${Class.Name}, (METAID_BASE(${G.ProjectName}) + ${Meta.AutoIncID}));
 @{END_FOREACH}
 
 void Declare${Meta.Name}InfoMetas();

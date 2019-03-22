@@ -18,7 +18,7 @@ enum ${Enum.Name}
 ${Class.Comment}
 struct ${Class.Name}:public ${Class.Base}
 {
-    REGISTER_AND_SERIALIZABLE(Class.Name);
+    REGISTER_AND_SERIALIZABLE(${Class.Name});
 @{FOREACH(Field IN ${Class.FieldList})}
     ${Field.Type} ${Field.Name}; ${Field.Comment}
 @{END_FOREACH}
@@ -28,7 +28,7 @@ struct ${Class.Name}:public ${Class.Base}
 
 
 @{FOREACH(Class IN ${Meta.ClassList})}
-REFELCTION_SUPPORT(${Class.Name}, (METAID_BASE(${Meta.ProjectName}) + ${Meta.AutoIncID}));
+REFELCTION_SUPPORT(${Class.Name}, (METAID_BASE(${G.ProjectName}) + EVENT_ID_BASE + ${Meta.AutoIncID}));
 @{END_FOREACH}
 
 void Declare${Meta.Name}EventMetas();

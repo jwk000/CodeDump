@@ -77,7 +77,7 @@ namespace CodeDump
             List<char> tar = new List<char>();
             for (int i = 0; i < c.Length; i++)
             {
-                if (i>0 && char.IsUpper(c[i]))
+                if (i > 0 && char.IsUpper(c[i]))
                 {
                     tmp.Add('_');
                 }
@@ -87,7 +87,7 @@ namespace CodeDump
             if (totype == NameManglingType.AaBb || totype == NameManglingType.aaBb)
             {
                 bool toup = totype == NameManglingType.AaBb;
-                for (int i = 0, j=0; i < tmp.Count; i++)
+                for (int i = 0, j = 0; i < tmp.Count; i++)
                 {
                     if (tmp[i] == '_')
                     {
@@ -122,7 +122,7 @@ namespace CodeDump
         public IDLMeta ParseIDL(string idl)
         {
             IDLMeta meta = null;
-            string meta_name = Path.GetFileNameWithoutExtension(idl);
+            string meta_name = Path.GetFileNameWithoutExtension(idl).Split('.')[0];
 
             if (!all_xml_meta.TryGetValue(meta_name, out meta))
             {
@@ -132,7 +132,7 @@ namespace CodeDump
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("解析IDL文件{0}失败,{1}", idl,e);
+                    Console.WriteLine("解析IDL文件{0}失败,{1}", idl, e);
                     return null;
                 }
                 all_xml_meta.Add(meta_name, meta);
@@ -150,14 +150,19 @@ namespace CodeDump
             TemplateData data = new TemplateData();
             data.SetGlobalVariant("Meta", meta);
             //meta变量注入
-            foreach(var kv in meta.meta_variant)
+            foreach (var kv in meta.meta_variant)
             {
-                data.SetGlobalVariant(kv.Key, kv.Value);
+                data.InjectVariant(kv.Key, kv.Value);
             }
             foreach (var rule in rules)
             {
                 var code_line = rule.Apply(data);
                 code.AddRange(code_line);
+            }
+            //删除旧文件
+            if (File.Exists(codefile))
+            {
+                File.Delete(codefile);
             }
             //写入文件
             using (FileStream fs = new FileStream(codefile, FileMode.Create, FileAccess.Write))
@@ -180,18 +185,18 @@ namespace CodeDump
                 Console.WriteLine("IDL文件{0}不存在！", idl);
                 return false;
             }
-            if(!Directory.Exists(dir))
+            if (!Directory.Exists(dir))
             {
                 Directory.CreateDirectory(dir);
             }
 
-            CodeLanguage lang = GetLanguageByTemplateExt(Path.GetExtension(template));
 
             string idlfile = Path.GetFileName(idl);
             string rawname = idlfile.Substring(0, idlfile.IndexOf('.'));
-            string cppname = NameMangling(rawname,  NameManglingType.aa_bb);
-            string csname = NameMangling(rawname, NameManglingType.AaBb);
-            string tplfile = Path.GetFileName(template).Replace("template", lang == CodeLanguage.CPP ? cppname : csname);
+            string aa_bb_name = NameMangling(rawname, NameManglingType.aa_bb);
+            string AaBbName = NameMangling(rawname, NameManglingType.AaBb);
+
+            string tplfile = Path.GetFileName(template).Replace("Template", AaBbName).Replace("template", aa_bb_name);
             string codefile = Path.Combine(dir, tplfile);
             if (File.Exists(codefile) &&
                 !m_file_time_checker.IsModified(idl) &&
@@ -205,8 +210,8 @@ namespace CodeDump
             {
                 return false;
             }
-            meta.lang = lang;
-            meta.code_file_name = tplfile.Substring(0,tplfile.IndexOf('.'));
+            meta.lang = GetLanguageByTemplateExt(Path.GetExtension(template));
+            meta.code_file_name = tplfile.Substring(0, tplfile.IndexOf('.'));
             if (!GenerateCode(meta, template, codefile))
             {
                 Console.WriteLine("生成IDL文件{0}的代码失败！", idl);

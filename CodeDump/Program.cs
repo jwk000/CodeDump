@@ -15,50 +15,44 @@ namespace CodeDump
         static void Main(string[] args)
         {
             Console.WriteLine("usage1: CodeDump --idldir=test/xml/ --tpldir=template/ --tardir=test/dumpcode/");
-            Console.WriteLine("usage2: CodeDump --idl=xxx.idl --lang=cpp;cs");
+            Console.WriteLine("usage2: CodeDump --idl=xxx.idl --tpldir=template/ --tardir=test/dumpcode/");
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
             string idldir = "./xml/";
-            string tpldir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "template/");
+            string tpldir = "./template/";
             string tardir = "./dumpcode/";
             string idlfile = "";
-            string[] lang = null;
+            //是否严格匹配模板文件名
+            bool with_match = false;
+
             for (int i = 0; i < args.Length; i++)
             {
+                Console.WriteLine(" {0}", args[i]);
+
                 var ss = args[i].Split('=');
                 if (ss[0] == "--idldir") idldir = ss[1];
                 if (ss[0] == "--tpldir") tpldir = ss[1];
                 if (ss[0] == "--tardir") tardir = ss[1];
                 if (ss[0] == "--idl") idlfile = ss[1];
-                if (ss[0] == "--lang") lang = ss[1].Split(';');
+                if (ss[0] == "--with_match") with_match = true;
             }
 
             CodeGenHelper code_gen = new CodeGenHelper();
             code_gen.Init();
 
-            //生成一个文件的某种语言代码
+            //生成一个idl文件的代码
             if (Path.GetExtension(idlfile)==".idl")
             {
-                tardir = Path.Combine(Path.GetDirectoryName(idlfile), "codedump");
                 foreach (string tpl in Directory.EnumerateFiles(tpldir))
                 {
-                    if (lang.Contains(Path.GetExtension(tpl)))
-                    {
-                        code_gen.GenerateAllCodes(idlfile, tpl, tardir);
-                    }
+                    code_gen.GenerateAllCodes(idlfile, tpl, tardir);
                 }
                 Console.ReadKey();
                 return;
             }
 
-            //先特殊处理一下公共引用
-            string commonidl = Path.Combine(idldir, "common.idl");
-            if (File.Exists(commonidl))
-            {
-                code_gen.ParseIDL(commonidl);
-            }
-
+            //为一个目录下的所有idl文件生成代码
             Action<string> DoGenerater = (string _xmldir) =>
             {
                 //遍历目录下的idl文件

@@ -394,6 +394,8 @@ namespace CodeDump
         public Dictionary<string, object> globalVariantDict = new Dictionary<string, object>();
         //局部变量
         public Dictionary<string, object> localVariantDict = new Dictionary<string, object>();
+        //直接变量
+        public Dictionary<string, string> injectVariantDict = new Dictionary<string, string>();
 
         public TemplateData()
         {
@@ -401,27 +403,29 @@ namespace CodeDump
         }
         public void SetGlobalVariant(string name, object obj)
         {
-            if (globalVariantDict.ContainsKey(name))
-            {
-                globalVariantDict[name] = obj;
-                return;
-            }
-            globalVariantDict.Add(name, obj);
+            globalVariantDict[name] = obj;
         }
 
         public void SetLocalVariant(string name, object obj)
         {
-            if (localVariantDict.ContainsKey(name))
-            {
-                localVariantDict[name] = obj;
-                return;
-            }
-            localVariantDict.Add(name, obj);
+            localVariantDict[name] = obj;
         }
 
+        public void InjectVariant(string name, string value)
+        {
+            injectVariantDict[name] = value;
+        }
 
         public object GetVariantObject(string objname, string fieldname)
         {
+            if (objname == "G")
+            {
+                if (injectVariantDict.TryGetValue(fieldname, out string val))
+                {
+                    return val;
+                }
+            }
+
             object obj = null;
             if (localVariantDict.TryGetValue(objname, out obj))
             {
@@ -433,7 +437,6 @@ namespace CodeDump
                 PropertyInfo info = obj.GetType().GetRuntimeProperty(fieldname);
                 return info.GetValue(obj);
             }
-
             return null;
 
         }
