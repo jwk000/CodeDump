@@ -4,6 +4,7 @@
 #include <platform/logic_frame/include/module_base/id_base.h>
 #include <platform/logic_frame/include/module_base/serializable.h>
 #include <platform/platform_shared/BiboFrame/BiboInterfaces.h>
+#include <platform/platform_shared/object_system/refcls.h>
 
 
 @{FOREACH(Enum IN ${Meta.EnumList})}

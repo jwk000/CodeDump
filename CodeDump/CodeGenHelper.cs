@@ -162,6 +162,7 @@ namespace CodeDump
             //删除旧文件
             if (File.Exists(codefile))
             {
+                File.SetAttributes(codefile, FileAttributes.Normal);
                 File.Delete(codefile);
             }
             //写入文件
