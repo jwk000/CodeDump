@@ -253,10 +253,12 @@ namespace CodeDump
             object[] var_array = data.ExtraMetaData(extra) as object[];
 
             List<string> result = new List<string>();
+            int index = 0;
             foreach (object v in var_array)
             {
                 data.SetLocalVariant(var_name, v);
-
+                data.SetLocalVariant("ForeachIndex", index.ToString());
+                index++;
                 List<string> res = new List<string>();
                 List<ITemplateRule> extend_rules = TemplateRuleParser.Parse(rule_lines);
                 foreach (var rule in extend_rules)
@@ -394,8 +396,6 @@ namespace CodeDump
         public Dictionary<string, object> globalVariantDict = new Dictionary<string, object>();
         //局部变量
         public Dictionary<string, object> localVariantDict = new Dictionary<string, object>();
-        //直接变量
-        public Dictionary<string, string> injectVariantDict = new Dictionary<string, string>();
 
         public TemplateData()
         {
@@ -411,22 +411,22 @@ namespace CodeDump
             localVariantDict[name] = obj;
         }
 
-        public void InjectVariant(string name, string value)
-        {
-            injectVariantDict[name] = value;
-        }
 
         public object GetVariantObject(string objname, string fieldname)
         {
-            if (objname == "G")
+            object obj = null;
+            if (objname == "G")//直接映射表
             {
-                if (injectVariantDict.TryGetValue(fieldname, out string val))
+                if (localVariantDict.TryGetValue(fieldname, out obj))
                 {
-                    return val;
+                    return obj;
+                }
+                if (globalVariantDict.TryGetValue(fieldname, out obj))
+                {
+                    return obj;
                 }
             }
 
-            object obj = null;
             if (localVariantDict.TryGetValue(objname, out obj))
             {
                 PropertyInfo info = obj.GetType().GetRuntimeProperty(fieldname);

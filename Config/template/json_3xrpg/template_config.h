@@ -31,8 +31,8 @@ struct ${Class.Name}
 class ${Meta.Name}Parser : public ConfReader<${Meta.Name}Parser>
 {
 public:
-    bool Init(const char* file);
-    virtual bool LoadConfig(nlohmann::json& root);
+    bool Initialize(const char* file);
+    virtual bool LoadConfig(nlohmann::json& root, bool init);
     const ${Meta.RootClassName}& GetConfig(){return m_config;}
 private:
 @{FOREACH(Class IN ${Meta.ClassList})}

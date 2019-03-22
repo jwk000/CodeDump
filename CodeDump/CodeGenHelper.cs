@@ -152,7 +152,7 @@ namespace CodeDump
             //meta变量注入
             foreach (var kv in meta.meta_variant)
             {
-                data.InjectVariant(kv.Key, kv.Value);
+                data.SetGlobalVariant(kv.Key, kv.Value);
             }
             foreach (var rule in rules)
             {

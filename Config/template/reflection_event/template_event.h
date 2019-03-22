@@ -2,6 +2,12 @@
 
 #include "${Meta.Name}_info.h"
 #include "products/Project_Mobile/mobile/mobile/shared/h3d_mobile_event.h"
+enum
+{
+@{FOREACH(Class IN ${Meta.ClassList})}
+    CLSID_${Class.Name} = EVENTCLSID_BASE(${G.ProjectName})+${G.ForeachIndex},
+@{END_FOREACH}
+};
 
 @{FOREACH(Enum IN ${Meta.EnumList})}
 ${Enum.Comment}
@@ -25,7 +31,6 @@ struct ${Class.Name}:public ${Class.Base}
 };
 
 @{END_FOREACH}
-
 
 @{FOREACH(Class IN ${Meta.ClassList})}
 REFELCTION_SUPPORT(${Class.Name}, (METAID_BASE(${G.ProjectName}) + EVENT_ID_BASE + ${Meta.AutoIncID}));

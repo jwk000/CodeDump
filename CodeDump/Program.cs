@@ -23,8 +23,6 @@ namespace CodeDump
             string tpldir = "./template/";
             string tardir = "./dumpcode/";
             string idlfile = "";
-            //是否严格匹配模板文件名
-            bool with_match = false;
 
             for (int i = 0; i < args.Length; i++)
             {
@@ -35,7 +33,6 @@ namespace CodeDump
                 if (ss[0] == "--tpldir") tpldir = ss[1];
                 if (ss[0] == "--tardir") tardir = ss[1];
                 if (ss[0] == "--idl") idlfile = ss[1];
-                if (ss[0] == "--with_match") with_match = true;
             }
 
             CodeGenHelper code_gen = new CodeGenHelper();
