@@ -1,0 +1,15 @@
+
+set ProjectName = Project_Skill;
+
+
+[base(CEventMobileRequest)]
+class CEventRequestSkillInfo
+{
+}
+
+[base(CEventMobileReply)]
+class CEventReplySkillInfo
+{
+	Dict<int,SkillInfo> m_skill_infos;
+}
+

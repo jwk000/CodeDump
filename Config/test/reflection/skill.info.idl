@@ -1,0 +1,10 @@
+
+set ProjectName = Project_Skill;
+
+class SkillInfo
+{
+	int id;
+	string name;
+	string desc;
+}
+
