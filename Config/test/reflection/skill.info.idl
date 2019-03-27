@@ -1,10 +1,20 @@
 
 set ProjectName = Project_Skill;
 
-class SkillInfo
+
+class skill_data_info
 {
-	int id;
+	[pstflags(field,autoinc)]
+	int dbid;
+	[pstflags(field,primary)]
+	TPersistID ownerid;
+	[pstflags(field)]
+	int skillid;
 	string name;
 	string desc;
+	[pstflags(field)]
+	int level;
+	[pstflags(field,datetime)]
+	time_t create_time;
 }
 

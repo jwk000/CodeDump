@@ -11,7 +11,7 @@ void Declare${Meta.Name}InfoMetas()
 @{FOREACH(Class IN ${Meta.ClassList})}
     DECLARE_REFLECTION(${Class.Name})
     @{FOREACH(Field IN ${Class.FieldList})}
-    .field(&${Class.Name}::${Field.Name}, "${Field.Name}", ${Field.Index})
+    .field(&${Class.Name}::${Field.Name}, "${Field.Name}", ${Field.Index} ${Field.PstFlags})
     @{END_FOREACH}
     .default_constructor();
 

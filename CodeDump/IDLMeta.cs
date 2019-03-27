@@ -8,80 +8,97 @@ using System.Text.RegularExpressions;
 
 namespace CodeDump
 {
-    enum eIDLAttr
-    {
-        NOATTR,
-        ROOT,//root class
-        KEY, //dict的key
-        STRING,//从string解析复杂字段
-        IN,//枚举限定
-        RANGE,//范围检查
-        OPTIONAL,//可选的字段，默认为必须有
-        TAG,//标签名 xml标签和类名不一致用
-        REWARD,//奖励类型，特殊解析
-        BASE,//基类名称
-    }
-
     class IDLAttr
     {
-        public eIDLAttr attr_type = eIDLAttr.NOATTR;
         public string attr_name;
-        public string attr_param;
+        public string attr_param;//所有参数不拆分
+        public string[] attr_params;//参数按逗号拆分
 
         public static IDLAttr ParseAttr(string line)
         {
-            string attrstr = line.Substring(line.IndexOf('[') + 1, line.IndexOf(']') - line.IndexOf('[') - 1);
+            line = line.Substring(line.IndexOf('[') + 1, line.IndexOf(']') - line.IndexOf('[') - 1);
+            if (string.IsNullOrEmpty(line))
+            {
+                return null;
+            }
+            IDLAttr idlattr = new IDLAttr();
             //处理带参数的属性
-            string[] ss = attrstr.Split('(');
-            string attrname = ss[0];
-            string attrparam = null;
+            string[] ss = line.Split('(');
+            idlattr.attr_name = ss[0];
 
             if (ss.Length > 1)
             {
-                attrparam = ss[1].Split(')')[0];
+                idlattr.attr_param = ss[1].Split(')')[0];
+                idlattr.attr_params = idlattr.attr_param.Split(',');
+            }
+            return idlattr;
+        }
+    }
+
+    class IDLAttrWrapper
+    {
+        public List<IDLAttr> attrs = new List<IDLAttr>();
+
+        public bool HasAttr(string name)
+        {
+            if (attrs.Count == 0)
+            {
+                return false;
+            }
+            IDLAttr a = attrs.First(attr => attr.attr_name == name);
+            if (a != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public string GetAttrParam(string name)
+        {
+            if (attrs.Count == 0)
+            {
+                return null;
             }
 
-            if (!string.IsNullOrEmpty(attrstr))
+            IDLAttr a = attrs.First(attr => attr.attr_name == name);
+            if (a != null)
             {
-                if (attrname == "root")
-                {
-                    return new IDLAttr { attr_type = eIDLAttr.ROOT, attr_name = attrname, attr_param = attrparam };
-                }
-                if (attrname == "key")
-                {
-                    return new IDLAttr { attr_type = eIDLAttr.KEY, attr_name = attrname, attr_param = attrparam };
-                }
-                if (attrname == "string")
-                {
-                    return new IDLAttr { attr_type = eIDLAttr.STRING, attr_name = attrname, attr_param = attrparam };
-                }
-                if (attrname == "optional")
-                {
-                    return new IDLAttr { attr_type = eIDLAttr.OPTIONAL, attr_name = attrname, attr_param = attrparam };
-                }
-                if (attrname == "tag")
-                {
-                    return new IDLAttr { attr_type = eIDLAttr.TAG, attr_name = attrname, attr_param = attrparam };
-                }
-                if (attrname == "range")
-                {
-                    return new IDLAttr { attr_type = eIDLAttr.RANGE, attr_name = attrname, attr_param = attrparam };
-                }
-                if (attrname == "reward")
-                {
-                    return new IDLAttr { attr_type = eIDLAttr.REWARD, attr_name = attrname, attr_param = attrparam };
-                }
-                if(attrname == "base")
-                {
-                    return new IDLAttr { attr_type = eIDLAttr.BASE, attr_name = attrname, attr_param = attrparam };
-                }
+                return a.attr_param;
             }
             return null;
+        }
+        public string[] GetAttrParams(string name)
+        {
+            if (attrs.Count == 0)
+            {
+                return null;
+            }
 
+            IDLAttr a = attrs.First(attr => attr.attr_name == name);
+            if (a != null)
+            {
+                return a.attr_params;
+            }
+            return null;
+        }
+        public string AttrName
+        {
+            get
+            {
+                if (attrs.Count == 0) return null;
+                return attrs.First().attr_name;
+            }
+        }
+        public string AttrParam
+        {
+            get
+            {
+                if (attrs.Count == 0) return null;
+                return attrs.First().attr_param;
+            }
         }
 
     }
-
     enum eIDLType
     {
         INVALID,
@@ -129,29 +146,18 @@ namespace CodeDump
         public object[] FieldList { get { return enum_fields.Values.ToArray(); } }
     }
 
-    class IDLClassField
+    class IDLClassField : IDLAttrWrapper
     {
         public IDLType field_type = new IDLType();
         public string type_name;
         public string field_name;
         public string comment;
         public string default_value;
-        public IDLAttr field_attrs = new IDLAttr();
 
         public IDLMeta Meta { get { return Class.Meta; } }
         public IDLClass Class { get; set; }
+        public string Comment { get { return comment; } }
         public string Name { get { return field_name; } }
-        public string IsOptional
-        {
-            get
-            {
-                if (field_attrs != null && field_attrs.attr_type == eIDLAttr.OPTIONAL)
-                {
-                    return "true";
-                }
-                return "false";
-            }
-        }
         public string DictKeyName
         {
             get
@@ -161,7 +167,7 @@ namespace CodeDump
                 IDLClass c = IDLParser.FindUsingClass(Class.Meta, DictValueType);
                 if (c != null)
                 {
-                    return c.Key;
+                    return c.GetAttrParam("key");
                 }
                 return null;
             }
@@ -174,34 +180,6 @@ namespace CodeDump
                 return idx.ToString();
             }
         }
-        public string AttrName
-        {
-            get
-            {
-                if (field_attrs == null) return null;
-                return field_attrs.attr_name;
-            }
-        }
-        public string AttrParam
-        {
-            get
-            {
-                if (field_attrs == null) return null;
-                return field_attrs.attr_param;
-            }
-        }
-        public string Tag
-        {
-            get
-            {
-                if (field_attrs != null && field_attrs.attr_type == eIDLAttr.TAG)
-                {
-                    return field_attrs.attr_param;
-                }
-                return field_name;
-            }
-        }
-        public string Comment { get { return comment; } }
         public string MetaType
         {
             get
@@ -222,7 +200,7 @@ namespace CodeDump
                         return "class";
                     case eIDLType.DICT:
                         {
-                            if (field_attrs != null && field_attrs.attr_type == eIDLAttr.STRING)
+                            if (HasAttr("string"))
                                 return "dict_string";
                             if (field_type.inner_type[1].type == eIDLType.CLASS)
                                 return "dict_class";
@@ -232,7 +210,7 @@ namespace CodeDump
                         return "error";
                     case eIDLType.LIST:
                         {
-                            if (field_attrs != null && field_attrs.attr_type == eIDLAttr.STRING)
+                            if (HasAttr("string"))
                                 return "list_string";
                         }
                         {
@@ -362,69 +340,100 @@ namespace CodeDump
             return null; ;
         }
 
+        public string Tag
+        {
+            get
+            {
+                if (HasAttr("tag"))
+                {
+                    return GetAttrParam("tag");
+                }
+                return field_name;
+            }
+        }
+        public string IsOptional
+        {
+            get
+            {
+                if (HasAttr("Optional"))
+                {
+                    return "true";
+                }
+                return "false";
+            }
+        }
+
+        public string PstFlags
+        {
+            get
+            {
+                if(HasAttr("pstflags"))
+                {
+                    string ss = ", ";
+                    foreach(string flag in GetAttrParams("pstflags"))
+                    {
+                        if (ss.Length > 7) ss += "|";
+                        switch (flag)
+                        {
+                            case "field":
+                                ss += "PERSIST_FLAG_FIELD";
+                                break;
+                            case "primary":
+                                ss += "PERSIST_FLAG_PRIMARY_KEY";
+                                break;
+                            case "hash":
+                                ss += "PERSIST_FLAG_HASH_KEY";
+                                break;
+                            case "unfold":
+                                ss += "PERSIST_FLAG_UNFOLD";
+                                break;
+                            case "datetime":
+                                ss += "PERSIST_FLAG_DATETIME";
+                                break;
+                            case "consistency":
+                                ss += "PERSIST_FLAG_CONSISTENCY";
+                                break;
+                            case "autoinc":
+                                ss += "PERSIST_FLAG_AUTOINC";
+                                break;
+                        }
+                    }
+                    return ss;
+                }
+                return null;
+            }
+        }
     }
-    class IDLClass
+    class IDLClass : IDLAttrWrapper
     {
-        public IDLAttr class_attr;
         public string class_name;
         public string comment;
         public List<IDLClassField> fieldList = new List<IDLClassField>();
 
         public IDLMeta Meta { get; set; }
+        public string Comment { get { return comment; } }
         public string Name { get { return class_name; } }
         public string Tag
         {
             get
             {
-                if (class_attr != null && class_attr.attr_type == eIDLAttr.TAG)
+                if (HasAttr("tag"))
                 {
-                    return class_attr.attr_param;
+                    return GetAttrParam("tag");
                 }
                 return class_name;
-            }
-        }
-        public string AttrName
-        {
-            get
-            {
-                if (class_attr == null) return null;
-                return class_attr.attr_name;
-            }
-        }
-        public string AttrParam
-        {
-            get
-            {
-                if (class_attr == null) return null;
-                return class_attr.attr_param;
-            }
-        }
-        public string Key
-        {
-            get
-            {
-                var lst = fieldList.Where(f => f.field_attrs != null && f.field_attrs.attr_type == eIDLAttr.KEY);
-                if (lst.Count() > 0)
-                {
-                    return lst.First().Name;
-                }
-                return fieldList[0].field_name;
             }
         }
         public string Base
         {
             get
             {
-                if (class_attr != null && class_attr.attr_type == eIDLAttr.BASE)
+                if (HasAttr("base"))
                 {
-                    return class_attr.attr_param;
+                    return GetAttrParam("base");
                 }
-                return "BaseClassNotFound";
+                return "Base Class Not Found";
             }
-        }
-        public string Comment
-        {
-            get { return comment; }
         }
         public object[] FieldList { get { return fieldList.ToArray(); } }
     }
@@ -629,8 +638,11 @@ namespace CodeDump
                     m_class.comment = comment;
                     m_class.class_name = match.Groups[2].Value;
                     m_class.Meta = meta;
-                    m_class.class_attr = attr;
-                    if (attr != null && attr.attr_type == eIDLAttr.ROOT)
+                    if (attr != null)
+                    {
+                        m_class.attrs.Add(attr);
+                    }
+                    if (attr != null && attr.attr_param=="root")
                     {
                         meta.root_class_name = m_class.class_name;
                     }
@@ -656,7 +668,10 @@ namespace CodeDump
                     field.type_name = m.Groups[1].Value;
                     field.field_name = m.Groups[2].Value;
                     field.default_value = def;
-                    field.field_attrs = attr;
+                    if (attr != null)
+                    {
+                        field.attrs.Add(attr);
+                    }
                     field.Class = m_class;
                     if (!ParseFieldType(meta, field.type_name, field.field_type, true))
                     {
