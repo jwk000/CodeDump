@@ -45,7 +45,7 @@ namespace CodeDump
             {
                 return false;
             }
-            IDLAttr a = attrs.First(attr => attr.attr_name == name);
+            IDLAttr a = attrs.Find(attr => attr.attr_name == name);
             if (a != null)
             {
                 return true;
@@ -60,7 +60,7 @@ namespace CodeDump
                 return null;
             }
 
-            IDLAttr a = attrs.First(attr => attr.attr_name == name);
+            IDLAttr a = attrs.Find(attr => attr.attr_name == name);
             if (a != null)
             {
                 return a.attr_param;
@@ -74,7 +74,7 @@ namespace CodeDump
                 return null;
             }
 
-            IDLAttr a = attrs.First(attr => attr.attr_name == name);
+            IDLAttr a = attrs.Find(attr => attr.attr_name == name);
             if (a != null)
             {
                 return a.attr_params;
@@ -158,20 +158,6 @@ namespace CodeDump
         public IDLClass Class { get; set; }
         public string Comment { get { return comment; } }
         public string Name { get { return field_name; } }
-        public string DictKeyName
-        {
-            get
-            {
-                if (field_type.type != eIDLType.DICT) return null;
-
-                IDLClass c = IDLParser.FindUsingClass(Class.Meta, DictValueType);
-                if (c != null)
-                {
-                    return c.GetAttrParam("key");
-                }
-                return null;
-            }
-        }
         public string Index
         {
             get
@@ -200,26 +186,16 @@ namespace CodeDump
                         return "class";
                     case eIDLType.DICT:
                         {
-                            if (HasAttr("string"))
-                                return "dict_string";
-                            if (field_type.inner_type[1].type == eIDLType.CLASS)
-                                return "dict_class";
-                            if (field_type.inner_type[0].type < eIDLType.CLASS)
-                                return "dict_basic";
+                            if (HasAttr("string")) return "dict_string";
+                            if (field_type.inner_type[1].type == eIDLType.CLASS) return "dict_class";
+                            if (field_type.inner_type[1].type < eIDLType.CLASS) return "dict_basic";
                         }
                         return "error";
                     case eIDLType.LIST:
                         {
-                            if (HasAttr("string"))
-                                return "list_string";
-                        }
-                        {
-                            if (field_type.inner_type[0].type == eIDLType.CLASS)
-                                return "list_class";
-                        }
-                        {
-                            if (field_type.inner_type[0].type < eIDLType.CLASS)
-                                return "list_basic";
+                            if (HasAttr("string")) return "list_string";
+                            if (field_type.inner_type[0].type == eIDLType.CLASS) return "list_class";
+                            if (field_type.inner_type[0].type < eIDLType.CLASS) return "list_basic";
                         }
                         return "error";
                 }
@@ -239,6 +215,15 @@ namespace CodeDump
             {
                 if (field_type.type != eIDLType.DICT) return null;
                 return GetFieldTypeName(field_type.inner_type[0], Meta.lang);
+            }
+        }
+        public string DictKeyName
+        {
+            get
+            {
+                if (field_type.type != eIDLType.DICT) return null;
+                if (!HasAttr("key")) return null;
+                return GetAttrParam("key");
             }
         }
         public string DictValueType
@@ -642,7 +627,7 @@ namespace CodeDump
                     {
                         m_class.attrs.Add(attr);
                     }
-                    if (attr != null && attr.attr_param=="root")
+                    if (attr != null && attr.attr_name=="root")
                     {
                         meta.root_class_name = m_class.class_name;
                     }
