@@ -15,7 +15,9 @@ namespace CodeDump
     {
         INVALID,
         CPP,
-        CS
+        CS,
+        LUA,
+        JS
     }
 
     class CodeGenHelper
@@ -59,6 +61,8 @@ namespace CodeDump
             if (ext == ".cs") return CodeLanguage.CS;
             if (ext == ".cpp") return CodeLanguage.CPP;
             if (ext == ".h") return CodeLanguage.CPP;
+            if (ext == ".lua") return CodeLanguage.LUA;
+            if (ext == ".js") return CodeLanguage.JS;
             return CodeLanguage.INVALID;
         }
 

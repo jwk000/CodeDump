@@ -278,21 +278,30 @@ namespace CodeDump
                 {
                     return default_value;
                 }
-                if (field_type.type == eIDLType.BOOL)
-                {
-                    return "false";
-                }
-                if (field_type.type == eIDLType.INT)
-                {
-                    return "0";
-                }
-                if (field_type.type == eIDLType.FLOAT)
-                {
-                    return "0.0f";
-                }
-
-                return null;
+                return GetFieldDefaultValue(field_type.type, Meta.lang);
             }
+        }
+
+        public string GetFieldDefaultValue(eIDLType t, CodeLanguage l)
+        {
+            switch (t)
+            {
+                case eIDLType.INT:
+                case eIDLType.FLOAT:
+                    return "0";
+                case eIDLType.STRING:
+                    return "\"\"";
+                case eIDLType.BOOL when l == CodeLanguage.CPP || l == CodeLanguage.CS:
+                    return "false";
+                case eIDLType.BOOL when l == CodeLanguage.LUA:
+                    return "0";
+                case eIDLType.LIST when l == CodeLanguage.LUA:
+                case eIDLType.DICT when l == CodeLanguage.LUA:
+                case eIDLType.CLASS when l == CodeLanguage.LUA:
+                    return "{}";
+
+            }
+            return null;
         }
         public string GetFieldTypeName(IDLType t, CodeLanguage lang)
         {
@@ -304,10 +313,8 @@ namespace CodeDump
                     return "float";
                 case eIDLType.BOOL:
                     return "bool";
-                case eIDLType.CLASS:
-                    return t.type_name;
                 case eIDLType.ENUM:
-                    return t.type_name;
+                    return "int";
                 case eIDLType.STRING when lang == CodeLanguage.CPP:
                     return "std::string";
                 case eIDLType.LIST when lang == CodeLanguage.CPP:
@@ -320,7 +327,26 @@ namespace CodeDump
                     return "List<" + GetFieldTypeName(t.inner_type[0], lang) + ">";
                 case eIDLType.DICT when lang == CodeLanguage.CS:
                     return "H3DDictionary<" + GetFieldTypeName(t.inner_type[0], lang) + "," + GetFieldTypeName(t.inner_type[1], lang) + ">";
-
+                case eIDLType.STRING when lang == CodeLanguage.LUA:
+                    return "string";
+                case eIDLType.LIST when lang == CodeLanguage.LUA:
+                    return "list<" + GetFieldTypeName(t.inner_type[0], lang) + ">";
+                case eIDLType.DICT when lang == CodeLanguage.LUA:
+                    return "map<" + GetFieldTypeName(t.inner_type[0], lang) + "," + GetFieldTypeName(t.inner_type[1], lang) + ">";
+                case eIDLType.CLASS when lang == CodeLanguage.LUA:
+                    {
+                        if (t.type_name == "TPersistID") return "int64";
+                        if (t.type_name == "time_t") return "int64";
+                        return t.type_name;
+                    }
+                case eIDLType.CLASS when lang == CodeLanguage.CS:
+                    {
+                        if (t.type_name == "TPersistID") return "long";
+                        if (t.type_name == "time_t") return "long";
+                        return t.type_name;
+                    }
+                case eIDLType.CLASS when lang== CodeLanguage.CPP:
+                    return t.type_name;
             }
             return null; ;
         }
