@@ -14,7 +14,7 @@ _enum("${Enum.Name}", ${Enum.Name})
 
 @{FOREACH(Class IN ${Meta.ClassList})}
 --${Class.Comment}
-@{IF(${Class.HasAttr(Base)}==true)}
+@{IF(${Class.HasAttr(base)}==true)}
 ---@class ${Class.Name}:${Class.Base}
 _class("${Class.Name}",${Class.Base})
 @{ELSE}
